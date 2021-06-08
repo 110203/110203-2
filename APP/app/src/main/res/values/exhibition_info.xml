@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="exhibition_no">
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+    </string-array>
+
+    <string-array name="exhibition_name">
+        <item>展覽名稱a</item>
+        <item>展覽名稱b</item>
+        <item>展覽名稱c</item>
+    </string-array>
+
+    <string-array name="exhibition_type">
+        <item>藝術展</item>
+        <item>商品展</item>
+    </string-array>
+
+    <string-array name="exhibition_text">
+        <item>展覽簡介a十個字…</item>
+        <item>展覽簡介b十個字…</item>
+        <item>展覽簡介c十個字…</item>
+    </string-array>
+
+    <integer-array name="exhibition_img">
+        <item>@drawable/hua_3</item>
+        <item>@drawable/ic_home</item>
+        <item>@drawable/ic_home</item>
+    </integer-array>
+
+    <string-array name="order_id">
+        <item>2021/5/30 下午02:30</item>
+        <item>2021/5/31 下午03:46</item>
+        <item>2021/6/2 下午02:36</item>
+    </string-array>
+
+    <string-array name="commodity_no">
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="commodity_name">
+        <item>商品a</item>
+        <item>商品b</item>
+        <item>商品c</item>
+    </string-array>
+
+    <string-array name="commodity_text">
+        <item>商品a的詳細描述</item>
+        <item>商品b的詳細描述</item>
+        <item>商品c的詳細描述</item>
+    </string-array>
+
+    <integer-array name="commodity_price">
+        <item>300</item>
+        <item>400</item>
+        <item>5000</item>
+    </integer-array>
+
+    <integer-array name="commodity_img">
+        <item>@drawable/hua_3</item>
+        <item>@drawable/ic_home</item>
+        <item>@drawable/ic_home</item>
+    </integer-array>
+</resources>

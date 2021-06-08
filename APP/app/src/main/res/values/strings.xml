@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">展。現</string>
+    <string name="title_home">首頁</string>
+    <string name="title_member">會員</string>
+    <string name="title_cart">購物車</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="teamEmail">110203@ntub.edu.tw</string>
+
+    <string-array name="exhibition"></string-array>
+
+
+</resources>
