@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>110203</title>
+
+    <meta name="description" content="Source code generated using layoutit.com">
+    <meta name="author" content="LayoutIt!">
+
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+    
+    <link href="/css/tabs.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row center">
+        <div class="col-md-12 d-flex align-items-center min-vh-100 py-3 py-md-0">
+          <div class="container">
+            <div class="card login-card">
+              <div class="row no-gutters">
+                <div class="col-md-12">
+                  <div class="tabset">
+                    <!-- Tab 1 -->
+                    <input type="radio" name="tabset" id="tab1" checked>
+                    <label for="tab1">新增展覽</label>
+                    <!-- Tab 2 -->
+                    <input type="radio" name="tabset" id="tab2">
+                    <label for="tab2">新增商品</label>
+
+                    <form class="form-inline my-2 my-lg-0" action="/searchE" method="GET">
+                      <input class="form-control mr-sm-2" type="text" name="keyword" placeholder="輸入關鍵字搜尋展覽">
+                      <button class="btn btn-primary2 my-2 my-sm-0" type="submit" style="margin: auto 10px auto 3px;">搜尋</button>
+                    </form>
+                    <form class="form-inline my-2 my-lg-0" action="/searchG" method="GET">
+                      <input class="form-control mr-sm-2" type="text" name="keyword" placeholder="輸入關鍵字搜尋商品">
+                      <button class="btn btn-primary2 my-2 my-sm-0" type="submit" style="margin: auto 10px auto 3px;">搜尋</button>
+                    </form>
+                    
+                    <div class="tab-panels">
+                      <section id="addExhi" class="tab-panel">
+                        <form role="form" enctype="multipart/form-data" action="/addE" method="POST">
+                          <div class="form-group">	
+                            <h2>新增展覽</h2>   
+                            <label for="exampleInputPassword1">
+                              會員帳號
+                            </label>
+                            <input type="email" class="form-control" style="width: 100%!important;" name="memNo" required>
+                            
+                            <label for="exampleInputEmail1">
+                              展覽檔案
+                            </label>
+                            <input type="file" class="form-control-file" name="eFile">
+                          </div>
+                  
+                          <div class="form-group">					 
+                            <label for="exampleInputPassword1">
+                              展覽名稱
+                            </label>
+                            <input type="text" class="form-control" id="exampleInputPassword1" name="eName" required>
+                          </div>
+                  
+                          <div class="form-group">					 
+                            <label for="exampleInputPassword1">
+                              展覽簡介
+                            </label>
+                            <input type="text" class="form-control" id="exampleInputPassword1"  name="introdution" required>
+                          </div>
+                          
+                          <div class="form-group">					 
+                            <label for="exampleInputPassword1">
+                              開始時間
+                            </label>
+                            <input type="date" class="form-control" id="exampleInputPassword1" name="startTime" required>
+                          </div>
+
+                          <div class="form-group">					 
+                            <label for="exampleInputPassword1">
+                              結束時間
+                            </label>
+                            <input type="date" class="form-control" id="exampleInputPassword1" name="endTime" required>
+                          </div>
+                  
+                          <div class="form-group">					 
+                            <label for="exampleInputPassword1">
+                              展覽預覽圖
+                            </label>
+                            <input type="file" class="form-control-file" id="exampleInputFile" name="eImage" >
+                          </div>
+                  
+                          <div class="form-group">					 
+                            <label for="exampleInputPassword1">
+                              類別
+                            </label>
+                            <input type="text" class="form-control" id="exampleInputPassword1" name="eType" required>
+                          </div>
+                          <input name="login" id="login" class="btn btn-block login-btn mb-4" type="submit" value="submit">
+                        </form>
+                      </section>
+
+                      <section id="addGood" class="tab-panel">
+                        <form role="form" enctype="multipart/form-data" action="/addG" method="POST">
+                          <div class="form-group">  
+                            <h2>新增商品</h2>                        
+                            <label for="exampleInputEmail1">
+                              展覽編號
+                            </label>
+                            <input type="text" class="form-control" id="exampleInputPassword1" name='eNo'>
+                          </div>
+                  
+                          <div class="form-group">					 
+                            <label for="exampleInputPassword1">
+                              商品名稱
+                            </label>
+                            <input type="text" class="form-control" id="exampleInputPassword1" name='gName'>
+                          </div>
+                  
+                          <div class="form-group">					 
+                            <label for="exampleInputPassword1">
+                              商品簡介
+                            </label>
+                            <input type="text" class="form-control" id="exampleInputPassword1" name='introdution'>
+                          </div>
+                  
+                          <div class="form-group">					 
+                            <label for="exampleInputPassword1">
+                              2D圖片
+                            </label>
+                            <input type="file" class="form-control-file" id="exampleInputFile" multiple name='gImage2d'>
+                          </div>
+                  
+                          <div class="form-group">					 
+                            <label for="exampleInputPassword1">
+                              3D圖片
+                            </label>
+                            <input type="file" class="form-control-file" id="exampleInputFile" multiple name='gImage3d'>
+                          </div>
+                  
+                          <div class="form-group">					 
+                            <label for="exampleInputPassword1">
+                              語音檔
+                            </label>
+                            <input type="file" class="form-control-file" id="exampleInputFile" multiple name='voice'>
+                          </div>
+                  
+                          <div class="form-group">					 
+                            <label for="exampleInputPassword1">
+                              商品數量
+                            </label>
+                            <input type="text" class="form-control" id="exampleInputPassword1" name='gAmount'>
+                          </div>
+
+                          <div class="form-group">					 
+                            <label for="exampleInputPassword1">
+                              商品價錢
+                            </label>
+                            <input type="text" class="form-control" id="exampleInputPassword1" name='price'>
+                          </div>
+                  
+                          <input name="login" id="login" class="btn btn-block login-btn mb-4" type="submit" value="submit">
+                        </form>
+                      </section>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/scripts.js"></script>
+  </body>
+</html>
