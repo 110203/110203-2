@@ -6,7 +6,9 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.LinearLayout
 import android.widget.TextView
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.test2.R
@@ -40,11 +42,15 @@ class OrderListAdapter(val orderData: Array<String>) : RecyclerView.Adapter<Orde
 
     override fun onBindViewHolder(holder: OrderViewHolder, position: Int) {
         holder.dataView.text = orderData[position]
-        holder.itemView.setOnClickListener {  }
+        holder.layout_All.setOnClickListener {
+            holder.dataView.text = "123456"
+            // TODO
+        }
     }
 
 }
 
 class OrderViewHolder(v: View) : RecyclerView.ViewHolder(v){
     val dataView : TextView = v.findViewById(R.id.exhibitionItem)
+    val layout_All : ConstraintLayout = v.findViewById(R.id.layout_All)
 }

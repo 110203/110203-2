@@ -46,6 +46,12 @@ interface APIService {
 
     @Headers("Content-Type: application/json")
     @POST("appMemExhibition")
+    fun appMemExhibition_Checked(
+        @Body memNo: RequestBody // scNo
+    ): Call<ExhibitionResponse_memNo>
+
+    @Headers("Content-Type: application/json")
+    @POST("appAllMemExhibition")
     fun appMemExhibition(
         @Body memNo: RequestBody // scNo
     ): Call<ExhibitionResponse_memNo>

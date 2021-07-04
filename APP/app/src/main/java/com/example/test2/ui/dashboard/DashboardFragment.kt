@@ -11,6 +11,7 @@ import com.example.test2.activity.profile.EditProfile
 import com.example.test2.activity.profile.ExhibitionManage
 import com.example.test2.activity.profile.OrderQuery
 import com.example.test2.R
+import com.example.test2.activity.profile.Application
 import kotlinx.android.synthetic.main.fragment_dashboard.*
 
 class DashboardFragment : Fragment() {
@@ -35,22 +36,17 @@ class DashboardFragment : Fragment() {
         // 個人資料
         btnToEditProfile.setOnClickListener {
             activity?.let {
-                var bundle = Bundle()
-                bundle.putString("userId", "12345")
                 var intent = Intent(it, EditProfile::class.java)
-                intent.putExtra("bundle", bundle)
                 it.startActivity(intent)
             }
         }
 
         // 申請建展
         btnToApplication.setOnClickListener {
-            showApplication.visibility = View.VISIBLE
-            msgContact.text = "請將詳細需求、展覽檔案等傳至"
-            msgContact3.text = "跟我們做聯繫喔！"
-        }
-        btnApplyClose.setOnClickListener {
-            showApplication.visibility = View.INVISIBLE
+            activity?.let {
+                var intent = Intent(it, Application::class.java)
+                it.startActivity(intent)
+            }
         }
 
         // 管理展覽

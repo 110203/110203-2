@@ -224,26 +224,35 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="g"
-                android:textSize="24sp" />
+                android:text="a"
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/msgContact2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:autoLink="email"
+                android:autoLink="web"
                 android:gravity="center"
-                android:text="@string/teamEmail"
-                android:textColor="@color/purple_700"
-                android:textSize="24sp" />
+                android:text="@string/googleForm"
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/msgContact3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="g"
-                android:textSize="24sp" />
+                android:text="c"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/msgContact5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="email"
+                android:gravity="center"
+                android:text="@string/teamEmail"
+                android:textColor="@color/purple_700"
+                android:textSize="18sp" />
 
         </LinearLayout>
 

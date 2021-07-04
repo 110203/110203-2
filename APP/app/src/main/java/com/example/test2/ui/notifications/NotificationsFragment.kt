@@ -17,7 +17,6 @@ import com.example.test2.data.model.CartResponse
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.activity_commodity.*
 import kotlinx.android.synthetic.main.fragment_notifications.*
-import kotlinx.android.synthetic.main.fragment_notifications.view.*
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
 import okhttp3.RequestBody.Companion.toRequestBody
 import org.json.JSONObject
@@ -100,8 +99,8 @@ class NotificationsFragment : Fragment() {
                     var layoutManager = LinearLayoutManager(mActivity)
                     layoutManager.orientation = LinearLayoutManager.VERTICAL
 
-                    cartCommodityView.layoutManager = layoutManager
-                    cartCommodityView.adapter = CartListAdapter(items)
+                    applicationList.layoutManager = layoutManager
+                    applicationList.adapter = CartListAdapter(items)
                     val s = String.format("%,d", totPrice).replace(',', ',')
                     txtTotPrice.text = s
                 }else{

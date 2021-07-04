@@ -1,6 +1,5 @@
 package com.example.test2.activity.profile
 
-import android.content.res.Resources
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -59,7 +58,7 @@ class ExhibitionManage : AppCompatActivity() {
         val requestBody = jsonObject.toString().toRequestBody("application/json".toMediaTypeOrNull())
 
         // 利用APIService中的appAllGoods, 將requestBody(eNo) POST 至資料庫, 回傳GoodResponse回來
-        RetrofitClient.instance.appMemExhibition(requestBody).enqueue(object: Callback<ExhibitionResponse_memNo> {
+        RetrofitClient.instance.appMemExhibition_Checked(requestBody).enqueue(object: Callback<ExhibitionResponse_memNo> {
             override fun onFailure(call: Call<ExhibitionResponse_memNo>, t: Throwable) {
                 Toast.makeText(applicationContext, t.message, Toast.LENGTH_LONG).show()
                 t.message?.let { Log.d("ERROR", it) }
@@ -70,8 +69,9 @@ class ExhibitionManage : AppCompatActivity() {
                 response: Response<ExhibitionResponse_memNo>
             ) {
                 var status = response.body()?.status.toString()
-                val data = ArrayList(response.body()?.data)
+
                 if(status == "success"){
+                    val data = ArrayList(response.body()?.data)
                     // 將data裝進HashMap中
                     for(i in data?.indices){
                         var item = HashMap<String, Any?>()
@@ -99,7 +99,8 @@ class ExhibitionManage : AppCompatActivity() {
                     exhibitionList.adapter = ExhibitionListAdapter(items)
 
                 }else{
-                    textView7.text = "NOT FOUND."
+                    txtNotFoundExhibitionMan.text = "查無資料"
+                    txtNotFoundExhibitionMan.visibility = View.VISIBLE
                 }
             }
 

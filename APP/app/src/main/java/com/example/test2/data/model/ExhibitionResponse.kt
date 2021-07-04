@@ -31,13 +31,13 @@ data class ExhibitionResponse_memNo(
 
 @JsonClass(generateAdapter = true)
 data class ExhibitionDetail_memNo(
-    @field:Json(name = "eNo") val eNo: String,
-    @field:Json(name = "eName") val eName: String,
-    @field:Json(name = "eType") val eType: String,
+    @field:Json(name = "eNo") val eNo: String?,
+    @field:Json(name = "eName") val eName: String?,
+    @field:Json(name = "eType") val eType: String?,
     @field:Json(name = "eImage") var eImage: String?,
-    @field:Json(name = "introdution") val eIntrodution: String,
-    @field:Json(name = "startTime") val startTime: String, // 可看不可修
-    @field:Json(name = "endTime") val endTime: String // 可看不可修
+    @field:Json(name = "introdution") val eIntrodution: String?,
+    @field:Json(name = "startTime") val startTime: String?, // 可看不可修
+    @field:Json(name = "endTime") val endTime: String? // 可看不可修
 )
 
 // 會員 > 管理展覽 > 輸入PIN碼
