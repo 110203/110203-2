@@ -28,7 +28,7 @@
         <LinearLayout
             android:id="@+id/linearLayout3"
             android:layout_width="0dp"
-            android:layout_height="0dp"
+            android:layout_height="wrap_content"
             android:orientation="horizontal"
             app:layout_constraintBottom_toBottomOf="@+id/toolbar2"
             app:layout_constraintEnd_toEndOf="parent"
@@ -42,16 +42,19 @@
                 android:background="#00000000"
                 android:paddingLeft="16dp"
                 android:paddingRight="16dp"
-                app:srcCompat="@drawable/abc_vector_test" />
+                android:tint="@color/fifth"
+                app:srcCompat="@drawable/ic_back"
+                tools:ignore="VectorDrawableCompat" />
 
             <TextView
                 android:id="@+id/txtShowName2D"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:fontFamily="serif"
                 android:gravity="center"
                 android:text="TextView"
-                android:textColor="#FFFFFF"
+                android:textColor="@color/fifth"
                 android:textSize="16sp" />
 
             <ImageButton
@@ -61,7 +64,8 @@
                 android:background="#00000000"
                 android:paddingLeft="16dp"
                 android:paddingRight="16dp"
-                app:srcCompat="@drawable/ic_arrow_forward_white_24dp"
+                android:tint="@color/fifth"
+                app:srcCompat="@drawable/ic_right_arrow_angle"
                 tools:ignore="VectorDrawableCompat" />
 
         </LinearLayout>

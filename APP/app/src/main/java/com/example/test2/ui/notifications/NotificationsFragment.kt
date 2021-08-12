@@ -16,6 +16,7 @@ import com.example.test2.data.api.RetrofitClient
 import com.example.test2.data.model.CartResponse
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.activity_commodity.*
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.fragment_notifications.*
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
 import okhttp3.RequestBody.Companion.toRequestBody
@@ -102,7 +103,7 @@ class NotificationsFragment : Fragment() {
                     applicationList.layoutManager = layoutManager
                     applicationList.adapter = CartListAdapter(items)
                     val s = String.format("%,d", totPrice).replace(',', ',')
-                    txtTotPrice.text = s
+                    btnCheckout.text = "填寫購買資訊(\$$s)"
                 }else{
                     textView7.text = "NOT FOUND."
                 }

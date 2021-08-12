@@ -14,7 +14,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Test2">
-        <activity android:name=".activity.profile.ApplicationList"></activity>
+        <activity android:name=".VisitorActivity"></activity>
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.profile.EditPassword" />
+        <activity android:name=".activity.profile.Signup" />
+        <activity android:name=".ExhibitionDetail" />
+        <activity android:name=".activity.profile.ApplicationList" />
         <activity android:name=".activity.profile.Application" />
         <activity android:name=".OrderDetail" />
         <activity android:name=".activity.profile.OrderQuery" />
@@ -25,15 +36,11 @@
         <activity android:name=".activity.profile.Login" />
         <activity android:name=".CommodityDetail" />
         <activity android:name=".activity.home.Commodity" />
-        <activity
-            android:name=".MainActivity"
-            android:label="@string/app_name">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".MainActivity" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

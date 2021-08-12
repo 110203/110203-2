@@ -42,13 +42,15 @@
                 android:background="#00000000"
                 android:paddingLeft="16dp"
                 android:paddingRight="16dp"
-                app:srcCompat="@drawable/abc_vector_test" />
+                android:tint="#AFABAB"
+                app:srcCompat="@drawable/ic_back" />
 
             <TextView
                 android:id="@+id/txtShowName3D"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:fontFamily="serif"
                 android:gravity="center"
                 android:text="TextView"
                 android:textColor="#FFFFFF"
@@ -61,7 +63,8 @@
                 android:background="#00000000"
                 android:paddingLeft="16dp"
                 android:paddingRight="16dp"
-                app:srcCompat="@drawable/ic_arrow_forward_white_24dp"
+                android:tint="#AFABAB"
+                app:srcCompat="@drawable/ic_right_arrow_angle"
                 tools:ignore="VectorDrawableCompat" />
 
         </LinearLayout>

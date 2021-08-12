@@ -14,6 +14,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.test2.ExhibitionDetail
 import com.example.test2.activity.home.Exhibition_2D
 import com.example.test2.R
 import com.example.test2.activity.home.Exhibition_3D
@@ -109,18 +110,11 @@ class HomeFragment : Fragment() {
         //////////////////////////
     }
 
-    class ExhibitionListAdapter(val items: ArrayList<Map<String, Any?>>) : RecyclerView.Adapter<ViewHolder>() {
+    class ExhibitionListAdapter(private val items: ArrayList<Map<String, Any?>>) : RecyclerView.Adapter<ViewHolder>() {
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
             val v = LayoutInflater.from(parent.context).inflate(R.layout.layout_exhibition_home, parent, false)
 
-            val myDialog = Dialog(parent.context, android.R.style.Theme_DeviceDefault_Light_Dialog_NoActionBar_MinWidth)
-            myDialog.setContentView(R.layout.layout_exhibition_detail)
-
-            v.setOnClickListener {
-                myDialog.show()
-            }
-
-            return ViewHolder(v, myDialog)
+            return ViewHolder(v)
         }
 
         override fun getItemCount(): Int {
@@ -137,43 +131,27 @@ class HomeFragment : Fragment() {
             holder.exhibitionText.text = exhibitionText
             Picasso.get().load("http://140.131.114.155/file/$photoPath").into(holder.exhibitionImg)
 
-            holder.exhibitionDetailName.text = exhibitionName
-            holder.exhibitionDetailText.text = exhibitionText
-            Picasso.get().load("http://140.131.114.155/file/$photoPath").into(holder.exhibitionDetailImg)
-            holder.goTo2D.setOnClickListener {
+            holder.exhibitionImg.setOnClickListener {
+                //myDialog.show()
                 val bundle = Bundle()
                 bundle.putString("showNo", exhibitionNo)
                 bundle.putString("showName", exhibitionName)
-                val intent = Intent(holder.toto, Exhibition_2D::class.java)
+                bundle.putString("showImgPath", photoPath)
+                bundle.putString("showText", exhibitionText)
+                val intent = Intent(holder.toto, ExhibitionDetail::class.java)
                 intent.putExtra("bundle", bundle)
                 holder.toto?.startActivity(intent)
-
-            }
-            holder.goTo3D.setOnClickListener {
-                val bundle = Bundle()
-                bundle.putString("showNo", exhibitionNo)
-                bundle.putString("showName", exhibitionName)
-                val intent = Intent(holder.toto, Exhibition_3D::class.java)
-                intent.putExtra("bundle", bundle)
-                holder.toto?.startActivity(intent)
-
             }
         }
 
     }
 
-    class ViewHolder(v: View, myDialog: Dialog) : RecyclerView.ViewHolder(v) {
+    class ViewHolder(v: View) : RecyclerView.ViewHolder(v) {
         val exhibitionName: TextView = v.findViewById(R.id.showName)
         val exhibitionText: TextView = v.findViewById(R.id.showText)
         val exhibitionImg: ImageView = v.findViewById(R.id.showImg)
 
-        val exhibitionDetailName: TextView = myDialog.findViewById(R.id.exhibitionDetailName)
-        val exhibitionDetailText: TextView = myDialog.findViewById(R.id.exhibitionDetailText)
-        val exhibitionDetailImg: ImageView = myDialog.findViewById(R.id.exhibitionDetailImg)
-        val goTo2D: Button = myDialog.findViewById(R.id.btn2D)
-        val goTo3D: Button = myDialog.findViewById(R.id.btn3D)
-
-        val toto: Context? = myDialog.context
+        val toto: Context? = v.context
 
     }
 }

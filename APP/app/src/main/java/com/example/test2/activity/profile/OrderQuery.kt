@@ -20,6 +20,10 @@ class OrderQuery : AppCompatActivity() {
         setContentView(R.layout.activity_order_query)
         supportActionBar?.hide()
 
+        btnToBackProfileOrderQuery.setOnClickListener {
+            finish()
+        }
+
         val res : Resources = resources
         val orderData = res.getStringArray(R.array.order_id)
 
@@ -32,7 +36,7 @@ class OrderQuery : AppCompatActivity() {
 
 class OrderListAdapter(val orderData: Array<String>) : RecyclerView.Adapter<OrderViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): OrderViewHolder {
-        val v = LayoutInflater.from(parent.context).inflate(R.layout.layout_exhibition_item, parent, false)
+        val v = LayoutInflater.from(parent.context).inflate(R.layout.layout_order_item, parent, false)
         return OrderViewHolder(v)
     }
 
@@ -41,16 +45,16 @@ class OrderListAdapter(val orderData: Array<String>) : RecyclerView.Adapter<Orde
     }
 
     override fun onBindViewHolder(holder: OrderViewHolder, position: Int) {
-        holder.dataView.text = orderData[position]
-        holder.layout_All.setOnClickListener {
-            holder.dataView.text = "123456"
-            // TODO
-        }
+        holder.txtOrderId.text = orderData[position]
+        holder.txtOrderDate.text = orderData[position]
+        holder.txtOrderStatus.text = orderData[position]
+
     }
 
 }
 
 class OrderViewHolder(v: View) : RecyclerView.ViewHolder(v){
-    val dataView : TextView = v.findViewById(R.id.exhibitionItem)
-    val layout_All : ConstraintLayout = v.findViewById(R.id.layout_All)
+    val txtOrderId : TextView = v.findViewById(R.id.txtOrderId)
+    val txtOrderDate : TextView = v.findViewById(R.id.txtOrderDate)
+    val txtOrderStatus : TextView = v.findViewById(R.id.txtOrderStatus)
 }

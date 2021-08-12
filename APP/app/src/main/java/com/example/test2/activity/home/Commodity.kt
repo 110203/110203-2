@@ -1,6 +1,5 @@
 package com.example.test2.activity.home
 
-import android.app.Dialog
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
@@ -8,13 +7,13 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.test2.CommodityDetail
 import com.example.test2.MainActivity
 import com.example.test2.R
 import com.example.test2.data.api.RetrofitClient
@@ -42,7 +41,7 @@ class Commodity : AppCompatActivity() {
         // 接收Exhibition_2D的資料
         var getShowNo = intent.getBundleExtra("bundle")?.getString("showNo").toString()
         var getShowName = intent.getBundleExtra("bundle")?.getString("showName")
-        textView7.text = "$getShowName\n商品清單"
+        textView7.text = "$getShowName 商品"
 
         postCommodity(getShowNo)
 
@@ -118,17 +117,17 @@ class Commodity : AppCompatActivity() {
 class CommodityListAdapter(val items: ArrayList<MutableMap<String, Any?>>) : RecyclerView.Adapter<ViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         // recyclerView
-        val v = LayoutInflater.from(parent.context).inflate(R.layout.layout_exhibition_home, parent, false)
+        val v = LayoutInflater.from(parent.context).inflate(R.layout.layout_commodity_home, parent, false)
 
-        // dialog
-        val myDialog = Dialog(parent.context, android.R.style.Theme_DeviceDefault_Light_Dialog_NoActionBar_MinWidth)
-        myDialog.setContentView(R.layout.activity_commodity_detail)
+//        // dialog
+//        val myDialog = Dialog(parent.context, android.R.style.Theme_DeviceDefault_Light_Dialog_NoActionBar_MinWidth)
+//        myDialog.setContentView(R.layout.activity_commodity_detail)
+//
+//        v.setOnClickListener {
+//            myDialog.show()
+//        }
 
-        v.setOnClickListener {
-            myDialog.show()
-        }
-
-        return ViewHolder(v, myDialog)
+        return ViewHolder(v)
     }
 
     override fun getItemCount(): Int {
@@ -136,38 +135,58 @@ class CommodityListAdapter(val items: ArrayList<MutableMap<String, Any?>>) : Rec
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int){
+        var goodNo = items[position]["goodNo"].toString()
+        var goodName = items[position]["goodName"].toString()
+        var goodPrice = items[position]["goodPrice"].toString()
+        var goodText = items[position]["goodText"].toString()
+        var goodAmount = items[position]["goodAmount"].toString()
+        var goodMyCartAmount = items[position]["myCartAmount"].toString()
         var photoPath = items[position]["goodImg"].toString()
 
         // recyclerView
-        holder.goodName.text = items[position]["goodName"].toString()
-        holder.goodPrice.text = "$" + items[position]["goodPrice"].toString()
+        holder.goodName.text = goodName
+        holder.goodPrice.text = "$" + goodPrice
         Picasso.get().load("http://140.131.114.155/file/$photoPath").into(holder.goodImg)
 
-        // dialog
-        holder.goodDetailName.text = items[position]["goodName"].toString()
-        holder.goodDetailText.text = items[position]["goodText"].toString()
-        holder.goodDetailPrice.text = items[position]["goodPrice"].toString()
-        Picasso.get().load("http://140.131.114.155/file/$photoPath").into(holder.goodDetailImg)
-
-        var amount = 0
-        var goodAmount = items[position]["goodAmount"] as Int
-        holder.btnAdd.setOnClickListener {
-            amount += 1
-            holder.txtAmount.text = amount.toString()
-        }
-        holder.btnSub.setOnClickListener {
-            amount -= 1
-            holder.txtAmount.text = amount.toString()
+        holder.goodImg.setOnClickListener {
+            val bundle = Bundle()
+            bundle.putString("goodNo", goodNo)
+            bundle.putString("goodName", goodName)
+            bundle.putString("goodPrice", goodPrice)
+            bundle.putString("goodText", goodText)
+            bundle.putString("goodAmount", goodAmount)
+            bundle.putString("goodMyCartAmount", goodMyCartAmount)
+            bundle.putString("goodImgPath", photoPath)
+            val intent = Intent(holder.toto, CommodityDetail::class.java)
+            intent.putExtra("bundle", bundle)
+            holder.toto?.startActivity(intent)
         }
 
-        holder.addGood.setOnClickListener {
-            if(goodAmount >= (amount + items[position]["myCartAmount"] as Int)){ // 目前要新增的數量+已加入購物車數量
-                items[position].put("myCartAmount", amount + items[position]["myCartAmount"] as Int)
-                postAddGood(position, it.getContext())
-            }else{
-                Log.d("cartttttttERROR", items[position]["myCartAmount"].toString())
-            }
-        }
+//        // dialog
+//        holder.goodDetailName.text = items[position]["goodName"].toString()
+//        holder.goodDetailText.text = items[position]["goodText"].toString()
+//        holder.goodDetailPrice.text = items[position]["goodPrice"].toString()
+//        Picasso.get().load("http://140.131.114.155/file/$photoPath").into(holder.goodDetailImg)
+//
+//        var amount = 0
+//        var goodAmount = items[position]["goodAmount"] as Int
+//        holder.btnAdd.setOnClickListener {
+//            amount += 1
+//            holder.txtAmount.text = amount.toString()
+//        }
+//        holder.btnSub.setOnClickListener {
+//            amount -= 1
+//            holder.txtAmount.text = amount.toString()
+//        }
+//
+//        holder.addGood.setOnClickListener {
+//            if(goodAmount >= (amount + items[position]["myCartAmount"] as Int)){ // 目前要新增的數量+已加入購物車數量
+//                items[position].put("myCartAmount", amount + items[position]["myCartAmount"] as Int)
+//                postAddGood(position, it.getContext())
+//            }else{
+//                Log.d("cartttttttERROR", items[position]["myCartAmount"].toString())
+//            }
+//        }
     }
 
     private fun postAddGood(position: Int, context: Context) {
@@ -178,7 +197,7 @@ class CommodityListAdapter(val items: ArrayList<MutableMap<String, Any?>>) : Rec
             .put("gAmount", items[position]["myCartAmount"])
             .toString().toRequestBody("application/json".toMediaTypeOrNull()) // TODO
 
-        // 利用APIService中的appAllGoods, 將requestBody(eNo) POST 至資料庫, 回傳GoodResponse回來
+        // 利用APIService中的appAllGoods, 將requestBody(eNo) POST 至資料庫, 回傳CartAdd回來
         RetrofitClient.instance.appAddS(requestBody).enqueue(object: Callback<CartAdd>{
             override fun onFailure(call: Call<CartAdd>, t: Throwable) {
                 t.message?.let { Log.d("ERROR", it) }
@@ -202,19 +221,21 @@ class CommodityListAdapter(val items: ArrayList<MutableMap<String, Any?>>) : Rec
 
 }
 
-class ViewHolder(v: View, myDialog: Dialog) : RecyclerView.ViewHolder(v) {
+class ViewHolder(v: View) : RecyclerView.ViewHolder(v) {
     // recyclerView
-    val goodName: TextView = v.findViewById(R.id.showName)
-    val goodPrice: TextView = v.findViewById(R.id.showText)
-    val goodImg: ImageView = v.findViewById(R.id.showImg)
+    val goodName: TextView = v.findViewById(R.id.goodName)
+    val goodPrice: TextView = v.findViewById(R.id.goodPrice)
+    val goodImg: ImageView = v.findViewById(R.id.goodImg)
 
-    // dialog
-    val goodDetailName: TextView = myDialog.findViewById(R.id.exhibitionDetailText)
-    val goodDetailText: TextView = myDialog.findViewById(R.id.goodDetailText)
-    val goodDetailPrice: TextView = myDialog.findViewById(R.id.goodDetailPrice)
-    val goodDetailImg: ImageView = myDialog.findViewById(R.id.goodDetailImg)
-    val addGood: Button = myDialog.findViewById(R.id.btnAddGood)
-    val btnAdd: Button = myDialog.findViewById(R.id.btnAdd)
-    val btnSub: Button = myDialog.findViewById(R.id.btnSub)
-    val txtAmount: TextView = myDialog.findViewById(R.id.txtAmount)
+    val toto: Context? = v.context
+
+//    // dialog
+//    val goodDetailName: TextView = myDialog.findViewById(R.id.exhibitionDetailText)
+//    val goodDetailText: TextView = myDialog.findViewById(R.id.goodDetailText)
+//    val goodDetailPrice: TextView = myDialog.findViewById(R.id.goodDetailPrice)
+//    val goodDetailImg: ImageView = myDialog.findViewById(R.id.goodDetailImg)
+//    val addGood: Button = myDialog.findViewById(R.id.btnAddGood)
+//    val btnAdd: Button = myDialog.findViewById(R.id.btnAdd)
+//    val btnSub: Button = myDialog.findViewById(R.id.btnSub)
+//    val txtAmount: TextView = myDialog.findViewById(R.id.txtAmount)
 }

@@ -41,7 +41,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="商品名稱a"
-                android:textSize="18sp"
+                android:textColor="@color/fourth"
+                android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -51,6 +52,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="$"
+                android:textColor="@color/fifth"
                 android:textSize="18sp"
                 app:layout_constraintStart_toStartOf="@+id/txtCommodityName"
                 app:layout_constraintTop_toBottomOf="@+id/txtCommodityName" />
@@ -61,27 +63,68 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="200"
+                android:textColor="@color/fifth"
                 android:textSize="18sp"
                 app:layout_constraintStart_toEndOf="@+id/textView99"
                 app:layout_constraintTop_toBottomOf="@+id/txtCommodityName" />
 
-            <TextView
-                android:id="@+id/textView8"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="數量："
-                android:textSize="18sp"
+            <Button
+                android:id="@+id/btnSubCart"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/button_border"
+                app:backgroundTint="@color/fifth"
+                app:icon="@drawable/ic_remove_black_24dp"
+                app:iconGravity="textStart"
+                app:iconPadding="0dp"
+                app:iconTint="@color/fifth"
                 app:layout_constraintStart_toStartOf="@+id/textView99"
                 app:layout_constraintTop_toBottomOf="@+id/textView99" />
 
             <TextView
                 android:id="@+id/txtCommodityAmount"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:gravity="center"
                 android:text="0"
+                android:textColor="@color/fourth"
                 android:textSize="18sp"
-                app:layout_constraintStart_toEndOf="@+id/textView8"
-                app:layout_constraintTop_toBottomOf="@+id/txtCommodityPrice" />
+                app:layout_constraintBottom_toBottomOf="@+id/btnSubCart"
+                app:layout_constraintStart_toEndOf="@+id/btnSubCart"
+                app:layout_constraintTop_toTopOf="@+id/btnSubCart" />
+
+            <Button
+                android:id="@+id/btnAddCart"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:background="@drawable/button_border"
+                app:backgroundTint="@color/fifth"
+                app:icon="@drawable/ic_add_black_24dp"
+                app:iconGravity="textStart"
+                app:iconPadding="0dp"
+                app:iconTint="@color/fifth"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/txtCommodityAmount"
+                app:layout_constraintTop_toTopOf="@+id/txtCommodityAmount" />
+
+            <Button
+                android:id="@+id/btnDeleteCart"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/button_radius_fifth"
+                app:backgroundTint="@color/fifth"
+                app:icon="@drawable/ic_delete"
+                app:iconGravity="textStart"
+                app:iconPadding="0dp"
+                app:iconTint="@color/fourth"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btnAddCart"
+                app:layout_constraintTop_toTopOf="@+id/btnAddCart" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </LinearLayout>

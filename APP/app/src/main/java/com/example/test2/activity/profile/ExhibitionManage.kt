@@ -8,14 +8,17 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import android.widget.Toast
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.test2.R
 import com.example.test2.data.api.RetrofitClient
-import com.example.test2.data.model.ExhibitionResponse_memNo
-import com.example.test2.data.model.ExhibitionResponse_pin
+import com.example.test2.data.model.ExhibitionResponseByMemNo
+import com.example.test2.data.model.ExhibitionResponseByPin
+import com.example.test2.ui.home.HomeFragment
 import kotlinx.android.synthetic.main.activity_commodity.*
 import kotlinx.android.synthetic.main.activity_exhibition_manage.*
+import kotlinx.android.synthetic.main.fragment_home.*
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
 import okhttp3.RequestBody.Companion.toRequestBody
 import org.json.JSONObject
@@ -46,6 +49,10 @@ class ExhibitionManage : AppCompatActivity() {
             var pin = txtPIN.text.toString()
             postLoginExhibition(userNo, pin)
         }
+
+        btnToBackProfileExhibitionManage.setOnClickListener {
+            finish()
+        }
     }
 
     private fun postMemExhibition(userNo : String) {
@@ -58,15 +65,15 @@ class ExhibitionManage : AppCompatActivity() {
         val requestBody = jsonObject.toString().toRequestBody("application/json".toMediaTypeOrNull())
 
         // 利用APIService中的appAllGoods, 將requestBody(eNo) POST 至資料庫, 回傳GoodResponse回來
-        RetrofitClient.instance.appMemExhibition_Checked(requestBody).enqueue(object: Callback<ExhibitionResponse_memNo> {
-            override fun onFailure(call: Call<ExhibitionResponse_memNo>, t: Throwable) {
+        RetrofitClient.instance.appMemExhibitionChecked(requestBody).enqueue(object: Callback<ExhibitionResponseByMemNo> {
+            override fun onFailure(call: Call<ExhibitionResponseByMemNo>, t: Throwable) {
                 Toast.makeText(applicationContext, t.message, Toast.LENGTH_LONG).show()
                 t.message?.let { Log.d("ERROR", it) }
             }
 
             override fun onResponse(
-                call: Call<ExhibitionResponse_memNo>,
-                response: Response<ExhibitionResponse_memNo>
+                call: Call<ExhibitionResponseByMemNo>,
+                response: Response<ExhibitionResponseByMemNo>
             ) {
                 var status = response.body()?.status.toString()
 
@@ -93,8 +100,8 @@ class ExhibitionManage : AppCompatActivity() {
                         Log.d("itemssssss", items.toString())
                     }
 
-                    var layoutManager = LinearLayoutManager(this@ExhibitionManage)
-                    layoutManager.orientation = LinearLayoutManager.VERTICAL
+                    // recycler
+                    var layoutManager = GridLayoutManager(this@ExhibitionManage, 2)
                     exhibitionList.layoutManager = layoutManager
                     exhibitionList.adapter = ExhibitionListAdapter(items)
 
@@ -117,15 +124,15 @@ class ExhibitionManage : AppCompatActivity() {
             .toString().toRequestBody("application/json".toMediaTypeOrNull())
 
         // 利用APIService中的appLoginExhibition, 將requestBody POST 至資料庫, 回傳ExhibitionResponse_pin回來
-        RetrofitClient.instance.appLoginExhibition(requestBody).enqueue(object: Callback<ExhibitionResponse_pin> {
-            override fun onFailure(call: Call<ExhibitionResponse_pin>, t: Throwable) {
+        RetrofitClient.instance.appLoginExhibition(requestBody).enqueue(object: Callback<ExhibitionResponseByPin> {
+            override fun onFailure(call: Call<ExhibitionResponseByPin>, t: Throwable) {
                 Toast.makeText(applicationContext, t.message, Toast.LENGTH_LONG).show()
                 t.message?.let { Log.d("ERROR", it) }
             }
 
             override fun onResponse(
-                call: Call<ExhibitionResponse_pin>,
-                response: Response<ExhibitionResponse_pin>
+                call: Call<ExhibitionResponseByPin>,
+                response: Response<ExhibitionResponseByPin>
             ) {
                 var status = response.body()?.status
                 val data = response.body()?.data
@@ -147,7 +154,7 @@ class ExhibitionManage : AppCompatActivity() {
 
 class ExhibitionListAdapter(val items: ArrayList<Map<String, Any?>>) : RecyclerView.Adapter<ExhibitionViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ExhibitionViewHolder {
-        val v = LayoutInflater.from(parent.context).inflate(R.layout.layout_exhibition_item, parent, false)
+        val v = LayoutInflater.from(parent.context).inflate(R.layout.layout_exhibition_home, parent, false)
         return ExhibitionViewHolder(v)
     }
 
@@ -156,12 +163,15 @@ class ExhibitionListAdapter(val items: ArrayList<Map<String, Any?>>) : RecyclerV
     }
 
     override fun onBindViewHolder(holder: ExhibitionViewHolder, position: Int) {
-        holder.itemView.setOnClickListener {  }
         holder.exhibitionName.text = items[position]["exhibitionName"].toString()
+        holder.itemView.setOnClickListener {
+
+        }
     }
 
 }
 
 class ExhibitionViewHolder(v: View) : RecyclerView.ViewHolder(v){
-    val exhibitionName : TextView = v.findViewById(R.id.exhibitionItem)
+    val exhibitionName : TextView = v.findViewById(R.id.showName)
+    val exhibitionText : TextView = v.findViewById(R.id.showText)
 }

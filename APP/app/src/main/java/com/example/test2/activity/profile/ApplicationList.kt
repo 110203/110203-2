@@ -1,5 +1,6 @@
 package com.example.test2.activity.profile
 
+import android.app.Dialog
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
@@ -7,6 +8,8 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.CheckBox
+import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -15,7 +18,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.test2.R
 import com.example.test2.data.api.RetrofitClient
-import com.example.test2.data.model.ExhibitionResponse_memNo
+import com.example.test2.data.model.ExhibitionResponseByMemNo
 import kotlinx.android.synthetic.main.activity_application_list.*
 import kotlinx.android.synthetic.main.activity_exhibition_manage.*
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
@@ -24,6 +27,8 @@ import org.json.JSONObject
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+import java.io.Console
+import java.time.LocalDate
 
 
 class ApplicationList : AppCompatActivity() {
@@ -57,15 +62,15 @@ class ApplicationList : AppCompatActivity() {
 
         // 利用APIService中的appAllGoods, 將requestBody(eNo) POST 至資料庫, 回傳GoodResponse回來
         RetrofitClient.instance.appMemExhibition(requestBody).enqueue(object:
-            Callback<ExhibitionResponse_memNo> {
-            override fun onFailure(call: Call<ExhibitionResponse_memNo>, t: Throwable) {
+            Callback<ExhibitionResponseByMemNo> {
+            override fun onFailure(call: Call<ExhibitionResponseByMemNo>, t: Throwable) {
                 Toast.makeText(applicationContext, t.message, Toast.LENGTH_LONG).show()
                 t.message?.let { Log.d("ERROR", it) }
             }
 
             override fun onResponse(
-                call: Call<ExhibitionResponse_memNo>,
-                response: Response<ExhibitionResponse_memNo>
+                call: Call<ExhibitionResponseByMemNo>,
+                response: Response<ExhibitionResponseByMemNo>
             ) {
                 var status = response.body()?.status.toString()
 
@@ -81,6 +86,9 @@ class ApplicationList : AppCompatActivity() {
                         item["exhibitionType"] = data?.get(i).eType
                         item["exhibitionStartTime"] = data?.get(i).startTime
                         item["exhibitionEndTime"] = data?.get(i).endTime
+                        item["exhibitionCheck"] = data?.get(i).eCheck
+                        item["exhibitionLogin"] = data?.get(i).eLogin
+                        item["exhibitionStyle"] = data?.get(i).eStyle
 
                         if (data?.get(i).eImage == null) {
                             item["exhibitionImg"] = "null.jpg"
@@ -112,7 +120,15 @@ class ApplicationList : AppCompatActivity() {
 class ApplyListAdapter(private val applyData: ArrayList<Map<String, Any?>>) : RecyclerView.Adapter<ApplyListHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ApplyListHolder {
         val v = LayoutInflater.from(parent.context).inflate(R.layout.layout_exhibition_item, parent, false)
-        return ApplyListHolder(v)
+
+        val myDialog = Dialog(parent.context, android.R.style.Theme_DeviceDefault_Light_Dialog_NoActionBar_MinWidth)
+        myDialog.setContentView(R.layout.layout_application_detail)
+
+        v.setOnClickListener {
+            myDialog.show()
+        }
+
+        return ApplyListHolder(v, myDialog)
     }
 
     override fun getItemCount(): Int {
@@ -121,12 +137,34 @@ class ApplyListAdapter(private val applyData: ArrayList<Map<String, Any?>>) : Re
 
     override fun onBindViewHolder(holder: ApplyListHolder, position: Int) {
         holder.dataView.text = applyData[position]["exhibitionNo"].toString() + "｜" + applyData[position]["exhibitionName"].toString()
-        holder.layout_All.setOnClickListener {  }
+
+        holder.applyNo.text = applyData[position]["exhibitionNo"].toString()
+        holder.applyName.text = applyData[position]["exhibitionName"].toString()
+        holder.applyType.text = applyData[position]["exhibitionType"].toString()
+        holder.applyStartTime.text = applyData[position]["exhibitionStartTime"].toString()
+        holder.applyEndTime.text = applyData[position]["exhibitionEndTime"].toString()
+        holder.applyText.text = applyData[position]["exhibitionText"].toString()
+        when(applyData[position]["exhibitionStyle"].toString()){
+            "2D" -> holder.applyChk2D.isChecked = true
+            "3D" -> holder.applyChk3D.isChecked = true
+            "2D, 3D" -> {
+                holder.applyChk2D.isChecked = true
+                holder.applyChk3D.isChecked = true
+            }
+        }
     }
 
 }
 
-class ApplyListHolder(v: View) : RecyclerView.ViewHolder(v){
+class ApplyListHolder(v: View, myDialog: Dialog) : RecyclerView.ViewHolder(v){
     val dataView : TextView = v.findViewById(R.id.exhibitionItem)
-    val layout_All : ConstraintLayout = v.findViewById(R.id.layout_All)
+
+    val applyNo: TextView = myDialog.findViewById(R.id.txtApplyNo)
+    val applyName: TextView = myDialog.findViewById(R.id.txtApplyName)
+    val applyType: TextView = myDialog.findViewById(R.id.txtApplyType)
+    val applyStartTime: TextView = myDialog.findViewById(R.id.txtApplyStartTime)
+    val applyEndTime: TextView = myDialog.findViewById(R.id.txtApplyEndTime)
+    val applyText: TextView = myDialog.findViewById(R.id.txtApplyText)
+    val applyChk2D: CheckBox = myDialog.findViewById(R.id.chkApply2D_)
+    val applyChk3D: CheckBox = myDialog.findViewById(R.id.chkApply3D_)
 }
