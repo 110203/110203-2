@@ -3,12 +3,13 @@ package com.example.test2.activity.profile
 import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.method.HideReturnsTransformationMethod
 import android.text.method.PasswordTransformationMethod
 import android.util.Log
+import android.widget.EditText
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.example.test2.MainActivity
 import com.example.test2.R
 import com.example.test2.data.api.RetrofitClient
@@ -45,7 +46,7 @@ class Login : AppCompatActivity() {
         btnLogin.setOnClickListener {
             var memNo = txtLoginEmail.text.toString()
             var memPwd = txtLoginPwd.text.toString()
-            postLogin(memNo, memPwd, editor)
+            postLogin(memNo, memPwd, editor, txtLoginPwd)
         }
 
         txtGoToSignup.setOnClickListener {
@@ -54,7 +55,12 @@ class Login : AppCompatActivity() {
         }
     }
 
-    private fun postLogin(memNo: String, memPwd: String, editor: SharedPreferences.Editor) {
+    private fun postLogin(
+        memNo: String,
+        memPwd: String,
+        editor: SharedPreferences.Editor,
+        txtLoginPwd: EditText
+    ) {
         ////////// POST //////////
         // Create RequestBody ( We're not using any converter, like GsonConverter, MoshiConverter e.t.c, that's why we use RequestBody )
         val jsonObject = JSONObject()
@@ -85,8 +91,11 @@ class Login : AppCompatActivity() {
                     editor.putString("memName", memName).apply()
                     editor.putString("memAddress", memAddress).apply()
                     editor.putString("memPhone", memPhone).apply()
+                    txtLoginPwd.setText("")
 
                     var intent = Intent(this@Login, MainActivity::class.java)
+                    intent.flags =
+                        Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_CLEAR_TOP
                     startActivity(intent)
                 }else{
                     Toast.makeText(this@Login, "登入失敗，請確認帳號密碼", Toast.LENGTH_LONG).show()

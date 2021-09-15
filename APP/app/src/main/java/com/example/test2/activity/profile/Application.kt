@@ -1,7 +1,6 @@
 package com.example.test2.activity.profile
 
 import android.app.DatePickerDialog
-import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.View
@@ -11,7 +10,6 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.test2.R
 import com.example.test2.data.api.RetrofitClient
-import com.example.test2.data.model.CartAdd
 import com.example.test2.data.model.ExhibitionAdd
 import kotlinx.android.synthetic.main.activity_application.*
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
@@ -35,8 +33,11 @@ class Application : AppCompatActivity() {
         setContentView(R.layout.activity_application)
         supportActionBar?.hide()
 
-        applyUserId.setText(R.string.memNo)
-        applyUserId.setEnabled(false)
+        // 接收dashboard的資料
+        val getMemNo: String = intent.getBundleExtra("bundle")?.getString("memNo").toString()
+
+        applyUserId.setText(getMemNo)
+        applyUserId.isEnabled = false
 
         // 展覽類型
         val exhibitionType = arrayListOf("藝術", "消費展", "商業", "書畫")
@@ -44,22 +45,24 @@ class Application : AppCompatActivity() {
         applyExhibitionType.setAdapter(adapter)
         applyExhibitionType.setTokenizer(CommaTokenizer())
 
+        ///// BUTTON /////
         // 展覽日期
         calendar = Calendar.getInstance()
         startYear = calendar.get(Calendar.YEAR)
         startMonth = calendar.get(Calendar.MONTH)
         startDay = calendar.get(Calendar.DAY_OF_MONTH)
 
+        // 送出
         btnApplySave.setOnClickListener {
-            onClickApplySave()
+            onClickApplySave(getMemNo)
         }
-        btnApplyView.setOnClickListener {
-            var intent = Intent(this, ApplicationList::class.java)
-            startActivity(intent)
-        }
+
+        // back
         btnToBackProfileApplication.setOnClickListener {
             finish()
         }
+        //////////////////
+
     }
 
     fun onClickStartTime(view: View) {
@@ -95,7 +98,7 @@ class Application : AppCompatActivity() {
         dialog.show()
     }
 
-    fun onClickApplySave() {
+    fun onClickApplySave(memNo: String) {
         // 判斷錯誤類型
         var errSaveType = 1
         var errSave = ""
@@ -125,14 +128,14 @@ class Application : AppCompatActivity() {
 
         // 針對各類型進行提示
         when(errSaveType){
-            0 -> postAddExhibition()
+            0 -> postAddExhibition(memNo)
             1 -> Toast.makeText(this, "請填寫$errSave", Toast.LENGTH_LONG).show()
             2 -> Toast.makeText(this, "請檢查開始日期與結束日期", Toast.LENGTH_LONG).show()
             3 -> Toast.makeText(this, "請勾選欲建立的展覽", Toast.LENGTH_LONG).show()
         }
     }
 
-    private fun postAddExhibition() {
+    private fun postAddExhibition(memNo: String) {
         var chkStyle = ""
         chkStyle = if(chkApply2D.isChecked && !chkApply3D.isChecked){
             "2D"
@@ -143,14 +146,14 @@ class Application : AppCompatActivity() {
         }
 
         val jsonObject = JSONObject()
-        val requestBody = jsonObject.put("memNo", "a22753516@gmail.com")
+        val requestBody = jsonObject.put("memNo", memNo)
             .put("eName", applyExhibitionName.text)
             .put("eType", applyExhibitionType.text)
             .put("startTime", applyExhibitionStartTime.text)
             .put("endTime", applyExhibitionEndTime.text)
             .put("style", chkStyle)
             .put("introdution", applyExhibitionText.text)
-            .toString().toRequestBody("application/json".toMediaTypeOrNull()) // TODO
+            .toString().toRequestBody("application/json".toMediaTypeOrNull())
 
         RetrofitClient.instance.appAddExhibition(requestBody).enqueue(object: Callback<ExhibitionAdd> {
             override fun onFailure(call: Call<ExhibitionAdd>, t: Throwable) {
@@ -168,7 +171,7 @@ class Application : AppCompatActivity() {
                     chkApply3D.isChecked = false
                     applyExhibitionText.setText("")
                 }else{
-                    Toast.makeText(this@Application, "新增失敗，請稍後再嘗試", Toast.LENGTH_LONG).show()
+                    Toast.makeText(this@Application, "新增失敗，請稍後再試", Toast.LENGTH_LONG).show()
                 }
             }
         })

@@ -77,14 +77,14 @@ interface APIService {
     @Headers("Content-Type: application/json")
     @POST("appMemExhibition")
     fun appMemExhibitionChecked(
-        @Body memNo: RequestBody // scNo
+        @Body memNo: RequestBody // memNo
     ): Call<ExhibitionResponseByMemNo>
 
     // eCheck=0 全部的申請建展
     @Headers("Content-Type: application/json")
     @POST("appAllMemExhibition")
     fun appMemExhibition(
-        @Body memNo: RequestBody // scNo
+        @Body memNo: RequestBody // memNo
     ): Call<ExhibitionResponseByMemNo>
 
     @Headers("Content-Type: application/json")
@@ -123,5 +123,15 @@ interface APIService {
     fun appDeleteS(
         @Body deleteSRequest: RequestBody // scNo
     ): Call<CartDelete>
+
+    ///////////////////////////
+    ////////// ORDER //////////
+    ///////////////////////////
+    // 查看訂單
+    @Headers("Content-Type: application/json")
+    @POST("appOrderRecord")
+    fun appOrderRecord(
+        @Body memNo: RequestBody
+    ): Call<OrderResponse>
 }
 

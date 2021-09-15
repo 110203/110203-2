@@ -7,7 +7,8 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_line_solid"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -16,9 +17,8 @@
         <LinearLayout
             android:id="@+id/linearLayout5__"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="0dp"
             android:layout_margin="10dp"
-            android:background="#00000000"
             android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -41,7 +41,7 @@
                     tools:ignore="VectorDrawableCompat" />
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:orientation="vertical">
@@ -64,7 +64,7 @@
                         <TextView
                             android:id="@+id/txtApplyNo"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:fontFamily="@font/notoseriftc_semibold"
                             android:gravity="center"
                             android:text="申請編號"
@@ -75,7 +75,7 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:background="@drawable/shape_line_dash"
                         android:orientation="vertical"
                         android:padding="5dp">
@@ -85,7 +85,7 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/notoseriftc_semibold"
                             android:gravity="center"
-                            android:text="申請內容"
+                            android:text="申請狀態"
                             android:textColor="@color/fourth"
                             android:textSize="20sp"
                             android:textStyle="bold" />
@@ -93,7 +93,8 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal">
+                            android:orientation="horizontal"
+                            android:paddingLeft="20dp">
 
                             <TextView
                                 android:layout_width="100dp"
@@ -101,162 +102,129 @@
                                 android:fontFamily="@font/notoseriftc_semibold"
                                 android:gravity="center_vertical"
                                 android:paddingLeft="5dp"
-                                android:text="展覽名稱"
+                                android:text="審核"
                                 android:textColor="@color/fourth"
                                 android:textSize="18sp" />
 
                             <TextView
-                                android:id="@+id/txtApplyName"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:fontFamily="@font/notoseriftc_semibold"
-                                android:gravity="center|left"
-                                android:text="展覽名稱"
-                                android:textSize="18sp" />
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:layout_width="100dp"
-                                android:layout_height="wrap_content"
-                                android:fontFamily="@font/notoseriftc_semibold"
-                                android:gravity="center_vertical"
-                                android:paddingLeft="5dp"
-                                android:text="展覽類型"
-                                android:textColor="@color/fourth"
-                                android:textSize="18sp" />
-
-                            <TextView
-                                android:id="@+id/txtApplyType"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:fontFamily="@font/notoseriftc_semibold"
-                                android:gravity="center|left"
-                                android:text="展覽類型"
-                                android:textSize="18sp" />
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:layout_width="100dp"
-                                android:layout_height="wrap_content"
-                                android:fontFamily="@font/notoseriftc_semibold"
-                                android:gravity="center_vertical"
-                                android:paddingLeft="5dp"
-                                android:text="開始日期"
-                                android:textColor="@color/fourth"
-                                android:textSize="18sp" />
-
-                            <TextView
-                                android:id="@+id/txtApplyStartTime"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:fontFamily="@font/notoseriftc_semibold"
-                                android:gravity="center|left"
-                                android:text="startTime"
-                                android:textSize="18sp" />
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:layout_width="100dp"
-                                android:layout_height="wrap_content"
-                                android:fontFamily="@font/notoseriftc_semibold"
-                                android:gravity="center_vertical"
-                                android:paddingLeft="5dp"
-                                android:text="結束日期"
-                                android:textColor="@color/fourth"
-                                android:textSize="18sp" />
-
-                            <TextView
-                                android:id="@+id/txtApplyEndTime"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:fontFamily="@font/notoseriftc_semibold"
-                                android:gravity="center|left"
-                                android:text="endTime"
-                                android:textSize="18sp" />
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                android:layout_width="100dp"
-                                android:layout_height="wrap_content"
-                                android:fontFamily="@font/notoseriftc_semibold"
-                                android:gravity="center|left"
-                                android:paddingLeft="5dp"
-                                android:text="欲建立展覽"
-                                android:textColor="@color/fourth"
-                                android:textSize="18sp" />
-
-                            <CheckBox
-                                android:id="@+id/chkApply2D_"
+                                android:id="@+id/msgCheck"
                                 android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
+                                android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:fontFamily="@font/notoseriftc_semibold"
-                                android:text="2D" />
-
-                            <CheckBox
-                                android:id="@+id/chkApply3D_"
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:layout_weight="1"
-                                android:checked="false"
-                                android:clickable="true"
-                                android:fontFamily="@font/notoseriftc_semibold"
-                                android:text="3D" />
+                                android:text="待審核\n（需一至三個工作天）"
+                                android:textSize="18sp" />
 
                         </LinearLayout>
 
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal">
+                            android:orientation="horizontal"
+                            android:paddingLeft="20dp">
 
                             <TextView
                                 android:layout_width="100dp"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/notoseriftc_semibold"
-                                android:gravity="center|left"
+                                android:gravity="center_vertical"
                                 android:paddingLeft="5dp"
-                                android:text="展覽簡介"
-                                android:textColor="@color/fourth"
+                                android:text="建置"
+                                android:textColor="@color/fifth"
                                 android:textSize="18sp" />
 
                             <TextView
-                                android:id="@+id/txtApplyText"
-                                android:layout_width="match_parent"
+                                android:id="@+id/msgBuild"
+                                android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginBottom="15dp"
+                                android:layout_weight="1"
                                 android:fontFamily="@font/notoseriftc_semibold"
-                                android:text="124333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333"
+                                android:text="未建置"
                                 android:textSize="18sp" />
 
                         </LinearLayout>
 
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingLeft="20dp">
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/notoseriftc_semibold"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="5dp"
+                                android:text="待開始"
+                                android:textColor="@color/fifth"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/msgWait"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/notoseriftc_semibold"
+                                android:text="建置完成待展期開始"
+                                android:textSize="18sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingLeft="20dp">
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/notoseriftc_semibold"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="5dp"
+                                android:text="展覽中"
+                                android:textColor="@color/fifth"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/msgStart"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/notoseriftc_semibold"
+                                android:text="展覽進行中"
+                                android:textSize="18sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingLeft="20dp">
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/notoseriftc_semibold"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="5dp"
+                                android:text="結束"
+                                android:textColor="@color/fifth"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/msgFinish"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/notoseriftc_semibold"
+                                android:text="該申請已結案"
+                                android:textSize="18sp" />
+
+                        </LinearLayout>
                     </LinearLayout>
-
                 </LinearLayout>
 
                 <ImageButton

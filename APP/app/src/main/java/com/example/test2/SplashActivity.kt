@@ -5,6 +5,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.example.test2.activity.profile.Login
 
@@ -16,7 +17,8 @@ class SplashActivity : AppCompatActivity() {
         supportActionBar?.hide()
 
         val sharedPref = this.getSharedPreferences("User", Context.MODE_PRIVATE)
-        val sharedPreferencesMemNo : String? = sharedPref.getString("memNo", "")
+        var sharedPreferencesMemNo = ""
+        sharedPreferencesMemNo = sharedPref.getString("memNo", "").toString()
 
         if(sharedPreferencesMemNo == ""){
             Handler(Looper.getMainLooper()).postDelayed(Runnable {
@@ -29,8 +31,5 @@ class SplashActivity : AppCompatActivity() {
                 startActivity(intent)
             }, 3000)
         }
-
-
-
     }
 }

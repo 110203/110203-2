@@ -13,8 +13,6 @@ class ExhibitionDetail : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_exhibition_detail)
-
-        // 隱藏TitleBar
         supportActionBar?.hide()
 
         // 接收home的資料

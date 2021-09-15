@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".OrderDetail">
+    tools:context=".activity.profile.OrderDetail">
 
     <ImageView
         android:id="@+id/imageView10"
@@ -39,7 +39,7 @@
         app:layout_constraintTop_toTopOf="@+id/toolbar9">
 
         <ImageButton
-            android:id="@+id/btnToBackOrderQuery"
+            android:id="@+id/btnToBackOrderDetail"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:background="#00000000"
@@ -56,11 +56,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="@font/notoseriftc_semibold"
-        android:paddingLeft="20dp"
+        android:paddingLeft="30dp"
         android:paddingTop="15dp"
-        android:paddingRight="20dp"
+        android:paddingRight="30dp"
         android:paddingBottom="15dp"
-        android:text="查看訂單"
+        android:text="訂單詳情"
         android:textColor="@color/sixth"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -71,6 +71,8 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -79,13 +81,174 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/textView6"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="訂單編號" />
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/notoseriftc_semibold"
+                    android:text="訂單編號"
+                    android:textColor="@color/first"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txtOrderNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/notoseriftc_semibold"
+                    android:paddingLeft="10dp"
+                    android:text="1"
+                    android:textColor="@color/first"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingBottom="20dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/round_radius_32dp"
+                    app:srcCompat="@drawable/ic_accept_32dp" />
+
+                <TextView
+                    android:id="@+id/txtOrderChkDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/notoseriftc_semibold"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text="訂單確認"
+                    android:textColor="@color/fourth"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingBottom="20dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/round_radius_32dp"
+                    app:srcCompat="@drawable/ic_checklist_32dp" />
+
+                <TextView
+                    android:id="@+id/txtOrderReadyDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/notoseriftc_semibold"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text="準備出貨中"
+                    android:textColor="@color/fifth"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingBottom="20dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/round_radius_32dp"
+                    app:srcCompat="@drawable/ic_delivery_truck_32dp" />
+
+                <TextView
+                    android:id="@+id/txtOrderShipDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/notoseriftc_semibold"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text="出貨"
+                    android:textColor="@color/fifth"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingBottom="20dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/round_radius_32dp"
+                    app:srcCompat="@drawable/ic_accept_32dp" />
+
+                <TextView
+                    android:id="@+id/txtOrderArrDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/notoseriftc_semibold"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text="商品已送達"
+                    android:textColor="@color/fifth"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/notoseriftc_semibold"
+                    android:gravity="center_vertical"
+                    android:text="訂單金額"
+                    android:textColor="@color/fourth"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txtShowOrderTot"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/notoseriftc_semibold"
+                    android:gravity="right"
+                    android:text="$260"
+                    android:textColor="@color/third"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
         </LinearLayout>
     </ScrollView>
 

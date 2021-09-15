@@ -8,147 +8,148 @@
     tools:context=".ui.dashboard.DashboardFragment">
 
 
-    <TextView
-        android:id="@+id/textView"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginTop="32dp"
-        android:fontFamily="@font/notoseriftc_medium"
-        android:gravity="center"
-        android:text="會員資料"
-        android:textColor="@color/fourth"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <LinearLayout
-        android:id="@+id/linearLayout5"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginTop="20dp"
-        android:orientation="vertical"
-        android:paddingLeft="15dp"
-        android:paddingRight="15dp"
+        android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView">
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
+            android:id="@+id/linearLayout5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:paddingBottom="10dp">
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
 
-            <Button
-                android:id="@+id/btnToEditProfile"
+            <TextView
+                android:id="@+id/textView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
-                android:layout_marginRight="8dp"
-                android:layout_weight="1"
-                android:background="@drawable/button_radius"
-                android:fontFamily="@font/notoseriftc_regular"
-                android:text="個人資料"
-                android:textSize="20sp"
-                app:backgroundTint="@color/material_on_surface_stroke"
-                app:icon="@drawable/ic_boy"
-                app:iconGravity="textTop" />
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/notoseriftc_medium"
+                android:gravity="center"
+                android:text="會員資料"
+                android:textColor="@color/fourth"
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
-            <Button
-                android:id="@+id/btnToApplication"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_weight="1"
-                android:background="@drawable/button_radius"
-                android:fontFamily="@font/notoseriftc_regular"
-                android:text="申請建展"
-                android:textSize="20sp"
-                app:backgroundTint="@color/material_on_surface_stroke"
-                app:icon="@drawable/ic_file"
-                app:iconGravity="textTop" />
+                android:orientation="horizontal"
+                android:paddingBottom="10dp">
+
+                <Button
+                    android:id="@+id/ddsds"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_radius"
+                    android:fontFamily="@font/notoseriftc_regular"
+                    android:text="個人資料"
+                    android:textSize="20sp"
+                    app:backgroundTint="@color/material_on_surface_stroke"
+                    app:icon="@drawable/ic_boy"
+                    app:iconGravity="textTop" />
+
+                <Button
+                    android:id="@+id/btnToApplication"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_radius"
+                    android:fontFamily="@font/notoseriftc_regular"
+                    android:text="申請建展"
+                    android:textSize="20sp"
+                    app:backgroundTint="@color/material_on_surface_stroke"
+                    app:icon="@drawable/ic_file"
+                    app:iconGravity="textTop" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp">
+
+                <Button
+                    android:id="@+id/btnToManageExhibition"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_radius"
+                    android:fontFamily="@font/notoseriftc_regular"
+                    android:text="管理展覽"
+                    android:textSize="20sp"
+                    app:backgroundTint="@color/material_on_surface_stroke"
+                    app:icon="@drawable/ic_gears"
+                    app:iconGravity="textTop" />
+
+                <Button
+                    android:id="@+id/btnApplyView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_radius"
+                    android:fontFamily="@font/notoseriftc_regular"
+                    android:text="查看申請紀錄"
+                    android:textSize="20sp"
+                    app:backgroundTint="@color/material_on_surface_stroke"
+                    app:icon="@drawable/ic_sticky_notes"
+                    app:iconGravity="textTop" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/btnToOrder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_radius"
+                    android:fontFamily="@font/notoseriftc_regular"
+                    android:text="查看訂單"
+                    android:textSize="20sp"
+                    app:backgroundTint="@color/material_on_surface_stroke"
+                    app:icon="@drawable/ic_test"
+                    app:iconGravity="textTop" />
+
+                <Button
+                    android:id="@+id/btnLogout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_radius"
+                    android:fontFamily="@font/notoseriftc_regular"
+                    android:text="　登出　"
+                    android:textSize="20sp"
+                    app:backgroundTint="@color/material_on_surface_stroke"
+                    app:icon="@drawable/ic_seagull"
+                    app:iconGravity="textTop" />
+            </LinearLayout>
+
         </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:paddingBottom="10dp">
-
-            <Button
-                android:id="@+id/btnToManageExhibition"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
-                android:layout_marginRight="8dp"
-                android:layout_weight="1"
-                android:background="@drawable/button_radius"
-                android:fontFamily="@font/notoseriftc_regular"
-                android:text="管理展覽"
-                android:textSize="20sp"
-                app:backgroundTint="@color/material_on_surface_stroke"
-                app:icon="@drawable/ic_gears"
-                app:iconGravity="textTop" />
-
-            <Button
-                android:id="@+id/btnApplyView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_weight="1"
-                android:background="@drawable/button_radius"
-                android:fontFamily="@font/notoseriftc_regular"
-                android:text="查看申請紀錄"
-                android:textSize="20sp"
-                app:backgroundTint="@color/material_on_surface_stroke"
-                app:icon="@drawable/ic_sticky_notes"
-                app:iconGravity="textTop" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:paddingBottom="10dp"
-            android:weightSum="2">
-
-            <Button
-                android:id="@+id/btnToOrder"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
-                android:layout_marginRight="8dp"
-                android:layout_weight="1"
-                android:background="@drawable/button_radius"
-                android:fontFamily="@font/notoseriftc_regular"
-                android:text="查詢訂單"
-                android:textSize="20sp"
-                app:backgroundTint="@color/material_on_surface_stroke"
-                app:icon="@drawable/ic_test"
-                app:iconGravity="textTop" />
-
-            <Button
-                android:id="@+id/btnLogout"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_weight="1"
-                android:background="@drawable/button_radius"
-                android:fontFamily="@font/notoseriftc_regular"
-                android:text="　登出　"
-                android:textSize="20sp"
-                app:backgroundTint="@color/material_on_surface_stroke"
-                app:icon="@drawable/ic_seagull"
-                app:iconGravity="textTop" />
-        </LinearLayout>
-
-    </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -20,6 +20,7 @@ import com.example.test2.R
 import com.example.test2.data.api.RetrofitClient
 import com.example.test2.data.model.ExhibitionResponseByMemNo
 import kotlinx.android.synthetic.main.activity_application_list.*
+import kotlinx.android.synthetic.main.activity_exhibition_2_d.*
 import kotlinx.android.synthetic.main.activity_exhibition_manage.*
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
 import okhttp3.RequestBody.Companion.toRequestBody
@@ -38,16 +39,24 @@ class ApplicationList : AppCompatActivity() {
         setContentView(R.layout.activity_application_list)
         supportActionBar?.hide()
 
-        val memNo = "a22753516@gmail.com" // TODO
+        // 接收dashboard的資料
+        val getMemNo: String = intent.getBundleExtra("bundle")?.getString("memNo").toString()
 
-        postApplicationList(memNo)
+        postApplicationList(getMemNo)
 
+        ///// BUTTON /////
         // 上傳
         btnOpenForm.setOnClickListener {
             val uri: Uri = Uri.parse("https://reurl.cc/8351xM")
             val i = Intent(Intent.ACTION_VIEW, uri)
             startActivity(i)
         }
+
+        // back
+        btnToBackProfileApplyList.setOnClickListener {
+            finish()
+        }
+        //////////////////
     }
 
 
@@ -95,9 +104,7 @@ class ApplicationList : AppCompatActivity() {
                         } else {
                             item["exhibitionImg"] = data?.get(i).eImage
                         }
-
                         items.add(item)
-                        Log.d("itemssssss", items.toString())
                     }
 
                     var layoutManager = LinearLayoutManager(this@ApplicationList)
@@ -121,7 +128,7 @@ class ApplyListAdapter(private val applyData: ArrayList<Map<String, Any?>>) : Re
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ApplyListHolder {
         val v = LayoutInflater.from(parent.context).inflate(R.layout.layout_exhibition_item, parent, false)
 
-        val myDialog = Dialog(parent.context, android.R.style.Theme_DeviceDefault_Light_Dialog_NoActionBar_MinWidth)
+        val myDialog = Dialog(parent.context, R.style.selectorDialog)
         myDialog.setContentView(R.layout.layout_application_detail)
 
         v.setOnClickListener {
@@ -152,6 +159,12 @@ class ApplyListAdapter(private val applyData: ArrayList<Map<String, Any?>>) : Re
                 holder.applyChk3D.isChecked = true
             }
         }
+//        if(applyData[position]["exhibitionCheck"] == 0){
+//            holder.msgBuild.visibility = View.INVISIBLE
+//            holder.msgWait.visibility = View.INVISIBLE
+//            holder.msgStart.visibility = View.INVISIBLE
+//            holder.msgFinish.visibility = View.INVISIBLE
+//        }
     }
 
 }
@@ -167,4 +180,10 @@ class ApplyListHolder(v: View, myDialog: Dialog) : RecyclerView.ViewHolder(v){
     val applyText: TextView = myDialog.findViewById(R.id.txtApplyText)
     val applyChk2D: CheckBox = myDialog.findViewById(R.id.chkApply2D_)
     val applyChk3D: CheckBox = myDialog.findViewById(R.id.chkApply3D_)
+//    val msgCheck: TextView = myDialog.findViewById(R.id.msgCheck)
+//    val msgBuild: TextView = myDialog.findViewById(R.id.msgBuild)
+//    val msgWait: TextView = myDialog.findViewById(R.id.msgWait)
+//    val msgStart: TextView = myDialog.findViewById(R.id.msgStart)
+//    val msgFinish: TextView = myDialog.findViewById(R.id.msgFinish)
+
 }

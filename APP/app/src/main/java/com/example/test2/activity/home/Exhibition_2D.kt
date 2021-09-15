@@ -24,7 +24,7 @@ class Exhibition_2D : AppCompatActivity() {
         // 顯示網頁(Roundme)
         val webView = findViewById<WebView>(R.id.webview)
         webView.webViewClient = WebViewClient()
-        webView.loadUrl("https://do649bnc9x4hqjt8vrtjca-on.drv.tw/exhibition/")
+        webView.loadUrl("https://do649bnc9x4hqjt8vrtjca-on.drv.tw/0809/")
         val webSettings = webView.settings
         webSettings.javaScriptEnabled = true // 讓網頁js可以使用
 
