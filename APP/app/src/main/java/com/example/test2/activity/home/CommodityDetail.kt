@@ -57,6 +57,9 @@ class CommodityDetail : AppCompatActivity() {
         }
 
         btnAddGood.setOnClickListener {
+            // getGoodAmount 商品a庫存
+            // amount 預加數量
+            // getGoodMyCartAmount 商品a目前在購物車的數量
             if (getGoodAmount >= (amount + getGoodMyCartAmount)) { // 目前要新增的數量+已加入購物車數量
                 if (getGoodNo != null) {
                     if (memNo != null) {

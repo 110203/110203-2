@@ -15,7 +15,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.test2.R
 import com.example.test2.activity.cart.CartCheckout
-import com.example.test2.activity.profile.Application
 import com.example.test2.activity.profile.Login
 import com.example.test2.data.api.RetrofitClient
 import com.example.test2.data.model.CartResponse
@@ -38,18 +37,17 @@ class NotificationsFragment : Fragment() {
     lateinit var txtTotPrice_ : TextView
 
     override fun onCreateView(
-            inflater: LayoutInflater,
-            container: ViewGroup?,
-            savedInstanceState: Bundle?
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
     ): View? {
         notificationsViewModel =
-                ViewModelProvider(this).get(NotificationsViewModel::class.java)
-        activity?.let{
+            ViewModelProvider(this).get(NotificationsViewModel::class.java)
+        activity?.let {
             this.mActivity = it
         }
 
-        val root = inflater.inflate(R.layout.fragment_notifications, container, false)
-        return root
+        return inflater.inflate(R.layout.fragment_notifications, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -166,7 +164,27 @@ class NotificationsFragment : Fragment() {
 
             }
 
+            holder.btnAddCart.setOnClickListener {
+                postUpdateCart()
+            }
 
+            holder.btnSubCart.setOnClickListener {
+                postUpdateCart()
+            }
+
+            holder.btnDeleteCart.setOnClickListener {
+                postDeleteCart()
+            }
+
+
+        }
+
+        private fun postDeleteCart() {
+            TODO("Not yet implemented")
+        }
+
+        private fun postUpdateCart() {
+            TODO("Not yet implemented")
         }
 
     }
@@ -177,6 +195,10 @@ class NotificationsFragment : Fragment() {
         val cartGoodAmount: TextView = v.findViewById(R.id.txtCommodityAmount)
         val cartGoodImg: ImageView = v.findViewById(R.id.imgCommodityImg)
         val chkCart: CheckBox = v.findViewById(R.id.chkCart)
+        val btnAddCart: Button = v.findViewById(R.id.btnAddCart)
+        val btnSubCart: Button = v.findViewById(R.id.btnSubCart)
+        val btnDeleteCart: Button = v.findViewById(R.id.btnDeleteCart)
+
 
 //        val btnCheckout: Button = pa.findViewById(R.id.btnCheckout)
     }

@@ -11,17 +11,21 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/exhibitionItem"
-            android:fontFamily="@font/notoseriftc_semibold"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:ellipsize="end"
+            android:fontFamily="@font/notoseriftc_semibold"
             android:gravity="center"
             android:text="展覽名稱"
+            android:textColor="@color/fourth"
             android:textSize="18sp" />
 
         <Space

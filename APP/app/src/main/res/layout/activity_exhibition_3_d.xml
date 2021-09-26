@@ -43,7 +43,7 @@
                 android:paddingLeft="16dp"
                 android:paddingRight="16dp"
                 android:tint="#AFABAB"
-                app:srcCompat="@drawable/ic_back" />
+                app:srcCompat="@drawable/ic_left_arrow" />
 
             <TextView
                 android:id="@+id/txtShowName3D"
@@ -64,7 +64,7 @@
                 android:paddingLeft="16dp"
                 android:paddingRight="16dp"
                 android:tint="#AFABAB"
-                app:srcCompat="@drawable/ic_right_arrow_angle"
+                app:srcCompat="@drawable/ic_right_arrow"
                 tools:ignore="VectorDrawableCompat" />
 
         </LinearLayout>

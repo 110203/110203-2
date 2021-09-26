@@ -7,8 +7,7 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/shape_line_solid"
+        android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -17,7 +16,7 @@
         <LinearLayout
             android:id="@+id/linearLayout5__"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="match_parent"
             android:layout_margin="10dp"
             android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -31,13 +30,14 @@
                 android:orientation="horizontal">
 
                 <ImageButton
+                    android:id="@+id/btnApplyList"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:background="#00000000"
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp"
-                    android:tint="@color/fifth"
-                    app:srcCompat="@drawable/ic_back"
+                    android:tint="@color/fourth"
+                    app:srcCompat="@drawable/ic_left_arrow"
                     tools:ignore="VectorDrawableCompat" />
 
                 <LinearLayout
@@ -62,7 +62,7 @@
                             android:textStyle="bold" />
 
                         <TextView
-                            android:id="@+id/txtApplyNo"
+                            android:id="@+id/txtApplyNo_"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:fontFamily="@font/notoseriftc_semibold"
@@ -218,6 +218,7 @@
                                 android:id="@+id/msgFinish"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_marginBottom="20dp"
                                 android:layout_weight="1"
                                 android:fontFamily="@font/notoseriftc_semibold"
                                 android:text="該申請已結案"
@@ -234,7 +235,7 @@
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp"
                     android:tint="@color/fifth"
-                    app:srcCompat="@drawable/ic_arrow_forward_ios_black_24dp"
+                    app:srcCompat="@drawable/ic_right_arrow"
                     tools:ignore="VectorDrawableCompat" />
 
             </LinearLayout>

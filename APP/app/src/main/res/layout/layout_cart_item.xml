@@ -114,7 +114,7 @@
                 android:layout_height="30sp"
                 android:layout_marginStart="8dp"
                 android:layout_marginLeft="8dp"
-                android:background="@drawable/button_radius_fifth"
+                android:background="@drawable/button_radius_translucent"
                 app:backgroundTint="@color/fifth"
                 app:icon="@drawable/ic_delete"
                 app:iconGravity="textStart"

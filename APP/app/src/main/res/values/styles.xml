@@ -10,4 +10,9 @@
         parent="@android:style/Theme.DeviceDefault.Light.Dialog.NoActionBar.MinWidth" >
         <item name="android:windowBackground">@drawable/shape_line_solid</item>
     </style>
+
+    <style name="applicationListFullDialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
 </resources>

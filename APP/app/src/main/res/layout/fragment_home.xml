@@ -47,8 +47,7 @@
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:src="@drawable/ic_loupe"
-                android:tint="@color/sixth"
-                app:srcCompat="@drawable/ic_loupe" />
+                app:tint="@color/sixth" />
 
             <EditText
                 android:id="@+id/editTextTextPersonName5"
@@ -66,6 +65,15 @@
                 android:textColorHint="@color/sixth"
                 android:textColorLink="@color/sixth"
                 android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/spnType"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:spinnerMode="dialog"
+                android:dropDownWidth="match_parent"
+                android:gravity="right"
+                android:backgroundTint="@color/fifth"/>
 
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -96,7 +104,7 @@
                 android:numColumns="2"
                 android:paddingLeft="16dp"
                 android:paddingRight="16dp"
-                android:paddingBottom="12dp"
+                android:paddingBottom="62dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -104,26 +112,8 @@
 
             </androidx.recyclerview.widget.RecyclerView>
 
-            <Spinner
-                android:id="@+id/spnType"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:gravity="right"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="@+id/exhibitionView"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <Spinner
-                android:id="@+id/spinner2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/exhibitionView" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -37,7 +37,7 @@
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp"
                     android:tint="@color/fifth"
-                    app:srcCompat="@drawable/ic_back"
+                    app:srcCompat="@drawable/ic_left_arrow"
                     tools:ignore="VectorDrawableCompat" />
 
                 <LinearLayout
@@ -75,10 +75,12 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:background="@drawable/shape_line_dash"
                         android:orientation="vertical"
-                        android:padding="5dp">
+                        android:padding="5dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp">
 
                         <TextView
                             android:layout_width="match_parent"
@@ -160,7 +162,7 @@
                             <TextView
                                 android:id="@+id/txtApplyStartTime"
                                 android:layout_width="match_parent"
-                                android:layout_height="match_parent"
+                                android:layout_height="wrap_content"
                                 android:fontFamily="@font/notoseriftc_semibold"
                                 android:gravity="center|left"
                                 android:text="startTime"
@@ -186,7 +188,7 @@
                             <TextView
                                 android:id="@+id/txtApplyEndTime"
                                 android:layout_width="match_parent"
-                                android:layout_height="match_parent"
+                                android:layout_height="wrap_content"
                                 android:fontFamily="@font/notoseriftc_semibold"
                                 android:gravity="center|left"
                                 android:text="endTime"
@@ -231,7 +233,7 @@
 
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:orientation="horizontal">
 
                             <TextView
@@ -248,7 +250,7 @@
                                 android:id="@+id/txtApplyText"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginBottom="15dp"
+                                android:layout_marginBottom="20dp"
                                 android:fontFamily="@font/notoseriftc_semibold"
                                 android:text="124333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333"
                                 android:textSize="18sp" />
@@ -260,13 +262,14 @@
                 </LinearLayout>
 
                 <ImageButton
+                    android:id="@+id/btnApplyListStatus"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:background="#00000000"
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp"
-                    android:tint="@color/fifth"
-                    app:srcCompat="@drawable/ic_arrow_forward_ios_black_24dp"
+                    android:tint="@color/fourth"
+                    app:srcCompat="@drawable/ic_right_arrow"
                     tools:ignore="VectorDrawableCompat" />
 
             </LinearLayout>
