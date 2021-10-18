@@ -137,7 +137,7 @@ class CommodityListAdapter(private val items: ArrayList<MutableMap<String, Any?>
 
         holder.goodName.text = goodName
         holder.goodPrice.text = "$$goodPrice"
-        val imgUrl: String = Resources.getSystem().getString(R.string.BASE_IMG_URL)
+        val imgUrl: String? = holder.toto?.getString(R.string.BASE_IMG_URL)
         Picasso.get().load(imgUrl + photoPath).into(holder.goodImg)
 
         holder.goodImg.setOnClickListener {

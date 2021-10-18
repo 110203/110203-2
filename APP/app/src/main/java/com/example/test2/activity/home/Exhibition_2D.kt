@@ -3,6 +3,7 @@ package com.example.test2.activity.home
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import com.example.test2.R
@@ -16,15 +17,23 @@ class Exhibition_2D : AppCompatActivity() {
         // 隱藏TitleBar
         supportActionBar?.hide()
 
-        // 接收home的資料
-        var getShowNo = intent.getBundleExtra("bundle")?.getString("showNo")
-        var getShowName = intent.getBundleExtra("bundle")?.getString("showName")
+        // 接收ExhibitionDetail的資料
+        val getShowNo = intent.getBundleExtra("bundle")?.getString("showNo")
+        val getShowName = intent.getBundleExtra("bundle")?.getString("showName")
+        val getEUrl2D = intent.getBundleExtra("bundle")?.getString("eUrl2D")
         txtShowName2D.text = getShowName.toString()
 
-        // 顯示網頁(Roundme)
+        // 顯示網頁
         val webView = findViewById<WebView>(R.id.webview)
         webView.webViewClient = WebViewClient()
-        webView.loadUrl("https://do649bnc9x4hqjt8vrtjca-on.drv.tw/0809/")
+        if (getEUrl2D != null && getEUrl2D != "not built" ) {
+            msgLoading.visibility = View.VISIBLE
+            webView.loadUrl(getEUrl2D)
+        } else {
+            webview.visibility = View.INVISIBLE
+            msgNotBuilt2D.visibility = View.VISIBLE
+        }
+
         val webSettings = webView.settings
         webSettings.javaScriptEnabled = true // 讓網頁js可以使用
 

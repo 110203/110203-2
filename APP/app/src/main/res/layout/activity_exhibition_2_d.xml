@@ -51,7 +51,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:fontFamily="serif"
+                android:fontFamily="@font/notoseriftc_medium"
                 android:gravity="center"
                 android:text="TextView"
                 android:textColor="@color/fifth"
@@ -72,6 +72,18 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+    <TextView
+        android:id="@+id/msgLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/notoseriftc_medium"
+        android:text="載入中請稍後......"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/webview"
+        app:layout_constraintEnd_toEndOf="@+id/webview"
+        app:layout_constraintStart_toStartOf="@+id/webview"
+        app:layout_constraintTop_toBottomOf="@+id/showNavbarControl" />
+
     <WebView
         android:id="@+id/webview"
         android:layout_width="match_parent"
@@ -82,5 +94,18 @@
         app:layout_constraintTop_toBottomOf="@+id/showNavbarControl">
 
     </WebView>
+
+    <TextView
+        android:id="@+id/msgNotBuilt2D"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/notoseriftc_medium"
+        android:text="此展覽尚未建置2D模式"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/webview"
+        app:layout_constraintEnd_toEndOf="@+id/webview"
+        app:layout_constraintStart_toStartOf="@+id/webview"
+        app:layout_constraintTop_toBottomOf="@+id/showNavbarControl" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

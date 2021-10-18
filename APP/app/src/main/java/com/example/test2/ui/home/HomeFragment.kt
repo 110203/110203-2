@@ -102,6 +102,11 @@ class HomeFragment : Fragment() {
                         } else {
                             item["exhibitionImg"] = data[i].eImage
                         }
+                        if (data[i].eFile2D == null) {
+                            item["exhibitionUrl2D"] = "not built"
+                        } else {
+                            item["exhibitionUrl2D"] = data[i].eFile2D
+                        }
                         items.add(item)
                     }
                     // recycler
@@ -139,6 +144,7 @@ class HomeFragment : Fragment() {
             val exhibitionName = items[position]["exhibitionName"].toString()
             val exhibitionText = items[position]["exhibitionText"].toString()
             val photoPath = items[position]["exhibitionImg"].toString()
+            val exhibitionUrl2D = items[position]["exhibitionUrl2D"].toString()
 
             holder.exhibitionName.text = exhibitionName
             holder.exhibitionText.text = exhibitionText
@@ -151,6 +157,7 @@ class HomeFragment : Fragment() {
                 bundle.putString("showName", exhibitionName)
                 bundle.putString("showImgPath", photoPath)
                 bundle.putString("showText", exhibitionText)
+                bundle.putString("eUrl2D", exhibitionUrl2D)
                 val intent = Intent(holder.toto, ExhibitionDetail::class.java)
                 intent.putExtra("bundle", bundle)
                 holder.toto?.startActivity(intent)

@@ -110,6 +110,13 @@ interface APIService {
         @Body addSRequest: RequestBody
     ): Call<CartAdd>
 
+    // 新增{gNo}商品至購物車，含新增、更改
+    @Headers("Content-Type: application/json")
+    @POST("appAddShopCart")
+    fun appAddShopCart(
+        @Body addSRequest: RequestBody
+    ): Call<CartAdd>
+
     // 更改購物車內容
     @Headers("Content-Type: application/json")
     @POST("appUpdateS")

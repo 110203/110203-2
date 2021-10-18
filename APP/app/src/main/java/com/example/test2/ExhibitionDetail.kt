@@ -16,19 +16,27 @@ class ExhibitionDetail : AppCompatActivity() {
         supportActionBar?.hide()
 
         // 接收home的資料
-        var getShowNo = intent.getBundleExtra("bundle")?.getString("showNo")
-        var getShowName = intent.getBundleExtra("bundle")?.getString("showName")
-        var getShowImgPath = intent.getBundleExtra("bundle")?.getString("showImgPath")
-        var getShowText = intent.getBundleExtra("bundle")?.getString("showText")
+        val getShowNo = intent.getBundleExtra("bundle")?.getString("showNo")
+        val getShowName = intent.getBundleExtra("bundle")?.getString("showName")
+        val getShowImgPath = intent.getBundleExtra("bundle")?.getString("showImgPath")
+        val getShowText = intent.getBundleExtra("bundle")?.getString("showText")
+        var getEUrl2D = intent.getBundleExtra("bundle")?.getString("eUrl2D")
+
 
         exhibitionDetailName.text = getShowName
         exhibitionDetailText.text = getShowText
         Picasso.get().load("http://140.131.114.155/file/$getShowImgPath").into(exhibitionDetailImg)
 
+        if (getEUrl2D == "not built") {
+            btn2D.isEnabled = false
+            btn2D.isClickable = false
+        }
+
         btn2D.setOnClickListener {
             val bundle = Bundle()
             bundle.putString("showNo", getShowNo)
             bundle.putString("showName", getShowName)
+            bundle.putString("eUrl2D", getEUrl2D)
             val intent = Intent(this, Exhibition_2D::class.java)
             intent.putExtra("bundle", bundle)
             startActivity(intent)

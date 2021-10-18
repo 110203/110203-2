@@ -21,7 +21,8 @@ data class ExhibitionDetail(
     @field:Json(name = "eImage") var eImage: String?,
     @field:Json(name = "introdution") val eIntrodution: String,
     @field:Json(name = "startTime") val startTime: String,
-    @field:Json(name = "endTime") val endTime: String
+    @field:Json(name = "endTime") val endTime: String,
+    @field:Json(name = "eFile2D") val eFile2D: String?
 )
 
 // 會員 > 申請建展
