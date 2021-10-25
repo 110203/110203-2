@@ -1,27 +1,20 @@
 package com.example.test2.ui.home
 
 import android.app.Activity
-import android.content.Context
-import android.content.Intent
-import android.os.Build
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.*
 import android.widget.ArrayAdapter
-import androidx.annotation.RequiresApi
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
-import com.example.test2.ExhibitionDetail
 import com.example.test2.R
+import com.example.test2.adapter.ExhibitionListForHomeAdapter
 import com.example.test2.data.api.RetrofitClient
 import com.example.test2.data.model.ExhibitionResponse
-import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.fragment_home.*
 import retrofit2.Call
 import retrofit2.Callback
@@ -110,7 +103,7 @@ class HomeFragment : Fragment() {
                         items.add(item)
                     }
                     // recycler
-                    exhibitionView.adapter = ExhibitionListAdapter(items)
+                    exhibitionView.adapter = ExhibitionListForHomeAdapter(items)
 
                     // spinner
                     exhibitionType = ArrayList(HashSet(exhibitionType)) // 移除exhibitionType的重複值
@@ -126,53 +119,4 @@ class HomeFragment : Fragment() {
         //////////////////////////
     }
 
-    class ExhibitionListAdapter(private val items: ArrayList<Map<String, Any?>>) : RecyclerView.Adapter<ViewHolder>() {
-        override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-            val v = LayoutInflater.from(parent.context).inflate(R.layout.layout_exhibition_home, parent, false)
-
-
-            return ViewHolder(v)
-        }
-
-        override fun getItemCount(): Int {
-            return items.size
-        }
-
-        @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
-        override fun onBindViewHolder(holder: ViewHolder, position: Int){
-            val exhibitionNo = items[position]["exhibitionNo"].toString()
-            val exhibitionName = items[position]["exhibitionName"].toString()
-            val exhibitionText = items[position]["exhibitionText"].toString()
-            val photoPath = items[position]["exhibitionImg"].toString()
-            val exhibitionUrl2D = items[position]["exhibitionUrl2D"].toString()
-
-            holder.exhibitionName.text = exhibitionName
-            holder.exhibitionText.text = exhibitionText
-            val imgUrl: String? = holder.toto?.getString(R.string.BASE_IMG_URL)
-            Picasso.get().load(imgUrl + photoPath).into(holder.exhibitionImg)
-
-            holder.exhibitionImg.setOnClickListener {
-                val bundle = Bundle()
-                bundle.putString("showNo", exhibitionNo)
-                bundle.putString("showName", exhibitionName)
-                bundle.putString("showImgPath", photoPath)
-                bundle.putString("showText", exhibitionText)
-                bundle.putString("eUrl2D", exhibitionUrl2D)
-                val intent = Intent(holder.toto, ExhibitionDetail::class.java)
-                intent.putExtra("bundle", bundle)
-                holder.toto?.startActivity(intent)
-            }
-            holder.exhibitionImg.clipToOutline = true
-        }
-
-    }
-
-    class ViewHolder(v: View) : RecyclerView.ViewHolder(v) {
-        val exhibitionName: TextView = v.findViewById(R.id.showName)
-        val exhibitionText: TextView = v.findViewById(R.id.showText)
-        val exhibitionImg: ImageView = v.findViewById(R.id.showImg)
-
-        val toto: Context? = v.context
-
-    }
 }

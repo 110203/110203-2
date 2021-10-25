@@ -103,26 +103,12 @@ interface APIService {
         @Body memNo: RequestBody
     ): Call<CartResponse>
 
-    // 新增{gNo}商品至購物車
-    @Headers("Content-Type: application/json")
-    @POST("appAddS")
-    fun appAddS(
-        @Body addSRequest: RequestBody
-    ): Call<CartAdd>
-
     // 新增{gNo}商品至購物車，含新增、更改
     @Headers("Content-Type: application/json")
     @POST("appAddShopCart")
     fun appAddShopCart(
         @Body addSRequest: RequestBody
     ): Call<CartAdd>
-
-    // 更改購物車內容
-    @Headers("Content-Type: application/json")
-    @POST("appUpdateS")
-    fun appUpdateS(
-        @Body updateSRequest: RequestBody // gAmount, scNo
-    ): Call<CartAmountUpdate>
 
     // 刪除購物車內容
     @Headers("Content-Type: application/json")

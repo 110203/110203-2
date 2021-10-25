@@ -8,4 +8,5 @@
         android:color="@color/fifth"/>
     <solid
         android:color="#00000000" />
+
 </shape>

@@ -20,7 +20,7 @@ class ExhibitionDetail : AppCompatActivity() {
         val getShowName = intent.getBundleExtra("bundle")?.getString("showName")
         val getShowImgPath = intent.getBundleExtra("bundle")?.getString("showImgPath")
         val getShowText = intent.getBundleExtra("bundle")?.getString("showText")
-        var getEUrl2D = intent.getBundleExtra("bundle")?.getString("eUrl2D")
+        val getEUrl2D = intent.getBundleExtra("bundle")?.getString("eUrl2D")
 
 
         exhibitionDetailName.text = getShowName
