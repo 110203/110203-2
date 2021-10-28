@@ -11,15 +11,16 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.test2.R
 import com.example.test2.data.ShoppingCart
 import com.squareup.picasso.Picasso
-var selectGoodNoList = ArrayList<Any>()
+var selectGoodList = ArrayList<Any>()
+var selectGoodTotPrice = 0
 
 class CartListForShoppingCartGetData {
-    fun getSelectGoodNo(): ArrayList<Any> {
-        return selectGoodNoList
+    fun getSelectGood(): ArrayList<Any> {
+        return selectGoodList
     }
 
-    fun getSelectGoodItems(): ArrayList<Any> {
-        return selectGoodNoList
+    fun getSelectGoodTotPrice(): Int {
+        return selectGoodTotPrice
     }
 
 }
@@ -35,7 +36,7 @@ class CartListForShoppingCartAdapter(
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val v = LayoutInflater.from(parent.context).inflate(R.layout.layout_cart_item, parent, false)
-
+        selectGoodList.clear()
         return ViewHolder(v)
     }
 
@@ -45,7 +46,6 @@ class CartListForShoppingCartAdapter(
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val photoPath = items[position]["cartGoodImg"].toString()
-        val cartNo = items[position]["cartNo"].toString()
         val cartGoodNo = items[position]["cartGoodNo"].toString()
         val cartGoodName = items[position]["cartGoodName"].toString()
         val cartGoodPrice = items[position]["cartGoodPrice"].toString()
@@ -59,21 +59,17 @@ class CartListForShoppingCartAdapter(
         val imgUrl: String? = holder.toto?.getString(R.string.BASE_IMG_URL)
         Picasso.get().load(imgUrl + photoPath).into(holder.cartGoodImg)
 
-
         checkStockAndSetButton(cartGoodStock, cartGoodAmount.toInt(), holder)
 
         var amount = cartGoodAmount.toInt()
 
         holder.chkCart.setOnClickListener {
             val scNoItem = items[position]
-            val scNoItem2 = mutableMapOf<String, Any?>()
-            scNoItem2[cartNo] = scNoItem
+            scNoItem["cartGoodAmount"] = amount
             if(holder.chkCart.isChecked){
-                updateCheckout("add", cartGoodPrice.toInt(), amount)
-                selectGoodNoList.add(scNoItem2)
+                updateCheckout("add", "chk", cartGoodPrice.toInt(), amount, position, amount)
             }else{
-                updateCheckout("sub", cartGoodPrice.toInt(), amount)
-                selectGoodNoList.remove(scNoItem2)
+                updateCheckout("sub", "chk", cartGoodPrice.toInt(), amount, position, amount)
             }
 
         }
@@ -82,7 +78,7 @@ class CartListForShoppingCartAdapter(
             amount += 1
             ShoppingCart().postUpdateCart(memNo, cartGoodNo, 1, holder.toto, holder.cartGoodAmount).toString()
             if(holder.chkCart.isChecked){
-                updateCheckout("add", cartGoodPrice.toInt(), 1)
+                updateCheckout("add", "btn", cartGoodPrice.toInt(), 1, position, amount)
             }
             checkStockAndSetButton(cartGoodStock, amount, holder)
         }
@@ -91,7 +87,7 @@ class CartListForShoppingCartAdapter(
             amount += -1
             ShoppingCart().postUpdateCart(memNo, cartGoodNo, -1, holder.toto, holder.cartGoodAmount).toString()
             if(holder.chkCart.isChecked){
-                updateCheckout("sub", cartGoodPrice.toInt(), 1)
+                updateCheckout("sub", "btn", cartGoodPrice.toInt(), 1, position, amount)
             }
             checkStockAndSetButton(cartGoodStock, amount, holder)
         }
@@ -99,7 +95,7 @@ class CartListForShoppingCartAdapter(
         holder.btnDeleteCart.setOnClickListener {
             ShoppingCart().postDeleteCart(memNo, cartGoodNo, holder.toto, msgError, applicationList, btnCheckout, mActivity)
             if(holder.chkCart.isChecked){
-                updateCheckout("sub", cartGoodPrice.toInt(), amount)
+                updateCheckout("sub", "btn", cartGoodPrice.toInt(), amount, position, amount)
             }
         }
     }
@@ -119,12 +115,33 @@ class CartListForShoppingCartAdapter(
     }
 
     @SuppressLint("SetTextI18n")
-    private fun updateCheckout(type: String, price: Int, amount: Int) {
-        when(type){
-            "add" -> totPrice += price * amount
-            "sub" -> totPrice -= price * amount
+    private fun updateCheckout(priceType: String, objType: String, price: Int, gAmount: Int, position: Int, amount: Int) {
+        val scNoItem = items[position]
+        scNoItem["cartGoodAmount"] = amount
+
+        when(priceType){
+            "add" -> {
+                totPrice += price * gAmount
+                when(objType){
+                    "btn" -> {
+                        selectGoodList.remove(scNoItem)
+                    }
+                }
+                selectGoodList.add(scNoItem)
+            }
+            "sub" -> {
+                totPrice -= price * gAmount
+                when(objType){
+                    "btn" -> {
+                        selectGoodList.add(scNoItem)
+                    }
+                }
+                selectGoodList.remove(scNoItem)
+            }
         }
+
         val s = String.format("%,d", totPrice).replace(',', ',')
+        selectGoodTotPrice = totPrice
         btnCheckout.text = "填寫購買資訊(\$$s)"
     }
 

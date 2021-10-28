@@ -11,10 +11,12 @@ import android.widget.*
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.test2.R
+import com.example.test2.activity.cart.CartCheckout
 import com.example.test2.activity.profile.Login
 import com.example.test2.adapter.CartListForShoppingCartGetData
 import com.example.test2.data.ShoppingCart
 import kotlinx.android.synthetic.main.fragment_notifications.*
+import kotlin.reflect.typeOf
 
 class NotificationsFragment : Fragment() {
 
@@ -22,7 +24,6 @@ class NotificationsFragment : Fragment() {
     private var mActivity: Activity? = null
 
     var totPrice = 0
-    lateinit var txtTotPrice_ : TextView
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -53,15 +54,21 @@ class NotificationsFragment : Fragment() {
         ShoppingCart().postMyCart(memNo, msgError, applicationList, btnCheckout, mActivity)
 
         btnCheckout.setOnClickListener {
-            val result = CartListForShoppingCartGetData().getSelectGoodNo()
-            btnCheckout.text = result.toString()
-//            activity?.let {
-//                val bundle = Bundle()
-//                bundle.putString("memNo", memNo)
-//                val intent = Intent(it, CartCheckout::class.java)
-//                intent.putExtra("bundle", bundle)
-//                it.startActivity(intent)
-//            }
+            val selectGood = CartListForShoppingCartGetData().getSelectGood()
+            val selectGoodTotPrice = CartListForShoppingCartGetData().getSelectGoodTotPrice()
+            activity?.let {
+                val bundle = Bundle()
+                bundle.putString("memNo", memNo)
+                bundle.putInt("selectGoodTotPrice", selectGoodTotPrice)
+                bundle.putString("selectCartCount", selectGood.size.toString())
+                for(i in 0 until selectGood.size){
+                    bundle.putString("data$i", selectGood[i].toString())
+                }
+
+                val intent = Intent(it, CartCheckout::class.java)
+                intent.putExtra("bundle", bundle)
+                it.startActivity(intent)
+            }
         }
 
     }

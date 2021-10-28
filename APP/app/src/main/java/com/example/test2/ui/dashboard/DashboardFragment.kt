@@ -27,7 +27,6 @@ class DashboardFragment : Fragment() {
         dashboardViewModel =
             ViewModelProvider(this).get(DashboardViewModel::class.java)
         return inflater.inflate(R.layout.fragment_dashboard, container, false)
-
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

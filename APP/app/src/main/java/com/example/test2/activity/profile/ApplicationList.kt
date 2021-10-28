@@ -78,28 +78,28 @@ class ApplicationList : AppCompatActivity() {
                 if(status == "success"){
                     val data = ArrayList(response.body()?.data)
                     // 將data裝進HashMap中
-                    for(i in data?.indices){
-                        var item = HashMap<String, Any?>()
+                    for(i in data.indices){
+                        val item = HashMap<String, Any?>()
 
-                        item["exhibitionNo"] = data?.get(i).eNo
-                        item["exhibitionName"] = data?.get(i).eName
-                        item["exhibitionText"] = data?.get(i).eIntrodution
-                        item["exhibitionType"] = data?.get(i).eType
-                        item["exhibitionStartTime"] = data?.get(i).startTime
-                        item["exhibitionEndTime"] = data?.get(i).endTime
-                        item["exhibitionCheck"] = data?.get(i).eCheck
-                        item["exhibitionLogin"] = data?.get(i).eLogin
-                        item["exhibitionStyle"] = data?.get(i).eStyle
+                        item["exhibitionNo"] = data[i].eNo
+                        item["exhibitionName"] = data[i].eName
+                        item["exhibitionText"] = data[i].eIntrodution
+                        item["exhibitionType"] = data[i].eType
+                        item["exhibitionStartTime"] = data[i].startTime
+                        item["exhibitionEndTime"] = data[i].endTime
+                        item["exhibitionCheck"] = data[i].eCheck
+                        item["exhibitionLogin"] = data[i].eLogin
+                        item["exhibitionStyle"] = data[i].eStyle
 
-                        if (data?.get(i).eImage == null) {
+                        if (data[i].eImage == null) {
                             item["exhibitionImg"] = "null.jpg"
                         } else {
-                            item["exhibitionImg"] = data?.get(i).eImage
+                            item["exhibitionImg"] = data[i].eImage
                         }
                         items.add(item)
                     }
 
-                    var layoutManager = LinearLayoutManager(this@ApplicationList)
+                    val layoutManager = LinearLayoutManager(this@ApplicationList)
                     layoutManager.orientation = LinearLayoutManager.VERTICAL
                     applicationList.layoutManager = layoutManager
                     applicationList.adapter = ApplyListAdapter(items)
@@ -185,7 +185,6 @@ class ApplyListAdapter(private val applyData: ArrayList<Map<String, Any?>>) : Re
 
         holder.itemView.setOnClickListener {
             dialogDetail.show()
-
         }
 
         btnStatus.setOnClickListener {
