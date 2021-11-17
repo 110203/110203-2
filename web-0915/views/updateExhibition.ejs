@@ -250,7 +250,8 @@
 
                     <div class="row mb-3">
                       <label for="exampleInputEmail1" class="col-sm-2 col-form-label">存在狀態</label>
-                      
+                      <% var eDelete=items.eDelete; %>
+                      <% if (eDelete==0) { %>
                       <div class="col-sm-10" style="margin-top: 0.5%;">
                         <p>
                           <input type="radio" id="exist" name="eDelete" value="0"  checked>
@@ -261,6 +262,18 @@
                           <label for="gone">刪除</label>
                         </p>
                       </div>
+                      <%}else { %>
+                        <div class="col-sm-10" style="margin-top: 0.5%;">
+                          <p>
+                            <input type="radio" id="exist" name="eDelete" value="0" >
+                            <label for="exist">存在</label>
+                          </p>
+                          <p>
+                            <input type="radio" id="gone" name="eDelete" value="1" checked>
+                            <label for="gone">刪除</label>
+                          </p>
+                        </div>
+                      <% } %>  
                     </div>
 
                     <br><br>

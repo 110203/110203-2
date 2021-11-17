@@ -206,7 +206,11 @@
                         <% }else if (eCheck==2) { %>
                           <input class="btn btn-block mb-4" name='eCheck'type="submit" value="取消展覽" style="margin-right: 5%;">
                           <input class="btn btn-block mb-4" name='eCheck'type="submit" value="開始建置" style="margin-right: 5%;">
-                        <% } else { %>
+                        <% }else if (eCheck==100) { %>
+                          <input class="btn btn-block mb-4" name='eCheck'type="submit" value="審核不通過" style="margin-right: 5%;">
+                          <input class="btn btn-block mb-4" name='eCheck'type="submit" value="審核通過" style="margin-right: 5%;">
+                        <% }else { %>
+                          <input class="btn btn-block mb-4" name='eCheck'type="submit" value="要求補件" style="margin-right: 5%;">
                           <input class="btn btn-block mb-4" name='eCheck'type="submit" value="審核不通過" style="margin-right: 5%;">
                           <input class="btn btn-block mb-4" name='eCheck'type="submit" value="審核通過"style="margin-right: 5%;">
                         <% } %>  

@@ -21,7 +21,7 @@ var add = async function(newData){
 var searchE = async function(keyword){
     var result={};
 	
-    await query('SELECT * FROM exhibition where eName like ? and eDelete=0 and eCheck=6','%'+keyword+'%')
+    await query('SELECT * FROM exhibition where eName like ?   and eCheck=6','%'+keyword+'%')
         .then((data) => {
             result = {code:0, data:data};  
         }, (error) => {
@@ -107,7 +107,7 @@ var loginExhibition = async function(memNo,ePin){
 var verifyExhibition = async function(){
     var result={};
 	
-    await query('SELECT * FROM exhibition where eCheck=0 or eCheck=2 or eCheck=3 or eCheck=5 or eCheck=6 ')
+    await query('SELECT * FROM exhibition where eCheck=0 or eCheck=2 or eCheck=3 or eCheck=5 or eCheck=6 or eCheck=100 ')
         .then((data) => {
             result = {code:0, data:data};  
         }, (error) => {

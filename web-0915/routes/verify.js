@@ -24,6 +24,8 @@ router.post('/',function(req, res, next){
       eCheck=6
     }else if(eCheck=='結束'){
       eCheck=7
+    }else if(eCheck=='要求補件'){
+      eCheck=100
     }else{
       eCheck=999
     }
