@@ -87,8 +87,7 @@
         <LinearLayout
             android:id="@+id/linearLayout5__"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
             android:paddingLeft="15dp"
             android:paddingRight="15dp"
@@ -163,7 +162,8 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:visibility="gone"
-                    app:srcCompat="@android:drawable/ic_delete" />
+                    app:srcCompat="@android:drawable/ic_delete"
+                    tools:ignore="VectorDrawableCompat" />
 
             </LinearLayout>
 
@@ -197,7 +197,8 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:visibility="gone"
-                    app:srcCompat="@android:drawable/ic_delete" />
+                    app:srcCompat="@android:drawable/ic_delete"
+                    tools:ignore="VectorDrawableCompat" />
 
             </LinearLayout>
 
@@ -299,7 +300,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="2D"
-                    android:textColor="@color/fourth" />
+                    android:textColor="@color/fourth"
+                    android:textSize="18sp" />
 
                 <CheckBox
                     android:id="@+id/chkApply3D"
@@ -308,7 +310,8 @@
                     android:layout_weight="1"
                     android:checked="false"
                     android:text="3D"
-                    android:textColor="@color/fourth" />
+                    android:textColor="@color/fourth"
+                    android:textSize="18sp" />
 
                 <ImageView
                     android:id="@+id/imgErr_chk"
@@ -329,7 +332,7 @@
                     android:layout_width="100dp"
                     android:layout_height="match_parent"
                     android:fontFamily="@font/notoseriftc_semibold"
-                    android:gravity="center|left"
+                    android:gravity="bottom"
                     android:text="展覽簡介"
                     android:textColor="@color/fourth"
                     android:textSize="18sp" />
@@ -340,10 +343,10 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:ems="10"
+                    android:gravity="bottom"
                     android:hint="詳細描述以利後續建展"
                     android:inputType="textMultiLine|textPersonName"
                     android:minLines="3"
-                    android:padding="0dp"
                     android:textColor="@color/fourth" />
 
                 <ImageView
@@ -356,6 +359,29 @@
 
             </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/chkReq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txtReqCheck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/notoseriftc_semibold"
+                    android:gravity="center|left"
+                    android:text="請確認建立展覽需上傳物件"
+                    android:textColor="@color/fourth"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
 
         </LinearLayout>
     </ScrollView>
@@ -399,11 +425,102 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/notoseriftc_semibold"
             android:gravity="center"
-            android:text="＊申請完畢請務必填寫表單上傳展覽資料！"
+            android:text="＊申請完畢請務必填寫表單上傳展覽資料！\n（會員 > 申請建展 > 查看申請紀錄）"
             android:textColor="@color/fourth"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/showReqBuild"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#F3888888"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:fontFamily="@font/notoseriftc_regular"
+                android:text="提出申請後請於五天內上傳展覽物件：\n１. 展覽封面圖（ex：.jpg, .png）\n２. 展場環景圖（請附多張圖並包成.zip檔）\n３. 商品主圖（主要呈現於商品清單頁面）\n４. 商品環繞圖\n　　（一個商品多角度照片，請包成.zip檔）\n５. 商品名稱、簡介、數量、售價"
+                android:textColor="@color/fourth"
+                android:textSize="16sp"
+                app:lineHeight="30dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:fontFamily="@font/notoseriftc_regular"
+                android:text="＊僅建立2D展覽，「商品環繞圖」可不附上。\n＊僅建立3D展覽，「展場環景圖」可不附上。"
+                android:textColor="@color/fourth"
+                android:textSize="16sp"
+                app:lineHeight="30dp" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:fontFamily="@font/notoseriftc_regular"
+                android:text="若有問題請透過以下方式聯絡我們："
+                android:textColor="@color/fourth"
+                android:textSize="16sp"
+                app:lineHeight="30dp" />
+
+            <TextView
+                android:id="@+id/txtSendEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:fontFamily="@font/notoseriftc_regular"
+                android:text="@string/teamEmail"
+                android:textColor="@color/fourth"
+                android:textSize="16sp"
+                app:lineHeight="30dp" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btnReqClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="#00000000"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            app:layout_constraintEnd_toEndOf="@+id/linearLayout8"
+            app:layout_constraintTop_toTopOf="@+id/linearLayout8" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

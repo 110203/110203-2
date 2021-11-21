@@ -26,6 +26,7 @@
         android:id="@+id/textView11"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:fontFamily="@font/notoseriftc_semibold"
         android:gravity="center"
         android:paddingLeft="20dp"
@@ -121,19 +122,38 @@
                     app:srcCompat="@drawable/ic_logistics"
                     tools:ignore="VectorDrawableCompat" />
 
-                <TextView
-                    android:id="@+id/address"
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:fontFamily="@font/notoseriftc_semibold"
-                    android:gravity="center|left"
-                    android:paddingLeft="10dp"
-                    android:text="台北市中正區濟南路一段321號 \n0932111111"
-                    android:textColor="@color/fourth"
-                    android:textSize="14sp" />
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtCheckoutAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/notoseriftc_semibold"
+                        android:gravity="center|left"
+                        android:paddingLeft="10dp"
+                        android:text="台北市中正區濟南路一段321號"
+                        android:textColor="@color/fourth"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/txtCheckoutTel"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:paddingLeft="10dp"
+                        android:text="0932111111"
+                        android:textColor="@color/fourth"
+                        android:textSize="14sp" />
+                </LinearLayout>
 
                 <ImageButton
+                    android:id="@+id/btnEditAddress"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:background="#00000000"
@@ -169,18 +189,38 @@
                     app:srcCompat="@drawable/ic_credit_card"
                     tools:ignore="VectorDrawableCompat" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:fontFamily="@font/notoseriftc_semibold"
-                    android:gravity="center|left"
-                    android:paddingLeft="10dp"
-                    android:text="VISA Classic \n ****-1234"
-                    android:textColor="@color/fourth"
-                    android:textSize="14sp" />
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtCheckoutPayment"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/notoseriftc_semibold"
+                        android:gravity="center|left"
+                        android:paddingLeft="10dp"
+                        android:text="VISA Classic"
+                        android:textColor="@color/fourth"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/txtCheckoutCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:paddingLeft="10dp"
+                        android:text="****-1234"
+                        android:textColor="@color/fourth"
+                        android:textSize="14sp" />
+                </LinearLayout>
 
                 <ImageButton
+                    android:id="@+id/btnEditPayment"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:background="#00000000"
@@ -209,7 +249,8 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/notoseriftc_semibold"
                     android:gravity="center|left"
-                    android:text="商品總金額"
+                    android:paddingLeft="10dp"
+                    android:text="商品金額"
                     android:textColor="@color/fourth"
                     android:textSize="14sp" />
 
@@ -244,7 +285,8 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/notoseriftc_semibold"
                     android:gravity="center|left"
-                    android:text="運費總金額"
+                    android:paddingLeft="10dp"
+                    android:text="運費"
                     android:textColor="@color/fourth"
                     android:textSize="14sp" />
 
@@ -280,7 +322,8 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/notoseriftc_semibold"
                     android:gravity="center|left"
-                    android:text="付款總金額"
+                    android:paddingLeft="10dp"
+                    android:text="總金額"
                     android:textColor="@color/fourth"
                     android:textSize="14sp" />
 

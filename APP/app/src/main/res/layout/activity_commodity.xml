@@ -33,14 +33,16 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/commList"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:gravity="top"
         android:paddingLeft="16dp"
+        android:paddingTop="100dp"
         android:paddingRight="16dp"
         android:paddingBottom="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7">
 
     </androidx.recyclerview.widget.RecyclerView>
 
@@ -60,6 +62,23 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar2" />
+
+    <TextView
+        android:id="@+id/msgErrorCommodity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/notoseriftc_regular"
+        android:gravity="center"
+        android:paddingLeft="16dp"
+        android:paddingTop="100dp"
+        android:paddingRight="16dp"
+        android:text="該展覽尚未有商品喔"
+        android:textSize="18sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        tools:visibility="gone" />
 
     <LinearLayout
         android:layout_width="0dp"

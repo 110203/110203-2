@@ -63,7 +63,6 @@ interface APIService {
     @Headers("Content-Type: application/json")
     @POST("appAllExhibition")
     fun appAllExhibition(
-
     ): Call<ExhibitionResponse>
 
     // 申請建展
@@ -92,6 +91,12 @@ interface APIService {
     fun appLoginExhibition(
         @Body pinRequest: RequestBody // memNo, pin
     ): Call<ExhibitionResponseByPin>
+
+    @Headers("Content-Type: application/json")
+    @POST("appUpdateExhibition")
+    fun appUpdateExhibition(
+        @Body pinRequest: RequestBody // memNo, pin
+    ): Call<ExhibitionAdd>
 
     ///////////////////////////////////
     ////////// SHOPPING CART //////////
@@ -126,5 +131,19 @@ interface APIService {
     fun appOrderRecord(
         @Body memNo: RequestBody
     ): Call<OrderResponse>
+
+    // 新增orderRecord, 取得orNo
+    @Headers("Content-Type: application/json")
+    @POST("appAddOrderRecord")
+    fun appAddOrderRecord(
+        @Body addRequest: RequestBody
+    ): Call<OrderAdd>
+
+    // 用 orNo 新增order的item
+    @Headers("Content-Type: application/json")
+    @POST("appAddOrderDetail")
+    fun appAddOrderDetail(
+        @Body addRequest: RequestBody
+    ): Call<OrderDetailAdd>
 }
 

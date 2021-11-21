@@ -14,5 +14,18 @@ data class OrderResponse(
 data class OrderDetail(
     @field:Json(name = "orNo") val orNo: String,
     @field:Json(name = "orTime") val orTime: String,
-    @field:Json(name = "state") val orState: String
+    @field:Json(name = "state") val orState: String,
+    @field:Json(name = "orTotalPrice") val orTotalPrice: String,
+    @field:Json(name = "gImage2D") val gImage: String?
+    )
+
+@JsonClass(generateAdapter = true)
+data class OrderAdd(
+    @field:Json(name = "status") val status: String?,
+    @field:Json(name = "orNo") val orNo: String?
+)
+
+@JsonClass(generateAdapter = true)
+data class OrderDetailAdd(
+    @field:Json(name = "status") val status: String?
 )

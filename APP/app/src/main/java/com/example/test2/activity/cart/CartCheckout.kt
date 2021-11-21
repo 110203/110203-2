@@ -1,26 +1,46 @@
 package com.example.test2.activity.cart
 
 import android.annotation.SuppressLint
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Context
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.test2.R
-import com.example.test2.adapter.CartListForCheckOutAdapter
-import com.example.test2.adapter.ExhibitionListForHomeAdapter
-import kotlinx.android.synthetic.main.activity_application_list.*
+import com.example.test2.adapter.CartListForCheckoutAdapter
+import com.example.test2.data.Order
 import kotlinx.android.synthetic.main.activity_cart_checkout.*
-import kotlinx.android.synthetic.main.activity_commodity.*
-import kotlinx.android.synthetic.main.activity_exhibition_2_d.*
-import kotlinx.android.synthetic.main.activity_exhibition_2_d.btnToBackHome
-import kotlinx.android.synthetic.main.fragment_home.*
-import java.util.ArrayList
+import java.util.*
+import kotlin.collections.HashMap
+import kotlin.collections.Map
+import kotlin.collections.set
 
 class CartCheckout : AppCompatActivity() {
+    private var cartAddress = ""
+    private var cartTel = ""
+    private var cartPayment = ""
+
     @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cart_checkout)
         supportActionBar?.hide()
+
+        cartAddress = txtCheckoutAddress.text.toString()
+        cartTel = txtCheckoutTel.text.toString()
+        cartPayment = txtCheckoutPayment.text.toString()
+
+        val sharedPref = this.getSharedPreferences("User", Context.MODE_PRIVATE)
+        var address : String? = sharedPref.getString("paymentAddress", "")
+        var tel : String? = sharedPref.getString("paymentTel", "")
+        var payment : String? = sharedPref.getString("paymentMethod", "")
+        val card : String? = sharedPref.getString("paymentCard", "")
+
+        txtCheckoutAddress.text = address
+        txtCheckoutTel.text = tel
+        txtCheckoutPayment.text = payment
+        txtCheckoutCard.text = card
 
         btnToBackNotifications.setOnClickListener {
             finish()
@@ -41,8 +61,25 @@ class CartCheckout : AppCompatActivity() {
         val layoutManager = LinearLayoutManager(this)
         layoutManager.orientation = LinearLayoutManager.VERTICAL
         applicationCheckoutList.layoutManager = layoutManager
-        applicationCheckoutList.adapter = CartListForCheckOutAdapter(items)
+        applicationCheckoutList.adapter = CartListForCheckoutAdapter(items)
 
+        btnEditAddress.setOnClickListener {
+            val bundle = Bundle()
+            bundle.putString("address", txtCheckoutAddress.text.toString())
+            bundle.putString("tel", txtCheckoutTel.text.toString())
+            val intent = Intent(this, CartSettingAddress::class.java)
+            intent.putExtra("bundle", bundle)
+            startActivity(intent)
+        }
+
+        btnEditPayment.setOnClickListener {
+            val bundle = Bundle()
+            bundle.putString("payment", txtCheckoutPayment.text.toString())
+            bundle.putString("card", txtCheckoutCard.text.toString())
+            val intent = Intent(this, CartSettingPayment::class.java)
+            intent.putExtra("bundle", bundle)
+            startActivity(intent)
+        }
 
         val deliveryCharge = 60
         val orderTotPrice = getSelectGoodTotPrice + deliveryCharge
@@ -50,6 +87,35 @@ class CartCheckout : AppCompatActivity() {
         txtCharge.text = deliveryCharge.toString()
         txtOrderTotPrice.text = String.format("%,d", orderTotPrice).replace(',', ',')
 
+        btnDoubleCheckout.setOnClickListener {
+            address = txtCheckoutAddress.text.toString()
+            tel = txtCheckoutTel.text.toString()
+            payment = txtCheckoutPayment.text.toString()
+            if(address == "" || tel == "" || payment == ""){
+                Toast.makeText(this, "地址、電話、支付方式請勿留空喔！", Toast.LENGTH_LONG).show()
+            }else{
+                btnDoubleCheckout.isEnabled = false
+                btnDoubleCheckout.isClickable = false
+                Order().postAddOrder(this, getMemNo, cartAddress, cartTel, cartPayment, items, orderTotPrice)
+            }
+        }
+    }
 
+    override fun onResume() {
+        val sharedPref = this.getSharedPreferences("User", Context.MODE_PRIVATE)
+        val address : String? = sharedPref.getString("paymentAddress", "")
+        val tel : String? = sharedPref.getString("paymentTel", "")
+        val payment : String? = sharedPref.getString("paymentMethod", "")
+        val card : String? = sharedPref.getString("paymentCard", "")
+        cartAddress = txtCheckoutAddress.text.toString()
+        cartTel = txtCheckoutTel.text.toString()
+        cartPayment = txtCheckoutPayment.text.toString()
+
+        txtCheckoutAddress.text = address
+        txtCheckoutTel.text = tel
+        txtCheckoutPayment.text = payment
+        txtCheckoutCard.text = card
+
+        super.onResume()
     }
 }

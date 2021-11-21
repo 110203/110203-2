@@ -7,9 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.ViewModelProvider
-import com.example.test2.MainActivity
 import com.example.test2.R
 import com.example.test2.SplashActivity
 import com.example.test2.activity.profile.*
@@ -35,6 +33,24 @@ class DashboardFragment : Fragment() {
         val sharedPref = activity?.getSharedPreferences("User", Context.MODE_PRIVATE)
         val memNo : String? = sharedPref?.getString("memNo", "")
         if(memNo == ""){
+            btnToProfile.isEnabled = false
+            btnToProfile.isClickable = false
+
+            btnToApplication.isEnabled = false
+            btnToApplication.isClickable = false
+
+            btnToManageExhibition.isEnabled = false
+            btnToManageExhibition.isClickable = false
+
+            btnApplyView.isEnabled = false
+            btnApplyView.isClickable = false
+
+            btnToOrder.isEnabled = false
+            btnToOrder.isClickable = false
+
+            btnLogout.isEnabled = false
+            btnLogout.isClickable = false
+
             activity?.let {
                 val intent = Intent(it, Login::class.java)
                 it.startActivity(intent)
@@ -42,7 +58,7 @@ class DashboardFragment : Fragment() {
         }
 
         // 個人資料
-        ddsds.setOnClickListener {
+        btnToProfile.setOnClickListener {
             activity?.let {
                 val intent = Intent(it, EditProfile::class.java)
                 it.startActivity(intent)

@@ -17,7 +17,8 @@
         android:id="@+id/imgOrder"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:background="@drawable/button_radius_fifth" />
+        android:background="@drawable/button_radius_fifth"
+        android:scaleType="centerCrop" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"

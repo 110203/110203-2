@@ -34,14 +34,14 @@ class ShoppingCart {
 
         var totPrice = 0
         val jsonObject = JSONObject()
-        jsonObject.put("memNo", memNo)
-
-        val requestBody = jsonObject.toString().toRequestBody("application/json".toMediaTypeOrNull())
+        val requestBody = jsonObject.put("memNo", memNo)
+            .toString().toRequestBody("application/json".toMediaTypeOrNull())
 
         RetrofitClient.instance.appAllShoppingcart(requestBody).enqueue(object: Callback<CartResponse> {
             override fun onFailure(call: Call<CartResponse>, t: Throwable) {
-                msgError.text = "請確認網路連線正常！"
+                msgError.text = "請確認網路連線正常與否！"
                 msgError.visibility = View.VISIBLE
+                applicationList.visibility = View.INVISIBLE
             }
 
             @SuppressLint("SetTextI18n")
@@ -68,6 +68,12 @@ class ShoppingCart {
                         }
                         items.add(item)
                     }
+                    if(items.isEmpty()){
+                        msgError.text = "目前購物車尚無商品\n快參觀展覽找到有興趣的商品吧！"
+                        msgError.visibility = View.VISIBLE
+                        applicationList.visibility = View.INVISIBLE
+                    }
+
                     val layoutManager = LinearLayoutManager(mActivity)
                     layoutManager.orientation = LinearLayoutManager.VERTICAL
 
@@ -96,7 +102,7 @@ class ShoppingCart {
         RetrofitClient.instance.appAddShopCart(requestBody).enqueue(object: Callback<CartAdd> {
 
             override fun onFailure(call: Call<CartAdd>, t: Throwable) {
-                t.message?.let { Log.d("ERROR", it) }
+                Toast.makeText(toto, "Oops，出了點問題，請稍後再試！", Toast.LENGTH_SHORT).show()
             }
 
             override fun onResponse(
@@ -127,13 +133,11 @@ class ShoppingCart {
         btnCheckout: Button,
         mActivity: Activity?
     ) {
-        ////////// POST //////////
         val jsonObject = JSONObject()
         val requestBody = jsonObject.put("memNo", memNo)
             .put("gNo", cartGoodNo)
             .toString().toRequestBody("application/json".toMediaTypeOrNull())
 
-        // 利用APIService中的appAllGoods, 將requestBody(eNo) POST 至資料庫, 回傳GoodResponse回來
         RetrofitClient.instance.appDeleteS(requestBody).enqueue(object: Callback<CartDelete> {
 
             override fun onFailure(call: Call<CartDelete>, t: Throwable) {
@@ -161,6 +165,5 @@ class ShoppingCart {
                 }
             }
         })
-        //////////////////////////////
     }
 }

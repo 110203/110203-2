@@ -8,7 +8,7 @@
     android:requiresFadingEdge="vertical">
 
     <Button
-        android:id="@+id/ddsds"
+        android:id="@+id/btnToProfile"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
