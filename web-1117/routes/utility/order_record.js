@@ -52,6 +52,38 @@ var returnOrNo = async function(memNo){
         });
     return result;
 }
+var AllOrderRecord = async function(){
+    var result={};
+	
+    await query('SELECT * FROM Gcp110203.order_record where state!=4')
+        .then((data) => {
+            result = {code:0, data:data};  
+        }, (error) => {
+            result = {code:-1};
+        });
+    return result;
+}
+var OneOrderRecord = async function(orNo){
+    var result={};
+	
+    await query('SELECT * FROM Gcp110203.order_record where orNo=?',orNo)
+        .then((data) => {
+            result = {code:0, data:data};  
+        }, (error) => {
+            result = {code:-1};
+        });
+    return result;
+}
+var verifyO = async function(state,orNo){
+    var results={};
 
+    await query('UPDATE order_record SET state=? WHERE orNo =?',[state,orNo])
+        .then((data) => {
+            results = data.affectedRows;  
+        }, (error) => {
+            results = -1;
+        });  
+    return results;
+}
 //匯出
-module.exports = {fetchMemOrder,fetchOneOrder,add,returnOrNo};
+module.exports = {fetchMemOrder,fetchOneOrder,add,returnOrNo,AllOrderRecord,OneOrderRecord,verifyO};
