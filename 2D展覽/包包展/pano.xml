@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tour start="node1" appversion="6.1.4" apprev="17919">
+  <panorama id="node1">
+    <input width="724" levelbias="0.400" leveltileurl="tiles/node1/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingpitch="0" overlap="1" height="724" leveltilesize="510" levelbiashidpi="1.000" levelingroll="0">
+      <level preload="0" width="724" height="724" predecode="0"/>
+      <level preload="1" width="362" height="362" predecode="1"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="0" fovmode="0">
+      <start pan="0" fov="70" projection="4" tilt="0"/>
+      <flyin pan="0" fov="170" projection="9" tilt="-90"/>
+      <min fovpixel="2" pan="0" tilt="-90"/>
+      <max fovfisheye="360" pan="360" fovstereographic="270" fov="120" tilt="90" scaletofit="1"/>
+    </view>
+    <userdata customnodeid="" latitude="" nodeid="node1" author="" datetime="" source="" description="" comment="" info="" tags="Downloads" longitude="" heading="0" title="" copyright=""/>
+    <hotspots width="120" height="0" wordwrap="1">
+      <label background="1" width="120" borderalpha="1" border="1" textcolor="0x000000" enabled="1" bordercolor="0x000000" textalpha="1" height="0" backgroundalpha="1" borderradius="1" wordwrap="1" backgroundcolor="0xffffff"/>
+      <polystyle handcursor="1" borderalpha="1" bordercolor="0x0000ff" mode="0" backgroundalpha="0.25098" backgroundcolor="0x0000ff"/>
+      <hotspot pan="-175.28" skinid="ht_info" description="" tilt="31.42" title="110203組" id="Point01" url="" target=""/>
+      <hotspot pan="-30.64" skinid="ht_video_youtube" description="" tilt="-13.93" title="瑜珈球的使用" id="Point02" url="j8W-8nPdy0w" target="_self"/>
+      <hotspot pan="-274.31" skinid="ht_info" description="&lt;iframe src=&quot;https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1850484.4351535044!2d120.45597943125003!3d25.060280200000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442ac1555555555%3A0x62ec76169c690054!2zREVDQVRITE9OIOi_quWNoeWEgiDlj7DljJflhafmuZblupc!5e0!3m2!1szh-TW!2stw!4v1626342677100!5m2!1szh-TW!2stw&quot; width=&quot;600&quot; height=&quot;450&quot; style=&quot;border:0;&quot; allowfullscreen=&quot;&quot; loading=&quot;lazy&quot;>&lt;/iframe>" tilt="-17.95" title="3D" id="Point03" url="" target="_self"/>
+      <hotspot pan="-333.91" skinid="ht_url" description="" tilt="-1.28" title="" id="Point04" url="" target="_blank"/>
+      <hotspot pan="-238.51" skinid="ht_node" description="" tilt="22.17" title="前往下個展間" id="Point05" url="{node3}" target=""/>
+      <hotspot pan="-268.31" skinid="ht_url" description="" tilt="16.76" title="" id="Point06" url="" target="_blank"/>
+      <polyhotspot description="" title="瑜珈球" id="Poly01" url="https://www.decathlon.tw/zh/pilates-c328575.html" target="_blank">
+        <polystring>-18.82/-19.99|-23.75/-18.26|-27.58/-15.03|-29.91/-11.73|-31.04/-8.19|-31.34/-4.14|-30.5/-0.62|-28.83/3.32|-25.92/6.65|-22.02/9.15|-18.54/10.38|-11.81/10.11|-7/7.89|-3.15/4.26|-1.04/-0.73|-0.45/-7.41|-3.7/-14.19|-9.13/-18.88|-14.93/-20.65</polystring>
+      </polyhotspot>
+      <polyhotspot description="" title="捲簾" id="Poly02" url="https://www.ikea.com.tw/zh/products/window-solutions/blinds-and-panels/sandvedel-art-60469787" target="_blank">
+        <polystring>-333.28/31.75|-333.52/7.67|-359.38/7.61|-0.64/34.63|-0.25/34.87</polystring>
+      </polyhotspot>
+      <polyhotspot description="ikea" title="地毯" id="Poly03" url="https://www.ikea.com.tw/zh/products/home-furnishing-rugs/rugs/tiphede-art-00456759" target="_blank">
+        <polystring>-56.64/-22.92|-61.4/-23.6|-351.7/-43.2|-311.69/-32.11|-315.99/-30.02|-319.49/-25.59|-317.53/-19.35|-332.06/-12.75|-349.28/-14.81|-336.88/-30.77|-334.69/-36.75|-54.28/-26.61|-54.5/-26.25</polystring>
+      </polyhotspot>
+      <polyhotspot description="" title="落地燈" id="Poly04" url="https://www.ikea.com.tw/zh/products/luminaires/floor-lamps/lersta-art-40110902" target="_blank">
+        <polystring>-74.51/-21.95|-79.53/-24.16|-75.83/-27.09|-68.22/-25.96|-71.33/-21.65|-66.34/34.52|-66.72/34.06|-67.03/34.94|-58.28/41.3|-48.49/40.79|-52.91/35.33|-57.58/39.72|-65.1/35.52|-67.36/32.51|-67.36/32.51</polystring>
+      </polyhotspot>
+      <polyhotspot description="" title="購物去!" id="Poly05" url="https://www.decathlon.tw/zh/" target="_blank">
+        <polystring>-280.5/39.13|-277.14/15.06|-314.42/10.93|-311.63/31.94|-310.87/31.78</polystring>
+      </polyhotspot>
+    </hotspots>
+    <media>
+      <image pan="-175.180" rotz="-3.000" handcursor="0" width="520" fov="49.350" stretch="1.000" roty="4.000" height="475" tilt="27.910" id="Element01" rotx="11.000" clickmode="0">
+        <source url="media/展現logo-removebg-preview.png"/>
+      </image>
+      <video startmutedmobile="0" tiltsize="10.000" ambientlevel="0.000" mode="3" pan="-296.260" rotz="13.000" handcursor="1" rotx="22.000" tilt="25.930" pansize="10.000" field="90.000" roty="-29.000" id="Element02" width="1280" loop="1" clickmode="2" nodechangekeep="0" stretch="1.000" level="1.000" height="720" fov="45.750">
+        <source url="media/限時免運安心購 I Decathlon.mp4"/>
+      </video>
+      <sound field="90.000" startmutedmobile="0" pan="-104.330" nodechangekeep="0" ambientlevel="0.000" loop="1" mode="3" level="1.000" tilt="-12.280" id="Element03" pansize="10.000" tiltsize="10.000">
+        <source url="media/Decathlon Jingle Music 2019.mp3"/>
+      </sound>
+    </media>
+    <transition zoomout="0" zoomin="0" enabled="1" blendtime="1" zoomfov="20" blendcolor="0x000000" softedge="0" zoomspeed="2" zoomoutpause="1" type="crossdissolve"/>
+    <animation animsequence="Animation01" useinautorotation="1" syncanimationwithvideo="0"/>
+    <control invertcontrol="1" lockedmouse="0" contextprojections="0" invertwheel="0" contextfullscreen="1" speedwheel="1" dblclickfullscreen="0" sensitivity="11" lockedkeyboard="0" simulatemass="1" hideabout="0" lockedwheel="0" rubberband="0" lockedkeyboardzoom="0"/>
+  </panorama>
+  <panorama id="node3">
+    <input width="1024" levelbias="0.400" leveltileurl="tiles/node3/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingpitch="0" overlap="1" height="1024" leveltilesize="510" levelbiashidpi="1.000" levelingroll="0">
+      <level preload="0" width="1024" height="1024" predecode="0"/>
+      <level preload="0" width="512" height="512" predecode="0"/>
+      <level preload="1" width="256" height="256" predecode="1"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="0" fovmode="0">
+      <start pan="0" fov="70" projection="4" tilt="0"/>
+      <flyin pan="0" fov="170" projection="9" tilt="-90"/>
+      <min fovpixel="2" pan="0" tilt="-90"/>
+      <max fovfisheye="360" pan="360" fovstereographic="270" fov="120" tilt="90" scaletofit="1"/>
+    </view>
+    <userdata customnodeid="" latitude="" nodeid="node3" author="" datetime="2021/7/27 上午 02:40" source="" description="" comment="" info="" tags="Downloads" longitude="" heading="0" title="" copyright=""/>
+    <hotspots width="120" height="0" wordwrap="1">
+      <label background="1" width="120" borderalpha="1" border="1" textcolor="0x000000" enabled="1" bordercolor="0x000000" textalpha="1" height="0" backgroundalpha="1" borderradius="1" wordwrap="1" backgroundcolor="0xffffff"/>
+      <polystyle handcursor="1" borderalpha="1" bordercolor="0x0000ff" mode="0" backgroundalpha="0.25098" backgroundcolor="0x0000ff"/>
+      <polyhotspot description="ISBN：978-4-299-00801-5&#xa;雑誌：66672-64" title="mono文具book" id="Poly01" url="https://tkj.jp/book/?cd=TD008015" target="_blank">
+        <polystring>-136.46/5.44|-135.62/1.59|-148.01/1.27|-146.91/7.17|-137.06/6.6|-137.65/6.64</polystring>
+      </polyhotspot>
+      <polyhotspot description="" title="marmot灰色菱格包" id="Poly02" url="https://www.eslite.com/product/10099146942732300#998" target="_blank">
+        <polystring>-150.68/3.01|-156.96/4.81|-164.54/2.48|-163.28/0.42|-152.49/0.95|-152.49/0.95</polystring>
+      </polyhotspot>
+      <polyhotspot description="" title="marmot2020 8月號" id="Poly03" url="https://tkj.jp/max/202008" target="_blank">
+        <polystring>-154.12/11.87|-163.41/10.52|-161.06/5.51|-154.53/5.2|-154.53/5.2|-152.23/5.68|-155.09/8.23</polystring>
+      </polyhotspot>
+      <polyhotspot description="" title="" id="Poly04" url="https://tkj.jp/max/202004" target="_blank">
+        <polystring>-164.98/9.77|-172.93/9.61|-171.83/1.07|-166.35/1.35|-163.16/5.76</polystring>
+      </polyhotspot>
+      <polyhotspot description="" title="" id="Poly05" url="https://tkj.jp/max/" target="_blank">
+        <polystring>-173.71/7.96|-178.24/7.99|-177.55/0.54|-173.57/0.28|-173.7/0.54</polystring>
+      </polyhotspot>
+      <polyhotspot description="" title="" id="Poly06" url="" target="_blank">
+        <polystring>-180.61/7.11|-190.22/7.27|-189.69/0.52|-185.78/0.35|-181.81/0.01</polystring>
+      </polyhotspot>
+      <polyhotspot description="" title="官方網站" id="Poly07" url="https://tkj.jp/max/" target="_blank">
+        <polystring>-68.54/28.64|-73.21/25.87|-73.19/20.23|-68.82/22.56</polystring>
+      </polyhotspot>
+      <polyhotspot description="" title="往前看看" id="Poly08" url="" target="_blank">
+        <polystring>-192.94/-16.91|-196.45/-17.03|-195.78/-20.01|-192.87/-19.89</polystring>
+      </polyhotspot>
+      <polyhotspot description="" title="marmot介紹" id="Poly09" url="https://www.oai.com.tw/marmot.html" target="_blank">
+        <polystring>-223.07/45.87|-248.89/55.36|-255.18/36.21|-227.26/28.94|-226.57/29.78</polystring>
+      </polyhotspot>
+      <polyhotspot description="" title="LL Bean網站" id="Poly10" url="https://global.llbean.com/" target="_blank">
+        <polystring>-256.08/32.42|-287.81/31.85|-286/7.4|-257.8/7.06|-257.8/7.06|-255.82/7.88</polystring>
+      </polyhotspot>
+      <polyhotspot description="" title="MEI網站" id="Poly11" url="https://mei-huntingtonbeach.com/about" target="_blank">
+        <polystring>-227.44/16.1|-248.62/23.91|-255.12/-7.53|-226.9/-6.47</polystring>
+      </polyhotspot>
+      <hotspot pan="-194.65" skinid="ht_node" description="" tilt="-18.44" title="走近看" id="Point01" url="{node5}" target=""/>
+      <hotspot pan="-105.07" skinid="ht_info" description="展。現 &lt;existibion>是台北商業大學二技部，資訊管理系第110203組的專題作品，因應展覽業或商家近年來受到疫情之影響，實體展示方式被迫停辦或是縮小規模，而開發出的虛擬展覽之系統。&#xa;我們的特色為，透過展覽廠商提供的照片建置出3D模型用以補足現行2D導覽之不足... ..." tilt="3.85" title="關於 existibition" id="Point03" url="" target=""/>
+      <hotspot pan="-311.78" skinid="ht_node" description="" tilt="36.97" title="前往體育用品展" id="Point04" url="{node1}" target=""/>
+      <hotspot pan="-146.01" fov="10" skinid="ht_info" description="&lt;iframe src=&quot;https://app.modelo.io/embedded/1420449216499060736?viewport=false&amp;autoplay=false&amp;autorotate=false&amp;hideTools=false&amp;showBIM=false&amp;showBBoxSize=false&amp;showKooRender=false&amp;showSettings=false&quot; style=&quot;width:100%;height:100%;&quot; frameborder=&quot;0&quot; mozallowfullscreen webkitallowfullscreen allowfullscreen >&lt;/iframe> " customimagewidth="29" distance3D="165.736" customimage="media/title-shape-removebg-preview.png" tilt="-1.15" customimageheight="29" title="３Ｄ模型" id="Point05" use3D="0" url="" target=""/>
+      <hotspot pan="-138.11" fov="10" skinid="ht_info" description="&lt;iframe src='https://gfycat.com/ifr/DaringMeanGoshawk' frameborder='0' scrolling='no' allowfullscreen width='390' height='300'>&lt;/iframe>&#xa;&#xa;&#xa;2020 08 月號 MONO文具品牌特刊&#xa;発売日：2020年8月31日&#xa;価格：2,079円(税込)&#xa;判型：B5&#xa;判ページ数：16P&#xa;ISBN：978-4-299-00801-5&#xa;雑誌：66672-64&#xa;&#xa;&#xa;變身為大容量收納包的MONO橡皮擦&#xa;在1碗蕎麥麵約日幣50圓的1963年，1支日幣60圓的最高級鉛筆「MONO」正式登場。源自於希臘語「MONOS」的「MONO」，意思是「唯一的」，目標是打造獨一無二的文具品牌「MONO」也就此誕生，從鉛筆起家的「MONO」，之後更陸續推出各式各樣的文具，其中最令人印象深刻的就是藍白黑三色的MONO橡皮擦。1969年登場到現在已經超過半世紀的MONO橡皮擦，從推出到現在雖然設計上有稍微改變，但顏色一直都是經典的藍白黑三色，為喜歡MONO文具的你，本誌除了要介紹MONO品牌誕生的軌跡、MONO橡皮擦設計的變遷以及蜻蜓牌鉛筆的歷史之外，還特別要附上MONO橡皮擦圖案收納包。&#xa;附加商品說明：&#xa;1969年登場後一直深受大家喜愛的MONO橡皮擦，本誌特別要附上經典藍白黑三色的MONO橡皮擦圖案收納包，除了可以收納文具之外，還可以依照需求收納彩妝用具、3C產品、旅行用品…等各種小物。（尺寸約為長11×寬21×高5.5㎝，材質為聚酯纖維、PVC、合金）" customimagewidth="18" distance3D="102.87" customimage="media/3969784-200-removebg-preview.png" tilt="-0.87" customimageheight="18" title="mono橡皮擦收納袋" id="Point06" use3D="0" url="" target=""/>
+      <hotspot pan="-152.32" fov="10" skinid="ht_info" description="&lt;iframe src='https://gfycat.com/ifr/InferiorNewAntelope' frameborder='0' scrolling='no' allowfullscreen width='390' height='300'>&lt;/iframe>&#xa;&#xa;2019 2月號 MonoMax雜誌&#xa;906円（税込）&#xa;発売日：2019年01月09日 &#xa;出版社：宝島社 &#xa;サイズ：A4変 &#xa;JAN：4910187490296 &#xa;&#xa;2018年優秀商品大賞1975年在美國成立的包包品牌TUMI，以軍用級彈道尼龍布聞名的TUMI，除了輕量且耐用之外，優秀的收納功能也是TUMI受歡迎的原因之一，就連美國前總統歐巴馬也是TUMI的愛用者。由評審來選出優秀包包的包包大賞，今年又再次登場，而這一次獲得最優秀賞的就是TUMI的ALPHA BRAVO「DAVIS」的後背包。可以收納A4尺寸文件以及筆電或平板的2層式收納空間，還有可以收納手機、信用卡、墨鏡…等小物的收納格，出差時還可以套進行李箱的拉桿上，除了TUMI的後背包之外，評審還選出許多優秀的包包。除了每年慣例的包包大賞之外，本期還要收錄2018年文具大賞，在2018年推出的所有文具中，本期將要請到專家們來為大家選出最優秀的文具，另外，還要請到家電專家，以提升家事效率為主題來選出2018年縮短時間的優秀家電。內容簡介：P.129－【特別附錄】Marmot灰色格菱紋腰包 可以搭配各種造型的灰色格菱紋，再加上可以同時放進500ml寶特瓶與長夾的超大容量，可以掛在腰間、揹在肩上或者是側背，本期特別要附上Marmot的灰色格菱紋腰包。（尺寸約為長15×寬20×高9㎝，主要材質為聚酯纖維）" customimagewidth="18" distance3D="102.87" customimage="media/3969784-200-removebg-preview.png" tilt="-0.63" customimageheight="18" title="marmot灰色腰包" id="Point06" use3D="0" url="" target=""/>
+      <hotspot pan="-158.23" fov="10" skinid="ht_info" description="&lt;iframe src=&quot;https://app.modelo.io/embedded/1420454040195112960?viewport=false&amp;autoplay=false&amp;autorotate=false&amp;hideTools=false&amp;showBIM=false&amp;showBBoxSize=false&amp;showKooRender=false&amp;showSettings=false&quot; style=&quot;width:100%;height:100%;&quot; frameborder=&quot;0&quot; mozallowfullscreen webkitallowfullscreen allowfullscreen >&lt;/iframe> " customimagewidth="29" distance3D="165.736" customimage="media/title-shape-removebg-preview.png" tilt="-1.07" customimageheight="29" title="３Ｄ模型" id="Point05" use3D="0" url="" target=""/>
+      <hotspot pan="-160.92" fov="10" skinid="ht_info" description="&lt;iframe src=&quot;https://app.modelo.io/embedded/1420455674443763712?viewport=false&amp;autoplay=false&amp;autorotate=false&amp;hideTools=false&amp;showBIM=false&amp;showBBoxSize=false&amp;showKooRender=false&amp;showSettings=false&quot; style=&quot;width:100%;height:100%;&quot; frameborder=&quot;0&quot; mozallowfullscreen webkitallowfullscreen allowfullscreen >&lt;/iframe>" customimagewidth="29" distance3D="165.736" customimage="media/title-shape-removebg-preview.png" tilt="14.28" customimageheight="29" title="３Ｄ模型" id="Point05" use3D="0" url="" target=""/>
+      <hotspot pan="-170.78" fov="10" skinid="ht_info" description=" &lt;iframe src=&quot;https://app.modelo.io/embedded/1420586103833436160?viewport=false&amp;autoplay=false&amp;autorotate=false&amp;hideTools=false&amp;showBIM=false&amp;showBBoxSize=false&amp;showKooRender=false&amp;showSettings=false&quot; style=&quot;width:100%;height:100%;&quot; frameborder=&quot;0&quot; mozallowfullscreen webkitallowfullscreen allowfullscreen >&lt;/iframe>" customimagewidth="29" distance3D="165.736" customimage="media/title-shape-removebg-preview.png" tilt="11.16" customimageheight="29" title="３Ｄ模型" id="Point05" use3D="0" url="" target=""/>
+      <hotspot pan="-178.26" fov="10" skinid="ht_info" description=" &lt;iframe src=&quot;https://app.modelo.io/embedded/1420588069363982336?viewport=false&amp;autoplay=false&amp;autorotate=false&amp;hideTools=false&amp;showBIM=false&amp;showBBoxSize=false&amp;showKooRender=false&amp;showSettings=false&quot; style=&quot;width:100%;height:100%;&quot; frameborder=&quot;0&quot; mozallowfullscreen webkitallowfullscreen allowfullscreen >&lt;/iframe>" customimagewidth="29" distance3D="165.736" customimage="media/title-shape-removebg-preview.png" tilt="9.62" customimageheight="29" title="３Ｄ模型" id="Point05" use3D="0" url="" target=""/>
+      <hotspot pan="-189.37" fov="10" skinid="ht_info" description="&lt;iframe src=&quot;https://app.modelo.io/embedded/1420589681059860480?viewport=false&amp;autoplay=false&amp;autorotate=false&amp;hideTools=false&amp;showBIM=false&amp;showBBoxSize=false&amp;showKooRender=false&amp;showSettings=false&quot; style=&quot;width:100%;height:100%;&quot; frameborder=&quot;0&quot; mozallowfullscreen webkitallowfullscreen allowfullscreen >&lt;/iframe>" customimagewidth="29" distance3D="165.736" customimage="media/title-shape-removebg-preview.png" tilt="-1.14" customimageheight="29" title="３Ｄ模型" id="Point05" use3D="0" url="" target=""/>
+      <hotspot pan="-155.23" fov="10" skinid="ht_info" description="&lt;iframe src='https://gfycat.com/ifr/DaringMeanGoshawk' frameborder='0' scrolling='no' allowfullscreen width='390' height='300'>&lt;/iframe>&#xa;&#xa;2020 8月號 MonoMax雜誌&#xa;特別定価： 990円(税込)&#xa; 2020年7月9日 (木) 発売&#xa; JANコード：4910187490807&#xa;&#xa;快樂生活好物大賞 &#xa;夏天本是外出旅遊、活動滿檔的熱鬧季節，可是全球疫情尚未完全平息，還是有一些需要遵守的防疫措施。儘管如此還是想好好過日子！MONO MAX就以自家為圓心，規劃出半徑三公里之內的遊樂提案，覺得出去玩不太安心的各位，不妨參考看看吧。 首先分享適合家裡、庭院、車裡、鄰近公園的遊樂情境，嚴選各種能讓場景更有說服力的實用設計，也要提升遠距工作的效率和舒適度，還有夏服穿搭、趣味DIY、慢跑用品、人氣店家食譜、宅配美食…等相關介紹，讓大家不用出遠門，也能發現生活樂趣。&#xa;&#xa;附加商品說明：&#xa;附贈Marmot特製的保冷袋背包，卡其色調耐看又好搭，有著可手提也可後背的大容量，兩側還有網袋口袋，是外出購物、戶外野餐的實用好幫手。（尺寸：寬34、高39.5、底寬12公分，肩帶最長78公分。材質：聚酯纖維貼PVC、聚酯纖維。）" customimagewidth="18" distance3D="102.87" customimage="media/3969784-200-removebg-preview.png" tilt="15.21" customimageheight="18" title="marmot棕色保冷袋" id="Point06" use3D="0" url="" target=""/>
+      <hotspot pan="-167.09" fov="10" skinid="ht_info" description="&lt;iframe src='https://gfycat.com/ifr/ShortWarmheartedGlowworm' frameborder='0' scrolling='no' allowfullscreen width='390' height='300'>&lt;/iframe>&#xa;&#xa;2020 4月號 MonoMax雜誌&#xa;定価： 980円(税込) &#xa;2020年3月13日 (金) 発売 &#xa;JANコード：4910187490401&#xa;&#xa;MONO MAX錢包大賞 &#xa;長期關注生活設計趨勢的MONO MAX發現，隨著電子錢包的興起，實體錢包開始走上兩大極端，一是輕便至上的迷你款式，另一個是注重收納的大容量。所以本期就根據專家的意見，評選出最新錢包大賞，向各位推薦設計最洗鍊，用起來最順手的優質皮夾。 除了新錢包，2020年新手錶也是眾人討論的話題之一。大家現在想要什麼樣的款式呢？哪個品牌的新作最令你好奇？介紹這一季最夯的熱門新錶款。再鎖定適合旅行的名品新包包，兼顧機能性和品味印象的商務服飾…等，並附贈Marmot特製的保冷袋。&#xa;附加商品說明：&#xa;在適合外出野餐的春季，為大家附贈Marmot特製的保冷袋。明亮配色看起來相當清爽，擁有便利的外口袋、可放下5瓶2L寶特瓶的大容量，還有安心的袋口拉練，當作購物袋使用也很不錯哦。（尺寸：袋口寬47.5、下寬33、高37、底寬14.5公分。材質：聚酯纖維貼PVC、聚酯纖維。）" customimagewidth="18" distance3D="102.87" customimage="media/3969784-200-removebg-preview.png" tilt="11.45" customimageheight="18" title="marmot米白色保冷袋" id="Point06" use3D="0" url="" target=""/>
+      <hotspot pan="-174.99" fov="10" skinid="ht_info" description="&lt;iframe src='https://gfycat.com/ifr/GrandioseThoroughCurassow' frameborder='0' scrolling='no' allowfullscreen width='390' height='300'>&lt;/iframe>&#xa;&#xa;2018 12月號 MonoMax雜誌&#xa;990円（税込）&#xa;発売日：2018年11月09日 &#xa;出版社：宝島社 &#xa;サイズ：A4変 &#xa; JAN：4910187491286&#xa;&#xa;最強戶外用品&amp;超實用迷你錢包很多人覺得夏天才是從事戶外活動的季節，但，對不少人來說，他們更享受在寒冷冬天上山下海！久違的冬天終於到來，今回MONO MAX特別企劃帶來冬天用的最強戶外用品，雖然說是戶外用品，但我們還要將它結合居家生活、街頭時尚，讓它不只能用在戶外，日常也能派上用場。首先看到的就是人氣NO.1的「THE NORTH FACE」，除了揭開SUMMIT系列的開發秘辛，連同採用的填充物和防水加工一併解說。另推薦室內×戶外通用的收納設計好物、提升廚房做菜效率的戶外烹調道具和街頭×戶外兩用的時尚配件，並介紹麻雀雖小、五臟俱全的超輕量錢包和人氣品牌傑作腕錶特選。隨刊贈送歷史超過百年的美國戶外品牌「L.L.Bean」獨家特製刷毛布托特包，A4尺寸輕鬆收納雜誌、隨身物品，外側還貼心附一拉鍊口袋，可放手機、臨時拿取的小東西，提袋加長設計就算秋冬穿得比較厚重也能肩背沒有問題。P.137【獨家附錄】L.L.Bean刷毛布托特包（下圖）從美國發跡至今超過百年歷史、海內外都有死忠粉絲的戶外品牌L.L.Bean，這次和本誌合作獨家推出刷毛布托特包，A4尺寸輕鬆收納雜誌、隨身物品，外側貼心附一拉鍊口袋，可放手機、臨時拿取的小東西，提袋加長就算秋冬穿的比較厚重也能肩背，簡單配色加上正面白底LOGO織標設計，男女生背都好看。(尺寸:上寬39×下寬30×高38×底深10cm)" customimagewidth="18" distance3D="102.87" customimage="media/3969784-200-removebg-preview.png" tilt="9.8" customimageheight="18" title="LL Bean 刷毛托特包" id="Point06" use3D="0" url="" target=""/>
+      <hotspot pan="-184.54" fov="10" skinid="ht_info" description="&lt;iframe src='https://gfycat.com/ifr/AngelicHopefulDodobird' frameborder='0' scrolling='no' allowfullscreen width='390' height='300'>&lt;/iframe>&#xa;&#xa;ㄟ斗 尷尬了...我做到現在才發現他是日本職棒北海道火腿跟MEI聯名出的包包，好像跟寶島社沒有關係QAQ" customimagewidth="18" distance3D="102.87" customimage="media/3969784-200-removebg-preview.png" tilt="-0.8" customimageheight="18" title="MEI帆布手拿包" id="Point06" use3D="0" url="" target=""/>
+      <hotspot pan="-47" skinid="ht_info" description="&lt;iframe src='https://gfycat.com/ifr/PowerlessGrandElephant' frameborder='0' scrolling='no' allowfullscreen width='390' height='300'>&lt;/iframe>&#xa;&#xa;日本寶島社雜誌是全日銷售第一名的雜誌品牌，旗下有多個雜誌連載中，包含女性時尚品牌mini、InRed、steady，男性時尚品牌monomax、SPRiNG等，其主要銷售手法為，以400塊上下到特定雜誌千元左右，買雜誌就附贈品牌聯名附錄品，在日本深受消費族群青睞，因其可以以較低價格就能買到上千元的時尚大牌聯名生產的物品，像是包包、化妝品、家用品、文具小物等，其中又以包包為多。&#xa;在台灣，寶島社的雜誌也受到某些客群的喜愛，誠品以及金石堂等也都有販售，有些人甚至會每一期都購買雜誌來蒐集附錄包，甚至網路上不乏販售雜誌附錄包的賣家。&#xa;本次展覽蒐羅了2018年到2020年間，男性雜誌MonoMax所發行過的雜誌附錄包精選，包含北美知名戶外用品品牌marmot以及LL Bean與日本自有品牌MEI所聯名生產的包款，每款包包均有標示出雜誌的刊號以及售價與簡介，並有以實體包包建置的３Ｄ模型可供查閱與查看細節設計介紹。" tilt="10.6" title="展覽簡介" id="Point02" url="" target=""/>
+      <hotspot pan="-251.7" skinid="ht_url" description="" tilt="-12.49" title="" id="Point07" url="" target="_blank"/>
+    </hotspots>
+    <media>
+      <image pan="-23.260" rotz="5.000" handcursor="0" width="1755" fov="83.250" stretch="1.000" roty="-4.000" height="1242" tilt="35.360" id="Element01" rotx="34.000" clickmode="0">
+        <source url="media/展覽海報.jpg"/>
+      </image>
+      <image pan="-72.250" rotz="15.000" handcursor="1" width="495" fov="11.100" stretch="1.000" roty="-29.000" height="504" tilt="23.500" id="Element02" rotx="21.000" clickmode="0">
+        <source url="media/163-1636444_red-web-icon-png-transparent-png-removebg-preview.png"/>
+      </image>
+      <image pan="-236.970" rotz="-31.000" handcursor="0" width="500" fov="32.250" stretch="1.000" roty="28.000" height="500" tilt="45.120" id="Element01" rotx="47.000" clickmode="0">
+        <source url="media/2c02cfc2c08ec0bfc2d689c93d1db64a-removebg-preview.png"/>
+      </image>
+      <image pan="-268.930" rotz="-2.000" handcursor="0" width="284" fov="37.200" stretch="1.000" roty="12.000" height="137" tilt="23.630" id="Element04" rotx="25.000" clickmode="0">
+        <source url="media/22de706008f353ea04ebb0c4ec1ba8f4-removebg-preview.png"/>
+      </image>
+      <image pan="-239.200" rotz="-2.000" handcursor="0" width="408" fov="23.250" stretch="1.000" roty="36.000" height="612" tilt="6.040" id="Element05" rotx="-3.000" clickmode="0">
+        <source url="media/MEILOGO-removebg-preview.png"/>
+      </image>
+      <image pan="-105.420" rotz="0.000" handcursor="0" width="925" fov="44.400" stretch="1.000" roty="0.000" height="270" tilt="13.420" id="Element06" rotx="10.000" clickmode="0">
+        <source url="media/logo_0-removebg-preview.png"/>
+      </image>
+      <sound field="90.000" startmutedmobile="0" pan="-15.370" nodechangekeep="0" ambientlevel="0.000" loop="0" mode="3" level="1.000" tilt="-17.470" id="Element03" pansize="10.000" tiltsize="10.000">
+        <source url="media/みっちりねこマーチ - MitchiriNeko March - Cute cat characters in a marching band!.mp3"/>
+      </sound>
+    </media>
+    <transition zoomout="0" zoomin="0" enabled="1" blendtime="1" zoomfov="20" blendcolor="0x000000" softedge="0" zoomspeed="2" zoomoutpause="1" type="crossdissolve"/>
+    <animation animsequence="Animation01" useinautorotation="1" syncanimationwithvideo="0"/>
+    <control invertcontrol="1" lockedmouse="0" contextprojections="0" invertwheel="0" contextfullscreen="1" speedwheel="1" dblclickfullscreen="0" sensitivity="11" lockedkeyboard="0" simulatemass="1" hideabout="0" lockedwheel="0" rubberband="0" lockedkeyboardzoom="0"/>
+  </panorama>
+  <panorama id="node5">
+    <input width="1024" levelbias="0.400" leveltileurl="tiles/node5/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingpitch="0" overlap="1" height="1024" leveltilesize="510" levelbiashidpi="1.000" levelingroll="0">
+      <level preload="0" width="1024" height="1024" predecode="0"/>
+      <level preload="0" width="512" height="512" predecode="0"/>
+      <level preload="1" width="256" height="256" predecode="1"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="0" fovmode="0">
+      <start pan="0" fov="70" projection="4" tilt="0"/>
+      <flyin pan="0" fov="170" projection="9" tilt="-90"/>
+      <min fovpixel="2" pan="0" tilt="-90"/>
+      <max fovfisheye="360" pan="360" fovstereographic="270" fov="120" tilt="90" scaletofit="1"/>
+    </view>
+    <userdata customnodeid="" latitude="" nodeid="node5" author="" datetime="2021/7/27 上午 02:39" source="" description="" comment="" info="" tags="Downloads" longitude="" heading="0" title="" copyright=""/>
+    <hotspots width="120" height="0" wordwrap="1">
+      <label background="1" width="120" borderalpha="1" border="1" textcolor="0x000000" enabled="1" bordercolor="0x000000" textalpha="1" height="0" backgroundalpha="1" borderradius="1" wordwrap="1" backgroundcolor="0xffffff"/>
+      <polystyle handcursor="1" borderalpha="1" bordercolor="0x0000ff" mode="0" backgroundalpha="0.25098" backgroundcolor="0x0000ff"/>
+      <hotspot pan="-37.82" skinid="ht_node" description="" tilt="-18.93" title="往回走" id="Point01" url="{node3}" target=""/>
+      <hotspot pan="-93.92" fov="10" skinid="ht_info" description="&lt;iframe src='https://gfycat.com/ifr/ClassicJaggedArgentinehornedfrog' frameborder='0' scrolling='no' allowfullscreen width='390' height='300'>&lt;/iframe>&#xa;&#xa;2020 08 月號 MONO文具品牌特刊&#xa;発売日：2020年8月31日&#xa;価格：2,079円(税込)&#xa;判型：B5&#xa;判ページ数：16P&#xa;ISBN：978-4-299-00801-5&#xa;雑誌：66672-64&#xa;&#xa;&#xa;變身為大容量收納包的MONO橡皮擦&#xa;在1碗蕎麥麵約日幣50圓的1963年，1支日幣60圓的最高級鉛筆「MONO」正式登場。源自於希臘語「MONOS」的「MONO」，意思是「唯一的」，目標是打造獨一無二的文具品牌「MONO」也就此誕生，從鉛筆起家的「MONO」，之後更陸續推出各式各樣的文具，其中最令人印象深刻的就是藍白黑三色的MONO橡皮擦。1969年登場到現在已經超過半世紀的MONO橡皮擦，從推出到現在雖然設計上有稍微改變，但顏色一直都是經典的藍白黑三色，為喜歡MONO文具的你，本誌除了要介紹MONO品牌誕生的軌跡、MONO橡皮擦設計的變遷以及蜻蜓牌鉛筆的歷史之外，還特別要附上MONO橡皮擦圖案收納包。&#xa;附加商品說明：&#xa;1969年登場後一直深受大家喜愛的MONO橡皮擦，本誌特別要附上經典藍白黑三色的MONO橡皮擦圖案收納包，除了可以收納文具之外，還可以依照需求收納彩妝用具、3C產品、旅行用品…等各種小物。（尺寸約為長11×寬21×高5.5㎝，材質為聚酯纖維、PVC、合金）&#xa;" customimagewidth="18" distance3D="102.87" customimage="media/3969784-200-removebg-preview.png" tilt="-0.65" customimageheight="18" title="mono橡皮擦收納袋" id="Point06" use3D="0" url="" target=""/>
+      <hotspot pan="-103.68" fov="10" skinid="ht_info" description="&lt;iframe src=&quot;https://app.modelo.io/embedded/1420449216499060736?viewport=false&amp;autoplay=false&amp;autorotate=false&amp;hideTools=false&amp;showBIM=false&amp;showBBoxSize=false&amp;showKooRender=false&amp;showSettings=false&quot; style=&quot;width:100%;height:100%;&quot; frameborder=&quot;0&quot; mozallowfullscreen webkitallowfullscreen allowfullscreen >&lt;/iframe> " customimagewidth="29" distance3D="165.736" customimage="media/title-shape-removebg-preview.png" tilt="-0.94" customimageheight="29" title="３Ｄ模型" id="Point05" use3D="0" url="" target=""/>
+      <hotspot pan="-118.72" fov="10" skinid="ht_info" description="&lt;iframe src='https://gfycat.com/ifr/InferiorNewAntelope' frameborder='0' scrolling='no' allowfullscreen width='390' height='300'>&lt;/iframe>&#xa;&#xa;2019 2月號 MonoMax雜誌&#xa;906円（税込）&#xa;発売日：2019年01月09日 &#xa;出版社：宝島社 &#xa;サイズ：A4変 &#xa;JAN：4910187490296 &#xa;&#xa;2018年優秀商品大賞1975年在美國成立的包包品牌TUMI，以軍用級彈道尼龍布聞名的TUMI，除了輕量且耐用之外，優秀的收納功能也是TUMI受歡迎的原因之一，就連美國前總統歐巴馬也是TUMI的愛用者。由評審來選出優秀包包的包包大賞，今年又再次登場，而這一次獲得最優秀賞的就是TUMI的ALPHA BRAVO「DAVIS」的後背包。可以收納A4尺寸文件以及筆電或平板的2層式收納空間，還有可以收納手機、信用卡、墨鏡…等小物的收納格，出差時還可以套進行李箱的拉桿上，除了TUMI的後背包之外，評審還選出許多優秀的包包。除了每年慣例的包包大賞之外，本期還要收錄2018年文具大賞，在2018年推出的所有文具中，本期將要請到專家們來為大家選出最優秀的文具，另外，還要請到家電專家，以提升家事效率為主題來選出2018年縮短時間的優秀家電。內容簡介：P.129－【特別附錄】Marmot灰色格菱紋腰包 可以搭配各種造型的灰色格菱紋，再加上可以同時放進500ml寶特瓶與長夾的超大容量，可以掛在腰間、揹在肩上或者是側背，本期特別要附上Marmot的灰色格菱紋腰包。（尺寸約為長15×寬20×高9㎝，主要材質為聚酯纖維）" customimagewidth="18" distance3D="102.87" customimage="media/3969784-200-removebg-preview.png" tilt="-0.73" customimageheight="18" title="marmot灰色腰包" id="Point06" use3D="0" url="" target=""/>
+      <hotspot pan="-126.84" fov="10" skinid="ht_info" description="&lt;iframe src=&quot;https://app.modelo.io/embedded/1420454040195112960?viewport=false&amp;autoplay=false&amp;autorotate=false&amp;hideTools=false&amp;showBIM=false&amp;showBBoxSize=false&amp;showKooRender=false&amp;showSettings=false&quot; style=&quot;width:100%;height:100%;&quot; frameborder=&quot;0&quot; mozallowfullscreen webkitallowfullscreen allowfullscreen >&lt;/iframe> " customimagewidth="29" distance3D="165.736" customimage="media/title-shape-removebg-preview.png" tilt="-1.82" customimageheight="29" title="３Ｄ模型" id="Point05" use3D="0" url="" target=""/>
+      <hotspot pan="-138.32" fov="10" skinid="ht_info" description="&lt;iframe src='https://gfycat.com/ifr/DaringMeanGoshawk' frameborder='0' scrolling='no' allowfullscreen width='390' height='300'>&lt;/iframe>&#xa;&#xa;2020 8月號 MonoMax雜誌&#xa;特別定価： 990円(税込)&#xa; 2020年7月9日 (木) 発売&#xa; JANコード：4910187490807&#xa;&#xa;快樂生活好物大賞 &#xa;夏天本是外出旅遊、活動滿檔的熱鬧季節，可是全球疫情尚未完全平息，還是有一些需要遵守的防疫措施。儘管如此還是想好好過日子！MONO MAX就以自家為圓心，規劃出半徑三公里之內的遊樂提案，覺得出去玩不太安心的各位，不妨參考看看吧。 首先分享適合家裡、庭院、車裡、鄰近公園的遊樂情境，嚴選各種能讓場景更有說服力的實用設計，也要提升遠距工作的效率和舒適度，還有夏服穿搭、趣味DIY、慢跑用品、人氣店家食譜、宅配美食…等相關介紹，讓大家不用出遠門，也能發現生活樂趣。&#xa;&#xa;附加商品說明：&#xa;附贈Marmot特製的保冷袋背包，卡其色調耐看又好搭，有著可手提也可後背的大容量，兩側還有網袋口袋，是外出購物、戶外野餐的實用好幫手。（尺寸：寬34、高39.5、底寬12公分，肩帶最長78公分。材質：聚酯纖維貼PVC、聚酯纖維。）&#xa;&#xa;&#xa;" customimagewidth="18" distance3D="102.87" customimage="media/3969784-200-removebg-preview.png" tilt="23.42" customimageheight="18" title="marmot棕色保冷袋" id="Point06" use3D="0" url="" target=""/>
+      <hotspot pan="-146.67" fov="10" skinid="ht_info" description="&lt;iframe src=&quot;https://app.modelo.io/embedded/1420455674443763712?viewport=false&amp;autoplay=false&amp;autorotate=false&amp;hideTools=false&amp;showBIM=false&amp;showBBoxSize=false&amp;showKooRender=false&amp;showSettings=false&quot; style=&quot;width:100%;height:100%;&quot; frameborder=&quot;0&quot; mozallowfullscreen webkitallowfullscreen allowfullscreen >&lt;/iframe>" customimagewidth="29" distance3D="165.736" customimage="media/title-shape-removebg-preview.png" tilt="24.01" customimageheight="29" title="３Ｄ模型" id="Point05" use3D="0" url="" target=""/>
+      <hotspot pan="-159.46" fov="10" skinid="ht_info" description="&lt;iframe src='https://gfycat.com/ifr/ShortWarmheartedGlowworm' frameborder='0' scrolling='no' allowfullscreen width='390' height='300'>&lt;/iframe>&#xa;&#xa;2020 4月號 MonoMax雜誌&#xa;定価： 980円(税込) &#xa;2020年3月13日 (金) 発売 &#xa;JANコード：4910187490401&#xa;&#xa;MONO MAX錢包大賞 &#xa;長期關注生活設計趨勢的MONO MAX發現，隨著電子錢包的興起，實體錢包開始走上兩大極端，一是輕便至上的迷你款式，另一個是注重收納的大容量。所以本期就根據專家的意見，評選出最新錢包大賞，向各位推薦設計最洗鍊，用起來最順手的優質皮夾。 除了新錢包，2020年新手錶也是眾人討論的話題之一。大家現在想要什麼樣的款式呢？哪個品牌的新作最令你好奇？介紹這一季最夯的熱門新錶款。再鎖定適合旅行的名品新包包，兼顧機能性和品味印象的商務服飾…等，並附贈Marmot特製的保冷袋。&#xa;附加商品說明：&#xa;在適合外出野餐的春季，為大家附贈Marmot特製的保冷袋。明亮配色看起來相當清爽，擁有便利的外口袋、可放下5瓶2L寶特瓶的大容量，還有安心的袋口拉練，當作購物袋使用也很不錯哦。（尺寸：袋口寬47.5、下寬33、高37、底寬14.5公分。材質：聚酯纖維貼PVC、聚酯纖維。）&#xa;" customimagewidth="17" distance3D="97.1554" customimage="media/3969784-200-removebg-preview.png" tilt="20.47" customimageheight="17" title="marmot米白色保冷袋" id="Point06" use3D="0" url="" target=""/>
+      <hotspot pan="-169.66" fov="10" skinid="ht_info" description=" &lt;iframe src=&quot;https://app.modelo.io/embedded/1420586103833436160?viewport=false&amp;autoplay=false&amp;autorotate=false&amp;hideTools=false&amp;showBIM=false&amp;showBBoxSize=false&amp;showKooRender=false&amp;showSettings=false&quot; style=&quot;width:100%;height:100%;&quot; frameborder=&quot;0&quot; mozallowfullscreen webkitallowfullscreen allowfullscreen >&lt;/iframe>" customimagewidth="29" distance3D="165.736" customimage="media/title-shape-removebg-preview.png" tilt="20.97" customimageheight="29" title="３Ｄ模型" id="Point05" use3D="0" url="" target=""/>
+      <hotspot pan="-180.4" fov="10" skinid="ht_info" description="&lt;iframe src='https://gfycat.com/ifr/GrandioseThoroughCurassow' frameborder='0' scrolling='no' allowfullscreen width='390' height='300'>&lt;/iframe>&#xa;&#xa;2018 12月號 MonoMax雜誌&#xa;990円（税込）&#xa;発売日：2018年11月09日 &#xa;出版社：宝島社 &#xa;サイズ：A4変 &#xa; JAN：4910187491286&#xa;&#xa;最強戶外用品&amp;超實用迷你錢包很多人覺得夏天才是從事戶外活動的季節，但，對不少人來說，他們更享受在寒冷冬天上山下海！久違的冬天終於到來，今回MONO MAX特別企劃帶來冬天用的最強戶外用品，雖然說是戶外用品，但我們還要將它結合居家生活、街頭時尚，讓它不只能用在戶外，日常也能派上用場。首先看到的就是人氣NO.1的「THE NORTH FACE」，除了揭開SUMMIT系列的開發秘辛，連同採用的填充物和防水加工一併解說。另推薦室內×戶外通用的收納設計好物、提升廚房做菜效率的戶外烹調道具和街頭×戶外兩用的時尚配件，並介紹麻雀雖小、五臟俱全的超輕量錢包和人氣品牌傑作腕錶特選。隨刊贈送歷史超過百年的美國戶外品牌「L.L.Bean」獨家特製刷毛布托特包，A4尺寸輕鬆收納雜誌、隨身物品，外側還貼心附一拉鍊口袋，可放手機、臨時拿取的小東西，提袋加長設計就算秋冬穿得比較厚重也能肩背沒有問題。P.137【獨家附錄】L.L.Bean刷毛布托特包（下圖）從美國發跡至今超過百年歷史、海內外都有死忠粉絲的戶外品牌L.L.Bean，這次和本誌合作獨家推出刷毛布托特包，A4尺寸輕鬆收納雜誌、隨身物品，外側貼心附一拉鍊口袋，可放手機、臨時拿取的小東西，提袋加長就算秋冬穿的比較厚重也能肩背，簡單配色加上正面白底LOGO織標設計，男女生背都好看。(尺寸:上寬39×下寬30×高38×底深10cm)&#xa;" customimagewidth="18" distance3D="102.87" customimage="media/3969784-200-removebg-preview.png" tilt="18.05" customimageheight="18" title="LL Bean 刷毛托特包" id="Point06" use3D="0" url="" target=""/>
+      <hotspot pan="-186.16" fov="10" skinid="ht_info" description=" &lt;iframe src=&quot;https://app.modelo.io/embedded/1420588069363982336?viewport=false&amp;autoplay=false&amp;autorotate=false&amp;hideTools=false&amp;showBIM=false&amp;showBBoxSize=false&amp;showKooRender=false&amp;showSettings=false&quot; style=&quot;width:100%;height:100%;&quot; frameborder=&quot;0&quot; mozallowfullscreen webkitallowfullscreen allowfullscreen >&lt;/iframe>" customimagewidth="29" distance3D="165.736" customimage="media/title-shape-removebg-preview.png" tilt="17.89" customimageheight="29" title="３Ｄ模型" id="Point05" use3D="0" url="" target=""/>
+      <hotspot pan="-195.83" fov="10" skinid="ht_info" description="&lt;iframe src='https://gfycat.com/ifr/AngelicHopefulDodobird' frameborder='0' scrolling='no' allowfullscreen width='390' height='300'>&lt;/iframe>&#xa;&#xa;ㄟ斗 尷尬了...我做到現在才發現他是日本職棒北海道火腿跟MEI聯名出的包包，好像跟寶島社沒有關係QAQ" customimagewidth="18" distance3D="102.87" customimage="media/3969784-200-removebg-preview.png" tilt="-0.96" customimageheight="18" title="MEI帆布手拿包" id="Point06" use3D="0" url="" target=""/>
+      <hotspot pan="-206.48" fov="10" skinid="ht_info" description="&lt;iframe src=&quot;https://app.modelo.io/embedded/1420589681059860480?viewport=false&amp;autoplay=false&amp;autorotate=false&amp;hideTools=false&amp;showBIM=false&amp;showBBoxSize=false&amp;showKooRender=false&amp;showSettings=false&quot; style=&quot;width:100%;height:100%;&quot; frameborder=&quot;0&quot; mozallowfullscreen webkitallowfullscreen allowfullscreen >&lt;/iframe>" customimagewidth="29" distance3D="165.736" customimage="media/title-shape-removebg-preview.png" tilt="-1.44" customimageheight="29" title="３Ｄ模型" id="Point05" use3D="0" url="" target=""/>
+      <hotspot pan="-109.86" skinid="ht_info" description="展。現 &lt;existibion>是台北商業大學二技部，資訊管理系第110203組的專題作品，因應展覽業或商家近年來受到疫情之影響，實體展示方式被迫停辦或是縮小規模，而開發出的虛擬展覽之系統。&#xa;我們的特色為，透過展覽廠商提供的照片建置出3D模型用以補足現行2D導覽之不足... ..." tilt="23.71" title="關於 existibition" id="Point03" url="" target=""/>
+      <hotspot pan="-62.52" skinid="ht_info" description="&lt;iframe src='https://gfycat.com/ifr/PowerlessGrandElephant' frameborder='0' scrolling='no' allowfullscreen width='390' height='300'>&lt;/iframe>&#xa;&#xa;日本寶島社雜誌是全日銷售第一名的雜誌品牌，旗下有多個雜誌連載中，包含女性時尚品牌mini、InRed、steady，男性時尚品牌monomax、SPRiNG等，其主要銷售手法為，以400塊上下到特定雜誌千元左右，買雜誌就附贈品牌聯名附錄品，在日本深受消費族群青睞，因其可以以較低價格就能買到上千元的時尚大牌聯名生產的物品，像是包包、化妝品、家用品、文具小物等，其中又以包包為多。&#xa;在台灣，寶島社的雜誌也受到某些客群的喜愛，誠品以及金石堂等也都有販售，有些人甚至會每一期都購買雜誌來蒐集附錄包，甚至網路上不乏販售雜誌附錄包的賣家。&#xa;本次展覽蒐羅了2018年到2020年間，男性雜誌MonoMax所發行過的雜誌附錄包精選，包含北美知名戶外用品品牌marmot以及LL Bean與日本自有品牌MEI所聯名生產的包款，每款包包均有標示出雜誌的刊號以及售價與簡介，並有以實體包包建置的３Ｄ模型可供查閱與查看細節設計介紹。" tilt="10.21" title="展覽簡介" id="Point02" url="" target=""/>
+      <polyhotspot description="" title="marmot介紹" id="Poly01" url="&#xa;https://www.oai.com.tw/marmot.html" target="_blank">
+        <polystring>-282.29/61.17|-321.96/62.23|-330.91/38.65|-281.98/40.81</polystring>
+      </polyhotspot>
+      <polyhotspot description="" title="LL Bean 網站" id="Poly02" url="https://global.llbean.com/" target="_blank">
+        <polystring>-325.67/37.6|-345.13/41.23|-359.97/26.26|-353.79/6.24|-324.95/20.24|-324.95/20.24</polystring>
+      </polyhotspot>
+      <polyhotspot description="" title="MEI網站" id="Poly03" url="https://mei-huntingtonbeach.com/about" target="_blank">
+        <polystring>-281.71/21.48|-317.49/27.44|-326.42/-8.03|-278.97/-8.47</polystring>
+      </polyhotspot>
+    </hotspots>
+    <media>
+      <image pan="-304.480" rotz="-4.000" handcursor="0" width="500" fov="38.100" stretch="1.000" roty="-2.000" height="500" tilt="56.410" id="Element01" rotx="52.000" clickmode="0">
+        <source url="media/2c02cfc2c08ec0bfc2d689c93d1db64a-removebg-preview.png"/>
+      </image>
+      <image pan="-304.300" rotz="1.000" handcursor="0" width="408" fov="28.200" stretch="1.000" roty="-3.000" height="612" tilt="9.570" id="Element05" rotx="2.000" clickmode="0">
+        <source url="media/MEILOGO-removebg-preview.png"/>
+      </image>
+      <image pan="-343.440" rotz="16.000" handcursor="0" width="284" fov="38.100" stretch="1.000" roty="-17.000" height="137" tilt="28.050" id="Element04" rotx="-5.000" clickmode="0">
+        <source url="media/22de706008f353ea04ebb0c4ec1ba8f4-removebg-preview.png"/>
+      </image>
+      <image pan="-49.660" rotz="8.000" handcursor="0" width="1755" fov="55.200" stretch="1.000" roty="-12.000" height="1242" tilt="23.690" id="Element02" rotx="23.000" clickmode="0">
+        <source url="media/展覽海報.jpg"/>
+      </image>
+      <image pan="-110.040" rotz="-4.000" handcursor="0" width="925" fov="38.100" stretch="1.000" roty="10.000" height="270" tilt="14.000" id="Element03" rotx="16.000" clickmode="0">
+        <source url="media/logo_0-removebg-preview.png"/>
+      </image>
+      <sound field="90.000" startmutedmobile="0" pan="-181.400" nodechangekeep="0" ambientlevel="0.000" loop="0" mode="3" level="1.000" tilt="-24.960" id="Element06" pansize="10.000" tiltsize="10.000">
+        <source url="media/みっちりねこマーチ - MitchiriNeko March - Cute cat characters in a marching band!.mp3"/>
+      </sound>
+    </media>
+    <transition zoomout="0" zoomin="0" enabled="1" blendtime="1" zoomfov="20" blendcolor="0x000000" softedge="0" zoomspeed="2" zoomoutpause="1" type="crossdissolve"/>
+    <animation animsequence="Animation01" useinautorotation="1" syncanimationwithvideo="0"/>
+    <control invertcontrol="1" lockedmouse="0" contextprojections="0" invertwheel="0" contextfullscreen="1" speedwheel="1" dblclickfullscreen="0" sensitivity="11" lockedkeyboard="0" simulatemass="1" hideabout="0" lockedwheel="0" rubberband="0" lockedkeyboardzoom="0"/>
+  </panorama>
+  <masternode>
+    <userdata customnodeid="" latitude="" nodeid="master" author="" datetime="" source="" description="" comment="" info="" tags="" longitude="" heading="0" title="" copyright=""/>
+  </masternode>
+</tour>
