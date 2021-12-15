@@ -1,20 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="15dp"
     android:requiresFadingEdge="vertical">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/input_pin_footer"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginStart="4dp"
-        android:layout_marginLeft="4dp"
-        android:layout_marginEnd="4dp"
-        android:layout_marginRight="4dp"
-        android:layout_marginBottom="20dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="gone">
+
+        <ImageView
+            android:id="@+id/pinImg"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/button_radius_seventh"
+            android:paddingLeft="50dp"
+            android:paddingTop="50dp"
+            android:paddingRight="50dp"
+            android:paddingBottom="80dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/lock" />
+
+        <TextView
+            android:id="@+id/showName2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/notoseriftc_semibold"
+            android:gravity="center"
+            android:text="輸入PIN碼"
+            android:textColor="@color/fourth"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/showLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -22,22 +66,22 @@
             android:id="@+id/showImg"
             android:layout_width="0dp"
             android:layout_height="0dp"
+            android:background="@drawable/button_radius_black"
             android:scaleType="centerCrop"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintDimensionRatio="1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/hua_3"
-            tools:src="@tools:sample/avatars" />
+            app:srcCompat="@drawable/hua_3" />
+
 
         <TextView
-            android:id="@+id/showName"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:background="#55000000"
+            android:background="@drawable/button_radius_translucent"
+            android:fontFamily="@font/notoseriftc_semibold"
             android:gravity="center"
-            android:text="展覽名稱"
             android:textColor="#FFFFFF"
             android:textSize="20sp"
             android:textStyle="bold"
@@ -47,18 +91,36 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
+            android:id="@+id/showName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/notoseriftc_semibold"
+            android:gravity="center"
+            android:text="展覽名稱"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/showImg"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
             android:id="@+id/showText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/notoseriftc_semibold"
+            android:maxEms="8"
+            android:singleLine="true"
             android:text="展覽簡介十個字…. "
             android:textColor="#FFFFFF"
             android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="@+id/showImg"
             app:layout_constraintEnd_toEndOf="@+id/showImg"
             app:layout_constraintStart_toStartOf="@+id/showImg"
-            android:maxEms="8"
-            android:singleLine="true"
-            android:ellipsize="end"/>
+            app:layout_constraintTop_toBottomOf="@+id/showName" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

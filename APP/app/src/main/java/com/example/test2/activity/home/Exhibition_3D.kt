@@ -12,9 +12,8 @@ class Exhibition_3D : AppCompatActivity() {
         setContentView(R.layout.activity_exhibition_3_d)
         supportActionBar?.hide()
 
-        // 接收home的資料
-        var getShowNo = intent.getBundleExtra("bundle")?.getString("showNo")
-        var getShowName = intent.getBundleExtra("bundle")?.getString("showName")
+        val getShowNo = intent.getBundleExtra("bundle")?.getString("showNo")
+        val getShowName = intent.getBundleExtra("bundle")?.getString("showName")
         txtShowName3D.text = getShowName.toString()
 
         btnToBackHome_3D.setOnClickListener {

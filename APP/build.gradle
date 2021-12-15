@@ -20,6 +20,9 @@ allprojects {
         google()
         // jcenter()
         mavenCentral()
+        flatDir {
+            dirs "${project(':unityLibrary').projectDir}/libs"
+        }
     }
 }
 

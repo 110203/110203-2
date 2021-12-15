@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.cart.CartCheckout">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarCheckout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#00000000"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/notoseriftc_semibold"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="結帳"
+        android:textColor="@color/fourth"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbarCheckout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbarCheckout" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbarCheckout"
+        app:layout_constraintEnd_toEndOf="@+id/toolbarCheckout"
+        app:layout_constraintStart_toStartOf="@+id/toolbarCheckout"
+        app:layout_constraintTop_toTopOf="@+id/toolbarCheckout">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="0dp">
+
+            <ImageButton
+                android:id="@+id/btnToBackNotifications"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#EFE8E8"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:tint="@color/fifth"
+                app:srcCompat="@drawable/ic_back"
+                tools:ignore="VectorDrawableCompat" />
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/applicationCheckoutList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/notoseriftc_semibold"
+                android:gravity="center|left"
+                android:text="地址"
+                android:textColor="@color/fourth"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imageButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/button_radius_efe8e8"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    app:srcCompat="@drawable/ic_logistics"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtCheckoutAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/notoseriftc_semibold"
+                        android:gravity="center|left"
+                        android:paddingLeft="10dp"
+                        android:text="台北市中正區濟南路一段321號"
+                        android:textColor="@color/fourth"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/txtCheckoutTel"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:paddingLeft="10dp"
+                        android:text="0932111111"
+                        android:textColor="@color/fourth"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/btnEditAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="#00000000"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    app:srcCompat="@drawable/ic_arrow_forward_ios_black_24dp"
+                    tools:ignore="VectorDrawableCompat" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/notoseriftc_semibold"
+                android:gravity="center|left"
+                android:text="付款方式"
+                android:textColor="@color/fourth"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imageButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/button_radius_efe8e8"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    app:srcCompat="@drawable/ic_credit_card"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtCheckoutPayment"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/notoseriftc_semibold"
+                        android:gravity="center|left"
+                        android:paddingLeft="10dp"
+                        android:text="VISA Classic"
+                        android:textColor="@color/fourth"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/txtCheckoutCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:paddingLeft="10dp"
+                        android:text="****-1234"
+                        android:textColor="@color/fourth"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/btnEditPayment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="#00000000"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    app:srcCompat="@drawable/ic_arrow_forward_ios_black_24dp"
+                    tools:ignore="VectorDrawableCompat" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/notoseriftc_semibold"
+                android:gravity="center|left"
+                android:text="付款詳情"
+                android:textColor="@color/fourth"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/notoseriftc_semibold"
+                    android:gravity="center|left"
+                    android:paddingLeft="10dp"
+                    android:text="商品金額"
+                    android:textColor="@color/fourth"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/notoseriftc_semibold"
+                    android:gravity="right"
+                    android:text="$"
+                    android:textColor="@color/fourth"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/txtGoodTotPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/notoseriftc_semibold"
+                    android:gravity="center|right"
+                    android:text="200"
+                    android:textColor="@color/fourth"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/notoseriftc_semibold"
+                    android:gravity="center|left"
+                    android:paddingLeft="10dp"
+                    android:text="運費"
+                    android:textColor="@color/fourth"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/notoseriftc_semibold"
+                    android:gravity="right"
+                    android:text="+$"
+                    android:textColor="@color/fourth"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/txtCharge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/notoseriftc_semibold"
+                    android:gravity="center|right"
+                    android:text="60"
+                    android:textColor="@color/fourth"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/notoseriftc_semibold"
+                    android:gravity="center|left"
+                    android:paddingLeft="10dp"
+                    android:text="總金額"
+                    android:textColor="@color/fourth"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/notoseriftc_semibold"
+                    android:gravity="right"
+                    android:text="$"
+                    android:textColor="@color/special"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txtOrderTotPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/notoseriftc_semibold"
+                    android:gravity="center|right"
+                    android:text="260"
+                    android:textColor="@color/special"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/btnDoubleCheckout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_radius_black"
+            android:fontFamily="@font/notoseriftc_regular"
+            android:text="結帳"
+            android:textColor="@color/sixth"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

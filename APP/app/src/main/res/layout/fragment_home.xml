@@ -7,58 +7,129 @@
     android:layout_gravity="center_vertical"
     tools:context=".ui.home.HomeFragment">
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:paddingLeft="14dp"
-        android:paddingTop="10dp"
-        android:paddingRight="14dp"
-        android:paddingBottom="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_gravity="center"
-            android:src="@drawable/ic_loupe" />
+            android:id="@+id/imageView3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/i2_background_top"
+            app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/linearLayout" />
 
-        <EditText
-            android:id="@+id/editTextTextPersonName5"
+        <LinearLayout
+            android:id="@+id/linearLayout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:hint="搜尋展覽"
-            android:inputType="textPersonName"
-            android:paddingLeft="10dp"
-            android:textSize="20sp" />
+            android:orientation="horizontal"
+            android:paddingLeft="50dp"
+            android:paddingTop="40dp"
+            android:paddingRight="50dp"
+            android:paddingBottom="60dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-        <Spinner
-            android:id="@+id/spnType"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:gravity="center" />
-    </LinearLayout>
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_loupe"
+                app:tint="@color/sixth" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/exhibitoinView"
-        android:layout_width="match_parent"
+            <EditText
+                android:id="@+id/editTextTextPersonName5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/fourth"
+                android:ems="10"
+                android:fontFamily="@font/notoseriftc_semibold"
+                android:hint="搜尋展覽"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:textColor="@color/sixth"
+                android:textColorHighlight="@color/sixth"
+                android:textColorHint="@color/sixth"
+                android:textColorLink="@color/sixth"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/spnType"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:spinnerMode="dialog"
+                android:dropDownWidth="match_parent"
+                android:gravity="right"
+                android:backgroundTint="@color/fifth"/>
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe"
+        android:layout_width="0dp"
         android:layout_height="0dp"
-        android:gravity="top"
-        android:numColumns="2"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
-        android:paddingBottom="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" >
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
 
-    </androidx.recyclerview.widget.RecyclerView>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout11"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
+
+            <TextView
+                android:id="@+id/msgErrorHome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/notoseriftc_regular"
+                android:gravity="center"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="Oops！出現了一些問題，請確認網路問題。\n無法解決請聯絡我們！"
+                android:textSize="18sp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/exhibitionView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="top"
+                android:numColumns="2"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="62dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

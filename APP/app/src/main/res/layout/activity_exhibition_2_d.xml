@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.home.Exhibition_2D">
+    tools:context=".activity.home.Exhibition2D">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/showNavbarControl"
@@ -28,7 +28,7 @@
         <LinearLayout
             android:id="@+id/linearLayout3"
             android:layout_width="0dp"
-            android:layout_height="0dp"
+            android:layout_height="wrap_content"
             android:orientation="horizontal"
             app:layout_constraintBottom_toBottomOf="@+id/toolbar2"
             app:layout_constraintEnd_toEndOf="parent"
@@ -36,22 +36,25 @@
             app:layout_constraintTop_toTopOf="@+id/toolbar2">
 
             <ImageButton
-                android:id="@+id/btnToBackHome"
+                android:id="@+id/btnToBackHome_2D"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:background="#00000000"
                 android:paddingLeft="16dp"
                 android:paddingRight="16dp"
-                app:srcCompat="@drawable/abc_vector_test" />
+                android:tint="@color/fifth"
+                app:srcCompat="@drawable/ic_left_arrow"
+                tools:ignore="VectorDrawableCompat" />
 
             <TextView
                 android:id="@+id/txtShowName2D"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:fontFamily="@font/notoseriftc_medium"
                 android:gravity="center"
                 android:text="TextView"
-                android:textColor="#FFFFFF"
+                android:textColor="@color/fifth"
                 android:textSize="16sp" />
 
             <ImageButton
@@ -61,12 +64,25 @@
                 android:background="#00000000"
                 android:paddingLeft="16dp"
                 android:paddingRight="16dp"
-                app:srcCompat="@drawable/ic_arrow_forward_white_24dp"
+                android:tint="@color/fifth"
+                app:srcCompat="@drawable/ic_right_arrow"
                 tools:ignore="VectorDrawableCompat" />
 
         </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/msgLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/notoseriftc_medium"
+        android:text="載入中請稍後......"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/webview"
+        app:layout_constraintEnd_toEndOf="@+id/webview"
+        app:layout_constraintStart_toStartOf="@+id/webview"
+        app:layout_constraintTop_toBottomOf="@+id/showNavbarControl" />
 
     <WebView
         android:id="@+id/webview"
@@ -78,5 +94,18 @@
         app:layout_constraintTop_toBottomOf="@+id/showNavbarControl">
 
     </WebView>
+
+    <TextView
+        android:id="@+id/msgNotBuilt2D"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/notoseriftc_medium"
+        android:text="此展覽尚未建置2D模式"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/webview"
+        app:layout_constraintEnd_toEndOf="@+id/webview"
+        app:layout_constraintStart_toStartOf="@+id/webview"
+        app:layout_constraintTop_toBottomOf="@+id/showNavbarControl" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

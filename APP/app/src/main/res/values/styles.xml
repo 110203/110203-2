@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="mySpinnerItemStyle">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/sixth</item>
+    </style>
+
+    <style
+        name="selectorDialog"
+        parent="@android:style/Theme.DeviceDefault.Light.Dialog.NoActionBar.MinWidth" >
+        <item name="android:windowBackground">@drawable/shape_line_solid</item>
+    </style>
+
+    <style name="applicationListFullDialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+</resources>

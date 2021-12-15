@@ -4,59 +4,123 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ExhibitionManage">
+    tools:context=".activity.profile.ExhibitionManage">
 
-    <TextView
-        android:id="@+id/textView25"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout13"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginTop="32dp"
-        android:gravity="center"
-        android:text="管理展覽"
-        android:textSize="24sp"
-        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/exhibitionList"
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/i11_background_top2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#00000000"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="@+id/toolbar13"
+            app:layout_constraintEnd_toEndOf="@+id/toolbar13"
+            app:layout_constraintStart_toStartOf="@+id/toolbar13"
+            app:layout_constraintTop_toTopOf="@+id/toolbar13">
+
+            <ImageButton
+                android:id="@+id/btnToBackProfileExhibitionManage"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#00000000"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:tint="@color/fifth"
+                app:srcCompat="@drawable/ic_back"
+                tools:ignore="VectorDrawableCompat" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/notoseriftc_semibold"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="管理展覽"
+            android:textColor="@color/sixth"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar13" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:paddingLeft="15dp"
-        android:paddingRight="15dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView25">
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout13">
 
-    </androidx.recyclerview.widget.RecyclerView>
+        <TextView
+            android:id="@+id/txtNotFoundExhibitionMan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/btnInputPIN"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center|start"
-        android:stateListAnimator="@null"
-        android:text="輸入PIN碼"
-        android:textColor="@color/second"
-        android:textSize="16sp"
-        app:backgroundTint="#00000000"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/exhibitionList" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/exhibitionList"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/showInputPIN"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#F3888888"
-        android:visibility="invisible"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:visibility="invisible">
+        tools:visibility="gone">
 
         <LinearLayout
             android:id="@+id/linearLayout4_2"
@@ -71,7 +135,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
-
             <EditText
                 android:id="@+id/txtPIN"
                 android:layout_width="match_parent"
@@ -81,6 +144,7 @@
                 android:layout_marginEnd="5dp"
                 android:layout_marginRight="5dp"
                 android:ems="10"
+                android:fontFamily="@font/notoseriftc_regular"
                 android:gravity="center"
                 android:hint="請輸入展覽PIN碼"
                 android:inputType="textPersonName" />
@@ -89,11 +153,11 @@
                 android:id="@+id/btnPIN"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginEnd="5dp"
-                android:layout_marginRight="5dp"
-                android:text="送出" />
+                android:background="@drawable/button_radius_black"
+                android:fontFamily="@font/notoseriftc_regular"
+                android:text="送出"
+                android:textColor="@color/sixth"
+                android:textSize="16sp" />
 
             <TextView
                 android:id="@+id/txtMsg"
@@ -103,7 +167,9 @@
                 android:layout_marginLeft="5dp"
                 android:layout_marginEnd="5dp"
                 android:layout_marginRight="5dp"
-                android:gravity="center" />
+                android:fontFamily="@font/notoseriftc_regular"
+                android:gravity="center"
+                android:textColor="@color/fourth" />
         </LinearLayout>
 
         <ImageButton

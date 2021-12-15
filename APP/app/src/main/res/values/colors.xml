@@ -9,6 +9,10 @@
     <color name="white">#FFFFFFFF</color>
     <color name="first">#000000</color>
     <color name="second">#3B3B3B</color>
-    <color name="third">#000000</color>
-    <color name="fourth">#FFFFFF</color>
+    <color name="third">#0818F8</color>
+    <color name="fourth">#313337</color>
+    <color name="fifth">#AFABAB</color>
+    <color name="sixth">#FFFFFF</color>
+    <color name="seventh">#F2F2F2</color>
+    <color name="special">#0818F8</color>
 </resources>
