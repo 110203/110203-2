@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.home.Exhibition_2D">
+    tools:context=".activity.home.Exhibition2D">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/showNavbarControl"
@@ -36,7 +36,7 @@
             app:layout_constraintTop_toTopOf="@+id/toolbar2">
 
             <ImageButton
-                android:id="@+id/btnToBackHome"
+                android:id="@+id/btnToBackHome_2D"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:background="#00000000"

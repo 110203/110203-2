@@ -46,7 +46,7 @@ class CartCheckout : AppCompatActivity() {
             finish()
         }
 
-        // 接收Exhibition_2D的資料
+        // 接收Exhibition2D的資料
         val getMemNo = intent.getBundleExtra("bundle")?.getString("memNo").toString()
         val getSelectGoodTotPrice = intent.getBundleExtra("bundle")?.getInt("selectGoodTotPrice").toString().toInt()
         val getSelectCartCount = intent.getBundleExtra("bundle")?.getString("selectCartCount").toString().toInt()

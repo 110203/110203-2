@@ -63,6 +63,7 @@ class Exhibition {
                         item["exhibitionType"] = data[i].eType
                         item["exhibitionStartTime"] = data[i].startTime
                         item["exhibitionEndTime"] = data[i].endTime
+                        item["exhibitionStyle"] = data[i].eStyle
 
                         exhibitionTypeDB.add(data[i].eType)
                         if (data[i].eImage == null) {
@@ -81,6 +82,8 @@ class Exhibition {
                     exhibitionView.adapter = ExhibitionListForHomeAdapter(items)
 
                     // spinner
+                    exhibitionType.clear()
+                    exhibitionType.add("全部")
                     val exhibitionTypeA = ArrayList(HashSet(exhibitionTypeDB)) // 移除exhibitionType的重複值
                     exhibitionType.addAll(exhibitionTypeA)
                     val typeAdapter = activity?.let { ArrayAdapter<String>(it, R.layout.spinner_item, exhibitionType) }
@@ -95,7 +98,6 @@ class Exhibition {
             }
         })
         return items
-        //////////////////////////
     }
 
     fun postAddExhibition(

@@ -3,20 +3,11 @@ package com.example.test2.activity.home
 import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.Toast
 import com.example.test2.R
 import com.example.test2.data.Goods
-import com.example.test2.data.api.RetrofitClient
-import com.example.test2.data.model.CartAdd
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.activity_commodity_detail.*
-import okhttp3.MediaType.Companion.toMediaTypeOrNull
-import okhttp3.RequestBody.Companion.toRequestBody
-import org.json.JSONObject
-import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.Response
 
 class CommodityDetail : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -58,14 +49,12 @@ class CommodityDetail : AppCompatActivity() {
         btnAddGood.setOnClickListener {
             if (memNo == ""){
                 Toast.makeText(this, "請登入後再添加商品喔！", Toast.LENGTH_LONG).show()
-
             }else if(amount == 0){
                 Toast.makeText(this, "請重新確認商品數量！", Toast.LENGTH_LONG).show()
             }else{
                 if (memNo != null) {
                     if (getGoodNo != null) {
-                        Goods().postAddGood(memNo, getGoodNo, amount, it.context)
-                        finish()
+                        Goods().postAddGood(memNo, getGoodNo, amount, this)
                     }
                 }
             }

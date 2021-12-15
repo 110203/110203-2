@@ -7,6 +7,7 @@ import android.widget.Toast
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.test2.activity.home.Commodity
+import com.example.test2.activity.home.CommodityDetail
 import com.example.test2.adapter.CommodityListForCommodityAdapter
 import com.example.test2.data.api.RetrofitClient
 import com.example.test2.data.model.CartAdd
@@ -69,18 +70,21 @@ class Goods {
         })
     }
 
-    fun postAddGood(memNo: String, goodNo: String, amount: Int, context: Context) {
-        ////////// POST //////////
+    fun postAddGood(
+        memNo: String,
+        goodNo: String,
+        amount: Int,
+        commodityDetail: CommodityDetail
+    ) {
         val jsonObject = JSONObject()
         val requestBody = jsonObject.put("memNo", memNo)
             .put("gNo", goodNo)
             .put("gAmount", amount)
             .toString().toRequestBody("application/json".toMediaTypeOrNull())
 
-        // 利用APIService中的appAllGoods, 將requestBody(eNo) POST 至資料庫, 回傳GoodResponse回來
         RetrofitClient.instance.appAddShopCart(requestBody).enqueue(object: Callback<CartAdd> {
             override fun onFailure(call: Call<CartAdd>, t: Throwable) {
-                Toast.makeText(context, "請確認網路連線正常與否！", Toast.LENGTH_LONG).show()
+                Toast.makeText(commodityDetail, "請確認網路連線正常與否！", Toast.LENGTH_LONG).show()
             }
 
             override fun onResponse(
@@ -88,14 +92,19 @@ class Goods {
                 response: Response<CartAdd>
             ) {
                 when(response.body()?.status.toString()){
-                    "add success" -> Toast.makeText(context, "新增成功!", Toast.LENGTH_SHORT).show()
-                    "update success" -> Toast.makeText(context, "更新成功!", Toast.LENGTH_SHORT).show()
-                    "add fail" -> Toast.makeText(context, "新增失敗!", Toast.LENGTH_SHORT).show()
-                    "update fail" -> Toast.makeText(context, "更新失敗!", Toast.LENGTH_SHORT).show()
-                    else -> Toast.makeText(context, "添加至購物車失敗，請稍後再試!", Toast.LENGTH_SHORT).show()
+                    "add success" -> {
+                        Toast.makeText(commodityDetail, "新增成功!", Toast.LENGTH_LONG).show()
+                        commodityDetail.finish()
+                    }
+                    "update success" -> {
+                        Toast.makeText(commodityDetail, "更新成功!", Toast.LENGTH_LONG).show()
+                        commodityDetail.finish()
+                    }
+                    "add fail" -> Toast.makeText(commodityDetail, "新增失敗!", Toast.LENGTH_LONG).show()
+                    "update fail" -> Toast.makeText(commodityDetail, "更新失敗!", Toast.LENGTH_LONG).show()
+                    else -> Toast.makeText(commodityDetail, "添加至購物車失敗，請稍後再試!", Toast.LENGTH_LONG).show()
                 }
             }
         })
-        //////////////////////////////
     }
 }

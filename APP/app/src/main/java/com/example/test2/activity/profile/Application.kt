@@ -70,7 +70,7 @@ class Application : AppCompatActivity() {
         }
     }
 
-    fun onClickStartTime() {
+    fun onClickStartTime(view: View) {
         calendar = Calendar.getInstance()
         startYear = calendar.get(Calendar.YEAR)
         startMonth = calendar.get(Calendar.MONTH)
@@ -89,7 +89,7 @@ class Application : AppCompatActivity() {
         dialog.show()
     }
 
-    fun onClickEndTime() {
+    fun onClickEndTime(view: View) {
         val dialog = DatePickerDialog(this, { _, year, month, day_of_month ->
             calendar[Calendar.YEAR] = year
             calendar[Calendar.MONTH] = month

@@ -2,7 +2,6 @@ package com.example.test2.data.api
 
 import com.example.test2.data.model.*
 import okhttp3.RequestBody
-import org.json.JSONObject
 import retrofit2.Call
 import retrofit2.http.*
 

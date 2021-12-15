@@ -1,11 +1,7 @@
 package com.example.test2.data.model
 
-import android.graphics.Bitmap
 import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
-import java.sql.Timestamp
-import java.time.DateTimeException
-import java.util.*
 
 @JsonClass(generateAdapter = true)
 data class ExhibitionResponse(
@@ -22,7 +18,8 @@ data class ExhibitionDetail(
     @field:Json(name = "introdution") val eIntrodution: String,
     @field:Json(name = "startTime") val startTime: String,
     @field:Json(name = "endTime") val endTime: String,
-    @field:Json(name = "eFile2D") val eFile2D: String?
+    @field:Json(name = "eFile2D") val eFile2D: String?,
+    @field:Json(name = "style") val eStyle: String?
 )
 
 // 會員 > 申請建展

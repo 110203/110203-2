@@ -22,6 +22,7 @@ class ExhibitionDetail : AppCompatActivity() {
         val getShowStartTime = intent.getBundleExtra("bundle")?.getString("showStartTime")
         val getShowEndTime = intent.getBundleExtra("bundle")?.getString("showEndTime")
         val getEUrl2D = intent.getBundleExtra("bundle")?.getString("eUrl2D")
+        val getEStyle = intent.getBundleExtra("bundle")?.getString("eStyle")
 
         exhibitionDetailName.text = getShowName
         exhibitionDetailText.text = getShowText
@@ -29,6 +30,23 @@ class ExhibitionDetail : AppCompatActivity() {
         val imgUrl: String = this.getString(R.string.BASE_IMG_URL)
         Picasso.get().load(imgUrl + getShowImgPath).into(exhibitionDetailImg)
 
+        when(getEStyle){
+            "2D" -> {
+                btn3D.isEnabled = false
+                btn3D.isClickable = false
+            }
+            "3D" -> {
+                btn2D.isEnabled = false
+                btn2D.isClickable = false
+            }
+            "2D, 3D" -> {}
+            else -> {
+                btn2D.isEnabled = false
+                btn2D.isClickable = false
+                btn3D.isEnabled = false
+                btn3D.isClickable = false
+            }
+        }
         if (getEUrl2D == "not built") {
             btn2D.isEnabled = false
             btn2D.isClickable = false
@@ -39,7 +57,7 @@ class ExhibitionDetail : AppCompatActivity() {
             bundle.putString("showNo", getShowNo)
             bundle.putString("showName", getShowName)
             bundle.putString("eUrl2D", getEUrl2D)
-            val intent = Intent(this, Exhibition_2D::class.java)
+            val intent = Intent(this, Exhibition2D::class.java)
             intent.putExtra("bundle", bundle)
             startActivity(intent)
         }
@@ -48,9 +66,13 @@ class ExhibitionDetail : AppCompatActivity() {
             val bundle = Bundle()
             bundle.putString("showNo", getShowNo)
             bundle.putString("showName", getShowName)
-            val intent = Intent(this, Exhibition_3D::class.java)
+            val intent = Intent(this, Exhibition3D::class.java)
             intent.putExtra("bundle", bundle)
             startActivity(intent)
+        }
+
+        btnToBackHome.setOnClickListener {
+            finish()
         }
     }
 }

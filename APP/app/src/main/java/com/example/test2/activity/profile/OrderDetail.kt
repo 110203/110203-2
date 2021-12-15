@@ -16,7 +16,6 @@ class OrderDetail : AppCompatActivity() {
         setContentView(R.layout.activity_order_detail)
         supportActionBar?.hide()
 
-        // 接收home的資料
         val getOrNo = intent.getBundleExtra("bundle")?.getString("orNo")
         val getOrState = intent.getBundleExtra("bundle")?.getString("orState")
         val getOrTotalPrice = intent.getBundleExtra("bundle")?.getString("orTotalPrice")?.toInt()
@@ -28,9 +27,12 @@ class OrderDetail : AppCompatActivity() {
             txtOrderReadyDetail.setTextColor(this.getColor(R.color.fourth))
         }
         if(getOrState=="2"){
+            txtOrderReadyDetail.setTextColor(this.getColor(R.color.fourth))
             txtOrderShipDetail.setTextColor(this.getColor(R.color.fourth))
         }
-        if(getOrState=="3"){
+        if(getOrState=="3" || getOrState=="4"){
+            txtOrderReadyDetail.setTextColor(this.getColor(R.color.fourth))
+            txtOrderShipDetail.setTextColor(this.getColor(R.color.fourth))
             txtOrderArrDetail.setTextColor(this.getColor(R.color.fourth))
         }
 

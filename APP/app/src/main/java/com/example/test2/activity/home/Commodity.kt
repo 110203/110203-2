@@ -19,7 +19,7 @@ class Commodity : AppCompatActivity() {
         setContentView(R.layout.activity_commodity)
         supportActionBar?.hide()
 
-        // 接收Exhibition_2D的資料
+        // 接收Exhibition2D的資料
         val getShowNo = intent.getBundleExtra("bundle")?.getString("showNo").toString()
         val getShowName = intent.getBundleExtra("bundle")?.getString("showName")
         textView7.text = "$getShowName 商品"

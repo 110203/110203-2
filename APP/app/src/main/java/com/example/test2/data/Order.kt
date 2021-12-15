@@ -11,7 +11,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.test2.activity.cart.CartCheckout
 import com.example.test2.activity.cart.CartCheckoutSuccess
-import com.example.test2.activity.profile.OrderListAdapter
 import com.example.test2.activity.profile.OrderQuery
 import com.example.test2.adapter.OrderListForOrderQueryAdapter
 import com.example.test2.data.api.RetrofitClient
@@ -47,9 +46,8 @@ class Order {
             .toString().toRequestBody("application/json".toMediaTypeOrNull())
 
         RetrofitClient.instance.appAddOrderRecord(requestBody).enqueue(object: Callback<OrderAdd> {
-
             override fun onFailure(call: Call<OrderAdd>, t: Throwable) {
-                Toast.makeText(cartCheckout, "Oops，出了點問題，請稍後再試！", Toast.LENGTH_SHORT).show()
+                Toast.makeText(cartCheckout, "Oops，出了點問題，請稍後再試！", Toast.LENGTH_LONG).show()
             }
 
             override fun onResponse(
@@ -90,7 +88,6 @@ class Order {
                 .toString().toRequestBody("application/json".toMediaTypeOrNull())
 
             RetrofitClient.instance.appAddOrderDetail(requestBody).enqueue(object: Callback<OrderDetailAdd> {
-
                 override fun onFailure(call: Call<OrderDetailAdd>, t: Throwable) {
                     Toast.makeText(cartCheckout, "Oops，出了點問題，請確認網路連線，並稍後再試！", Toast.LENGTH_SHORT).show()
                 }
@@ -104,7 +101,7 @@ class Order {
                             allPostStatus.add("success")
                         }
                         else -> {
-                            Toast.makeText(cartCheckout, "Oops，出了點問題，請與我們聯繫！", Toast.LENGTH_SHORT).show()
+                            Toast.makeText(cartCheckout, "Oops，出了點問題，請與我們聯繫！", Toast.LENGTH_LONG).show()
                         }
                     }
 

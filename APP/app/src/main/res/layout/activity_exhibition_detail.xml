@@ -7,6 +7,31 @@
     android:background="#25272B"
     tools:context=".activity.home.ExhibitionDetail">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnToBackHome"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="#00000000"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:tint="@color/fifth"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintStart_toStartOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="@+id/toolbar"
+        app:srcCompat="@drawable/ic_back"
+        tools:ignore="VectorDrawableCompat" />
+
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -15,7 +40,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
 
         <ImageView
             android:id="@+id/exhibitionDetailImg"
@@ -25,7 +50,7 @@
             android:adjustViewBounds="true"
             android:maxHeight="350dp"
             android:paddingLeft="20dp"
-            android:paddingTop="50dp"
+            android:paddingTop="20dp"
             android:paddingRight="20dp"
             android:scaleType="centerCrop"
             android:scrollbarAlwaysDrawHorizontalTrack="false"

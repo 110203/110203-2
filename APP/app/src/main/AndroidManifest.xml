@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.test2">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -31,8 +30,8 @@
         <activity android:name=".activity.profile.ExhibitionManage" />
         <activity android:name=".activity.profile.EditProfile" />
         <activity android:name=".activity.home.ExhibitionDetail" />
-        <activity android:name=".activity.home.Exhibition_2D" />
-        <activity android:name=".activity.home.Exhibition_3D" />
+        <activity android:name=".activity.home.Exhibition2D" />
+        <activity android:name=".activity.home.Exhibition3D" android:screenOrientation="landscape"/>
         <activity android:name=".activity.home.CommodityDetail" />
         <activity android:name=".activity.home.Commodity" />
         <activity android:name=".MainActivity" />

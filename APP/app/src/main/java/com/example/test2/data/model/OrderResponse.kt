@@ -2,7 +2,6 @@ package com.example.test2.data.model
 
 import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
-import java.util.*
 
 @JsonClass(generateAdapter = true)
 data class OrderResponse(

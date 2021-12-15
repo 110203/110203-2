@@ -40,6 +40,7 @@ class ExhibitionListForHomeAdapter(
         val exhibitionUrl2D = items[position]["exhibitionUrl2D"].toString()
         var exhibitionStartTime = items[position]["exhibitionStartTime"].toString()
         var exhibitionEndTime = items[position]["exhibitionEndTime"].toString()
+        var exhibitionStyle = items[position]["exhibitionStyle"].toString()
 
         exhibitionStartTime = exhibitionStartTime.split("T")[0]
         exhibitionEndTime = exhibitionEndTime.split("T")[0]
@@ -58,6 +59,7 @@ class ExhibitionListForHomeAdapter(
             bundle.putString("showStartTime", exhibitionStartTime)
             bundle.putString("showEndTime", exhibitionEndTime)
             bundle.putString("eUrl2D", exhibitionUrl2D)
+            bundle.putString("eStyle", exhibitionStyle)
             val intent = Intent(holder.toto, ExhibitionDetail::class.java)
             intent.putExtra("bundle", bundle)
             holder.toto?.startActivity(intent)
