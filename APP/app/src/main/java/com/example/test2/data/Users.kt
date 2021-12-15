@@ -213,6 +213,7 @@ class Users {
                     txtSignupPwd.setText("")
                     txtSignupPwdCheck.setText("")
                     txtSignupName.setText("")
+                    signup.finish()
                 }else{
                     Toast.makeText(signup, "該email已註冊過！", Toast.LENGTH_LONG).show()
                 }

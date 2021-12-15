@@ -29,7 +29,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="10dp">
+            android:padding="20dp">
 
             <TextView
                 android:layout_width="match_parent"
@@ -107,15 +107,6 @@
                     app:iconPadding="0dp"
                     app:iconTint="@color/sixth" />
             </LinearLayout>
-
-            <TextView
-                android:id="@+id/txtForgetPwd"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/notoseriftc_semibold"
-                android:gravity="right"
-                android:text="忘記密碼？"
-                android:textColor="@color/fifth" />
 
             <Button
                 android:id="@+id/btnLogin"

@@ -377,7 +377,7 @@
                     android:layout_height="match_parent"
                     android:fontFamily="@font/notoseriftc_semibold"
                     android:gravity="center|left"
-                    android:text="請確認建立展覽需上傳物件"
+                    android:text="請確認建立展覽需上傳之物件"
                     android:textColor="@color/fourth"
                     android:textSize="18sp" />
 

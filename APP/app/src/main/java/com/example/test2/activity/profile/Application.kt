@@ -126,6 +126,8 @@ class Application : AppCompatActivity() {
         }else if(applyExhibitionText.text.isEmpty()){
             errSave = "展覽簡介"
             imgErr_text.visibility = View.VISIBLE
+        }else if(!chkReq.isChecked){
+            errSaveType = 4
         }else{
             errSaveType = 0
         }
@@ -136,6 +138,7 @@ class Application : AppCompatActivity() {
             1 -> Toast.makeText(this, "請填寫$errSave", Toast.LENGTH_LONG).show()
             2 -> Toast.makeText(this, "請檢查開始日期與結束日期", Toast.LENGTH_LONG).show()
             3 -> Toast.makeText(this, "請勾選欲建立的展覽", Toast.LENGTH_LONG).show()
+            4 -> Toast.makeText(this, "請閱讀「建立展覽需上傳之文件」，並勾選同意", Toast.LENGTH_LONG).show()
         }
     }
 }
