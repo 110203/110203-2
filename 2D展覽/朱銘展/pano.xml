@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tour start="node2" appversion="6.1.4" apprev="17919">
+  <panorama id="node7">
+    <input height="1024" leveltilesize="510" levelbias="0.400" width="1024" levelbiashidpi="1.000" levelingpitch="0" overlap="1" leveltileurl="tiles/node7/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingroll="0">
+      <level height="1024" width="1024" predecode="0" preload="0"/>
+      <level height="512" width="512" predecode="0" preload="0"/>
+      <level height="256" width="256" predecode="1" preload="1"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view fovmode="0" pannorth="0">
+      <start fov="70" pan="0" tilt="0" projection="4"/>
+      <flyin fov="170" pan="0" tilt="-90" projection="9"/>
+      <min fovpixel="2" pan="0" tilt="-90"/>
+      <max fov="120" scaletofit="1" pan="360" tilt="90" fovfisheye="360" fovstereographic="270"/>
+    </view>
+    <userdata info="" tags="Downloads" datetime="2021/9/1 上午 04:30" title="" heading="0" author="" source="" nodeid="node7" comment="" longitude="" description="" customnodeid="" copyright="" latitude=""/>
+    <hotspots height="20" width="180" wordwrap="1">
+      <label bordercolor="0x000000" height="20" textalpha="1" width="180" background="1" borderradius="1" textcolor="0x000000" borderalpha="1" wordwrap="1" backgroundalpha="1" border="1" backgroundcolor="0xffffff" enabled="1"/>
+      <polystyle bordercolor="0x0000ff" handcursor="1" borderalpha="1" backgroundalpha="0.25098" mode="0" backgroundcolor="0x0000ff"/>
+      <hotspot skinid="ht_info" fov="10" customimage="media/未命名-removebg-preview.png" url="" distance3D="788.674" id="Point01" pan="-55.97" title="" tilt="22.48" customimageheight="138" use3D="0" target="_blank" customimagewidth="138" description="&lt;iframe src='https://s9.gifyu.com/images/DONG6847-1110x1065.md.jpg' frameborder='0' scrolling='no' allowfullscreen width='540' height='380'>&lt;/iframe>1938 - 1970s&#xa;朱銘，本名朱川泰，1938年誕生於苗栗通霄。十五歲開始，他師從雕刻師傅李金川學習雕刻及繪畫，自此邁入雕刻生涯。三十歲那年，朱銘決心獻身於藝術追求，毅然拜入當時的雕刻大師楊英風門下。&#xa;&#xa;1976年，朱銘在國立歷史博物館舉辦首次個展，造成空前轟動，各界佳評如潮，從而使朱銘被視為1970年代臺灣鄉土運動的象徵，奠定他在藝壇的地位。不過，朱銘並未就此停頓，反而越發努力創作，發展出日後知名的《太極系列》。&#xa;&#xa;1980 - 2000&#xa;1980年代初期，朱銘已在臺灣藝壇立足，但他沒未因此自限，反而前往國際藝術重鎮的美國紐約，以此為契機，進軍國際。&#xa;&#xa;此時期是朱銘藝術創作的巔峰，朱銘《人間系列》作品進入重要發展階段，《太極系列》則與《人間系列》並行發展。《太極系列》的藝術語彙及精神內涵逐步深化，而《人間系列》則反映了朱銘對俗世人間形形色色人物的細膩觀察。他的藝術創作一再蜕變，媒材上不再侷限於木料，陶土、海綿、青銅、不鏽鋼等各種媒材盡為他所用。&#xa;&#xa;1987年開始，朱銘逐步地落實「種活藝術種子」的夢想。他從無到有，從荒地到公園，在臺灣的金山創建了一座美術館。1999年，朱銘傾注一生積蓄和十二年漫長辛勞的美術館正式開幕。「朱銘美術館」可謂朱銘最大的一件作品，亦代表著藝術家對社會最大的付出與回饋。&#xa;&#xa;2000 -&#xa;在藝術創作上，朱銘不斷突破創新。2000年，他以抽象形式的《太極拱門》完美詮釋太極氣韻流轉的深意，為《太極系列》畫下圓滿的句點。2005年發表的《人間系列─三軍》，則結合了雕塑、裝置與行動藝術。2007年開始，朱銘《人間系列》以「丟」的概念去除多餘的色彩，轉為白與黑，追求更純粹的造型世界。&#xa;&#xa;2010年，朱銘的《人間系列─囚》及《立方體》作品，更提出新的創作觀，作品跳脫造型思考，轉而探究人類內心的問題，顯示朱銘創作的多元發展及美學觀之深化。&#xa;&lt;iframe width=&quot;500&quot; height=&quot;300&quot; src=&quot;https://www.youtube.com/embed/yYqUYK3oU6E&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen>&lt;/iframe>&#xa;"/>
+      <hotspot skinid="ht_info" fov="10" customimage="media/未命名-removebg-preview.png" url="" distance3D="434.342" id="Point02" pan="-7.39" title="" tilt="-15.03" customimageheight="76" use3D="0" target="" customimagewidth="76" description="&lt;iframe src=&quot; https://app.modelo.io/embedded/1436229143892905984?viewport=false&amp;autoplay=false&amp;autorotate=false&amp;hideTools=false&amp;showBIM=false&amp;showBBoxSize=false&amp;showKooRender=false&amp;showSettings=false&quot; style=&quot;width:100%;height:100%;&quot; frameborder=&quot;0&quot; mozallowfullscreen webkitallowfullscreen allowfullscreen >&lt;/iframe>&#xa;年代：1987&#xa;材質：銅&#xa;朱銘自1980年代中期開始，創作了一系列的運動員。不同於以往木質、陶作或水墨的《人間系列》，此五件作品運用了藝術家新的創作技法，以麻繩綑綁大片海綿塑型，再加以翻銅製成作品。藝術家透過綑綁的鬆緊度，突顯運動員在進行體操當下身體與四肢的肌肉表現，同時也透過海綿材質本身的柔軟性，在人物胸部、腰際與膝蓋等較大的身體轉折處展現高度的靈活和彈性。透過選用的材質特性，藝術家充分地展現運動員力量與柔軟度的完美結合。"/>
+      <hotspot skinid="ht_info" fov="10" customimage="media/未命名-removebg-preview.png" url="" distance3D="445.772" id="Point02" pan="-18.29" title="" tilt="-11.24" customimageheight="78" use3D="0" target="" customimagewidth="78" description="&lt;iframe src=&quot; https://app.modelo.io/embedded/1436229947678130176?viewport=false&amp;autoplay=false&amp;autorotate=false&amp;hideTools=false&amp;showBIM=false&amp;showBBoxSize=false&amp;showKooRender=false&amp;showSettings=false&quot; style=&quot;width:100%;height:100%;&quot; frameborder=&quot;0&quot; mozallowfullscreen webkitallowfullscreen allowfullscreen >&lt;/iframe>&#xa;年代：1987&#xa;材質：銅&#xa;朱銘自1980年代中期開始，創作了一系列的運動員。不同於以往木質、陶作或水墨的《人間系列》，此五件作品運用了藝術家新的創作技法，以麻繩綑綁大片海綿塑型，再加以翻銅製成作品。藝術家透過綑綁的鬆緊度，突顯運動員在進行體操當下身體與四肢的肌肉表現，同時也透過海綿材質本身的柔軟性，在人物胸部、腰際與膝蓋等較大的身體轉折處展現高度的靈活和彈性。透過選用的材質特性，藝術家充分地展現運動員力量與柔軟度的完美結合。"/>
+      <hotspot skinid="ht_info" fov="10" customimage="media/未命名-removebg-preview.png" url="" distance3D="400.052" id="Point02" pan="-20.86" title="" tilt="-1.17" customimageheight="70" use3D="0" target="" customimagewidth="70" description=" &lt;iframe src=&quot; https://app.modelo.io/embedded/1436239311981903872?viewport=false&amp;autoplay=false&amp;autorotate=false&amp;hideTools=false&amp;showBIM=false&amp;showBBoxSize=false&amp;showKooRender=false&amp;showSettings=false&quot; style=&quot;width:100%;height:100%;&quot; frameborder=&quot;0&quot; mozallowfullscreen webkitallowfullscreen allowfullscreen >&lt;/iframe>&#xa;年代：1991&#xa;材質：銅&#xa;《太極系列》源於楊英風勸朱銘為了身體的健康應該要去學太極，之後他便開始挑戰以「太極拳」當成雕刻的創作題材。在1976年的史博館個展中，《太極系列》並未獲得太多注意，到了隔年該系列在日本東京中央美術館展出後造成轟動，才重新被臺灣所重視。此後太極就成為藝術家最為人熟知的作品。在這件作品中人物上半身向後轉，雙手微斂，單腳向後曲起作勢踢出，重心落在另隻腳上。藝術家充分掌握到作品的平衡感，在造形上雖然以大塊面堆疊組合而成，卻能在轉折處略作出切面，讓作品在穩重之餘，展現出太極對招中的動勢。"/>
+      <hotspot skinid="ht_info" fov="10" customimage="media/未命名-removebg-preview.png" url="" distance3D="725.808" id="Point02" pan="-360" title="" tilt="-1.97" customimageheight="127" use3D="0" target="" customimagewidth="127" description="&lt;iframe src=&quot; https://app.modelo.io/embedded/1436238849723465728?viewport=false&amp;autoplay=false&amp;autorotate=false&amp;hideTools=false&amp;showBIM=false&amp;showBBoxSize=false&amp;showKooRender=false&amp;showSettings=false&quot; style=&quot;width:100%;height:100%;&quot; frameborder=&quot;0&quot; mozallowfullscreen webkitallowfullscreen allowfullscreen >&lt;/iframe>&#xa;年代：1991&#xa;材質：銅&#xa;《太極系列》源於楊英風勸朱銘為了身體的健康應該要去學太極，之後他便開始挑戰以「太極拳」當成雕刻的創作題材。在1976年的史博館個展中，《太極系列》並未獲得太多注意，到了隔年該系列在日本東京中央美術館展出後造成轟動，才重新被臺灣所重視。此後太極就成為藝術家最為人熟知的作品。在這件作品中人物上半身向後轉，雙手微斂，單腳向後曲起作勢踢出，重心落在另隻腳上。藝術家充分掌握到作品的平衡感，在造形上雖然以大塊面堆疊組合而成，卻能在轉折處略作出切面，讓作品在穩重之餘，展現出太極對招中的動勢。"/>
+      <hotspot skinid="ht_info" fov="10" customimage="media/未命名-removebg-preview.png" url="" distance3D="405.767" id="Point02" pan="-340.67" title="" tilt="0.86" customimageheight="71" use3D="0" target="" customimagewidth="71" description="&lt;iframe src=&quot; https://app.modelo.io/embedded/1436239859443433472?viewport=false&amp;autoplay=false&amp;autorotate=false&amp;hideTools=false&amp;showBIM=false&amp;showBBoxSize=false&amp;showKooRender=false&amp;showSettings=false&quot; style=&quot;width:100%;height:100%;&quot; frameborder=&quot;0&quot; mozallowfullscreen webkitallowfullscreen allowfullscreen >&lt;/iframe>&#xa;年代：1991&#xa;材質：銅&#xa;《太極系列》源於楊英風勸朱銘為了身體的健康應該要去學太極，之後他便開始挑戰以「太極拳」當成雕刻的創作題材。在1976年的史博館個展中，《太極系列》並未獲得太多注意，到了隔年該系列在日本東京中央美術館展出後造成轟動，才重新被臺灣所重視。此後太極就成為藝術家最為人熟知的作品。在這件作品中人物上半身向後轉，雙手微斂，單腳向後曲起作勢踢出，重心落在另隻腳上。藝術家充分掌握到作品的平衡感，在造形上雖然以大塊面堆疊組合而成，卻能在轉折處略作出切面，讓作品在穩重之餘，展現出太極對招中的動勢。"/>
+      <hotspot skinid="ht_info" fov="10" customimage="media/未命名-removebg-preview.png" url="" distance3D="394.337" id="Point02" pan="-345.16" title="" tilt="-9.17" customimageheight="69" use3D="0" target="" customimagewidth="69" description="&lt;iframe src=&quot; https://app.modelo.io/embedded/1436237140270567424?viewport=false&amp;autoplay=false&amp;autorotate=false&amp;hideTools=false&amp;showBIM=false&amp;showBBoxSize=false&amp;showKooRender=false&amp;showSettings=false&quot; style=&quot;width:100%;height:100%;&quot; frameborder=&quot;0&quot; mozallowfullscreen webkitallowfullscreen allowfullscreen >&lt;/iframe> &#xa;年代：1987&#xa;材質：銅&#xa;朱銘自1980年代中期開始，創作了一系列的運動員。不同於以往木質、陶作或水墨的《人間系列》，此五件作品運用了藝術家新的創作技法，以麻繩綑綁大片海綿塑型，再加以翻銅製成作品。藝術家透過綑綁的鬆緊度，突顯運動員在進行體操當下身體與四肢的肌肉表現，同時也透過海綿材質本身的柔軟性，在人物胸部、腰際與膝蓋等較大的身體轉折處展現高度的靈活和彈性。透過選用的材質特性，藝術家充分地展現運動員力量與柔軟度的完美結合。"/>
+      <hotspot skinid="ht_info" fov="10" customimage="media/未命名-removebg-preview.png" url="" distance3D="577.218" id="Point02" pan="-336.89" title="" tilt="-13.64" customimageheight="101" use3D="0" target="" customimagewidth="101" description="&lt;iframe src=&quot; https://app.modelo.io/embedded/1436236291670593536?viewport=false&amp;autoplay=false&amp;autorotate=false&amp;hideTools=false&amp;showBIM=false&amp;showBBoxSize=false&amp;showKooRender=false&amp;showSettings=false&quot; style=&quot;width:100%;height:100%;&quot; frameborder=&quot;0&quot; mozallowfullscreen webkitallowfullscreen allowfullscreen >&lt;/iframe>&#xa;年代：1987&#xa;材質：銅&#xa;朱銘自1980年代中期開始，創作了一系列的運動員。不同於以往木質、陶作或水墨的《人間系列》，此五件作品運用了藝術家新的創作技法，以麻繩綑綁大片海綿塑型，再加以翻銅製成作品。藝術家透過綑綁的鬆緊度，突顯運動員在進行體操當下身體與四肢的肌肉表現，同時也透過海綿材質本身的柔軟性，在人物胸部、腰際與膝蓋等較大的身體轉折處展現高度的靈活和彈性。透過選用的材質特性，藝術家充分地展現運動員力量與柔軟度的完美結合。"/>
+      <hotspot skinid="ht_info" fov="10" customimage="media/未命名-removebg-preview.png" url="" distance3D="691.518" id="Point02" pan="-296.52" title="" tilt="1.4" customimageheight="121" use3D="0" target="" customimagewidth="121" description="&lt;iframe src=&quot; https://app.modelo.io/embedded/1436224849015078912?viewport=false&amp;autoplay=false&amp;autorotate=false&amp;hideTools=false&amp;showBIM=false&amp;showBBoxSize=false&amp;showKooRender=false&amp;showSettings=false&quot; style=&quot;width:100%;height:100%;&quot; frameborder=&quot;0&quot; mozallowfullscreen webkitallowfullscreen allowfullscreen >&lt;/iframe>&#xa;人間系列，朱銘後期創作上不再幫雕塑上色，因為他認為顏色會影響觀看者的主觀意識，反而是黑、白二色能讓人更聚焦於創作品本身；來到朱銘美術館的門口，總能看到白色的雕塑作品，而且會隨著時間更換，不同年份看到的雕塑品都不盡相同。"/>
+      <hotspot skinid="ht_info" fov="10" customimage="media/未命名-removebg-preview.png" url="" distance3D="691.518" id="Point02" pan="-261.39" title="" tilt="5.57" customimageheight="121" use3D="0" target="" customimagewidth="121" description="&lt;iframe src=&quot; https://app.modelo.io/embedded/1436227781303336960?viewport=false&amp;autoplay=false&amp;autorotate=false&amp;hideTools=false&amp;showBIM=false&amp;showBBoxSize=false&amp;showKooRender=false&amp;showSettings=false&quot; style=&quot;width:100%;height:100%;&quot; frameborder=&quot;0&quot; mozallowfullscreen webkitallowfullscreen allowfullscreen >&lt;/iframe>&#xa;人間系列，朱銘後期創作上不再幫雕塑上色，因為他認為顏色會影響觀看者的主觀意識，反而是黑、白二色能讓人更聚焦於創作品本身；來到朱銘美術館的門口，總能看到白色的雕塑作品，而且會隨著時間更換，不同年份看到的雕塑品都不盡相同。"/>
+      <hotspot skinid="ht_info" fov="10" customimage="media/未命名-removebg-preview.png" url="" distance3D="1428.76" id="Point02" pan="-211.9" title="" tilt="-36.49" customimageheight="250" use3D="0" target="" customimagewidth="250" description=" &lt;iframe src=&quot; https://app.modelo.io/embedded/1436242018833321984?viewport=false&amp;autoplay=false&amp;autorotate=false&amp;hideTools=false&amp;showBIM=false&amp;showBBoxSize=false&amp;showKooRender=false&amp;showSettings=false&quot; style=&quot;width:100%;height:100%;&quot; frameborder=&quot;0&quot; mozallowfullscreen webkitallowfullscreen allowfullscreen >&lt;/iframe>&#xa;年代：1991&#xa;材質：銅&#xa;《太極系列》源於楊英風勸朱銘為了身體的健康應該要去學太極，之後他便開始挑戰以「太極拳」當成雕刻的創作題材。在1976年的史博館個展中，《太極系列》並未獲得太多注意，到了隔年該系列在日本東京中央美術館展出後造成轟動，才重新被臺灣所重視。此後太極就成為藝術家最為人熟知的作品。在這件作品中人物上半身向後轉，雙手微斂，單腳向後曲起作勢踢出，重心落在另隻腳上。藝術家充分掌握到作品的平衡感，在造形上雖然以大塊面堆疊組合而成，卻能在轉折處略作出切面，讓作品在穩重之餘，展現出太極對招中的動勢。"/>
+      <polyhotspot url="{node2}" id="Poly01" title="" target="" description="">
+        <polystring>-318.18/22.89|-316.02/-11.04|-331.79/-7.55|-333.14/20.05</polystring>
+      </polyhotspot>
+    </hotspots>
+    <media>
+      <image fov="9.300" rotx="-5.000" height="812" handcursor="1" width="724" id="Element01" pan="-19.490" roty="-19.000" tilt="2.100" clickmode="1" rotz="1.000" stretch="1.000">
+        <source url="media/太極介紹.png"/>
+      </image>
+      <image fov="9.300" rotx="-4.000" height="812" handcursor="1" width="724" id="Element01" pan="0.050" roty="3.000" tilt="2.680" clickmode="1" rotz="2.000" stretch="1.000">
+        <source url="media/太極介紹.png"/>
+      </image>
+      <image fov="9.300" rotx="4.000" height="812" handcursor="1" width="724" id="Element01" pan="-340.680" roty="17.000" tilt="3.310" clickmode="1" rotz="0.000" stretch="1.000">
+        <source url="media/太極介紹.png"/>
+      </image>
+      <image fov="15.150" rotx="0.000" height="577" handcursor="0" width="432" id="Element02" pan="-20.440" roty="0.000" tilt="-2.410" clickmode="0" rotz="0.000" stretch="1.000">
+        <source url="media/S__6160418-removebg-preview (1).png"/>
+      </image>
+      <image fov="16.050" rotx="-2.000" height="341" handcursor="0" width="512" id="Element03" pan="0.240" roty="27.000" tilt="1.250" clickmode="0" rotz="-2.000" stretch="1.000">
+        <source url="media/unnamed-removebg-preview (4).png"/>
+      </image>
+      <image fov="15.150" rotx="0.000" height="331" handcursor="0" width="679" id="Element04" pan="-340.340" roty="29.000" tilt="0.660" clickmode="0" rotz="3.000" stretch="1.000">
+        <source url="media/S__6160420-removebg-preview.png"/>
+      </image>
+      <image fov="69.150" rotx="26.000" height="812" handcursor="1" width="724" id="Element05" pan="-196.250" roty="-10.000" tilt="27.200" clickmode="1" rotz="0.000" stretch="1.000">
+        <source url="media/太極介紹.png"/>
+      </image>
+      <image fov="9.300" rotx="0.000" height="204" handcursor="0" width="112" id="Element07" pan="-168.520" roty="0.000" tilt="-31.840" clickmode="0" rotz="-85.000" stretch="1.000">
+        <source url="media/命名.png"/>
+      </image>
+      <image fov="69.150" rotx="26.000" height="812" handcursor="1" width="724" id="Element05" pan="-197.040" roty="-10.000" tilt="27.270" clickmode="1" rotz="0.000" stretch="1.000">
+        <source url="media/太極介紹.png"/>
+      </image>
+      <image fov="90.000" rotx="-33.000" height="449" handcursor="0" width="556" id="Element06" pan="-219.370" roty="-19.000" tilt="-24.440" clickmode="0" rotz="-17.000" stretch="1.000">
+        <source url="media/S__6168598-removebg-preview (1).png"/>
+      </image>
+      <image fov="45.300" rotx="25.000" height="1065" handcursor="0" width="1110" id="Element08" pan="-52.430" roty="35.000" tilt="20.630" clickmode="0" rotz="-13.000" stretch="1.000">
+        <source url="media/DONG6847-1110x1065.jpg"/>
+      </image>
+      <image fov="12.900" rotx="0.000" height="598" handcursor="0" width="417" id="Element09" pan="-345.130" roty="0.000" tilt="-8.650" clickmode="0" rotz="0.000" stretch="1.000">
+        <source url="media/S__6209539-removebg-preview.png"/>
+      </image>
+      <image fov="16.500" rotx="-8.000" height="650" handcursor="0" width="384" id="Element10" pan="-337.450" roty="49.000" tilt="-13.380" clickmode="0" rotz="4.000" stretch="1.000">
+        <source url="media/S__6209540-removebg-preview (1).png"/>
+      </image>
+      <image fov="22.350" rotx="0.000" height="763" handcursor="0" width="327" id="Element13" pan="-258.920" roty="19.000" tilt="-8.510" clickmode="0" rotz="-1.000" stretch="1.000">
+        <source url="media/S__132825091-removebg-preview (1).png"/>
+      </image>
+      <image fov="25.050" rotx="-13.000" height="628" handcursor="0" width="397" id="Element14" pan="-303.790" roty="-26.000" tilt="-3.160" clickmode="0" rotz="-4.000" stretch="1.000">
+        <source url="media/S__132825093-removebg-preview.png"/>
+      </image>
+      <image fov="9.300" rotx="0.000" height="844" handcursor="1" width="708" id="Element15" pan="-32.540" roty="65.000" tilt="4.890" clickmode="1" rotz="1.000" stretch="1.000">
+        <source url="media/人間介紹.png"/>
+      </image>
+      <image fov="16.500" rotx="-17.000" height="573" handcursor="0" width="435" id="Element12" pan="-15.950" roty="0.000" tilt="-11.710" clickmode="0" rotz="0.000" stretch="1.000">
+        <source url="media/6-2-removebg-preview.png"/>
+      </image>
+      <image fov="30.450" rotx="-24.000" height="499" handcursor="0" width="500" id="Element11" pan="-6.950" roty="0.000" tilt="-14.300" clickmode="0" rotz="0.000" stretch="1.000">
+        <source url="media/凹名-removebg-preview.png"/>
+      </image>
+    </media>
+    <transition type="crossdissolve" zoomoutpause="1" zoomspeed="2" softedge="0" zoomfov="20" blendcolor="0x000000" blendtime="1" zoomout="0" enabled="1" zoomin="0"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control sensitivity="8" contextfullscreen="1" speedwheel="1" lockedkeyboardzoom="0" lockedkeyboard="0" invertwheel="0" simulatemass="1" lockedwheel="0" contextprojections="0" rubberband="0" dblclickfullscreen="0" invertcontrol="1" hideabout="0" lockedmouse="0"/>
+  </panorama>
+  <panorama id="node2">
+    <input height="1024" leveltilesize="510" levelbias="0.400" width="1024" levelbiashidpi="1.000" levelingpitch="0" overlap="1" leveltileurl="tiles/node2/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingroll="0">
+      <level height="1024" width="1024" predecode="0" preload="0"/>
+      <level height="512" width="512" predecode="0" preload="0"/>
+      <level height="256" width="256" predecode="1" preload="1"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view fovmode="0" pannorth="0">
+      <start fov="70" pan="0" tilt="0" projection="4"/>
+      <flyin fov="170" pan="0" tilt="-90" projection="9"/>
+      <min fovpixel="2" pan="0" tilt="-90"/>
+      <max fov="120" scaletofit="1" pan="360" tilt="90" fovfisheye="360" fovstereographic="270"/>
+    </view>
+    <userdata info="" tags="Downloads" datetime="2021/9/1 上午 04:31" title="" heading="0" author="" source="" nodeid="node2" comment="" longitude="" description="" customnodeid="" copyright="" latitude=""/>
+    <hotspots height="20" width="180" wordwrap="1">
+      <label bordercolor="0x000000" height="20" textalpha="1" width="180" background="1" borderradius="1" textcolor="0x000000" borderalpha="1" wordwrap="1" backgroundalpha="1" border="1" backgroundcolor="0xffffff" enabled="1"/>
+      <polystyle bordercolor="0x0000ff" handcursor="1" borderalpha="1" backgroundalpha="0.25098" mode="0" backgroundcolor="0x0000ff"/>
+      <hotspot skinid="ht_info" fov="10" customimage="media/未命名-removebg-preview.png" url="" distance3D="634.368" id="Point01" pan="-303.64" title="" tilt="10.37" customimageheight="111" use3D="0" target="_blank" customimagewidth="111" description="&lt;iframe src='https://s9.gifyu.com/images/DONG6847-1110x1065.md.jpg' frameborder='0' scrolling='no' allowfullscreen width='540' height='380'>&lt;/iframe>1938 - 1970s&#xa;朱銘，本名朱川泰，1938年誕生於苗栗通霄。十五歲開始，他師從雕刻師傅李金川學習雕刻及繪畫，自此邁入雕刻生涯。三十歲那年，朱銘決心獻身於藝術追求，毅然拜入當時的雕刻大師楊英風門下。&#xa;&#xa;1976年，朱銘在國立歷史博物館舉辦首次個展，造成空前轟動，各界佳評如潮，從而使朱銘被視為1970年代臺灣鄉土運動的象徵，奠定他在藝壇的地位。不過，朱銘並未就此停頓，反而越發努力創作，發展出日後知名的《太極系列》。&#xa;&#xa;1980 - 2000&#xa;1980年代初期，朱銘已在臺灣藝壇立足，但他沒未因此自限，反而前往國際藝術重鎮的美國紐約，以此為契機，進軍國際。&#xa;&#xa;此時期是朱銘藝術創作的巔峰，朱銘《人間系列》作品進入重要發展階段，《太極系列》則與《人間系列》並行發展。《太極系列》的藝術語彙及精神內涵逐步深化，而《人間系列》則反映了朱銘對俗世人間形形色色人物的細膩觀察。他的藝術創作一再蜕變，媒材上不再侷限於木料，陶土、海綿、青銅、不鏽鋼等各種媒材盡為他所用。&#xa;&#xa;1987年開始，朱銘逐步地落實「種活藝術種子」的夢想。他從無到有，從荒地到公園，在臺灣的金山創建了一座美術館。1999年，朱銘傾注一生積蓄和十二年漫長辛勞的美術館正式開幕。「朱銘美術館」可謂朱銘最大的一件作品，亦代表著藝術家對社會最大的付出與回饋。&#xa;&#xa;2000 -&#xa;在藝術創作上，朱銘不斷突破創新。2000年，他以抽象形式的《太極拱門》完美詮釋太極氣韻流轉的深意，為《太極系列》畫下圓滿的句點。2005年發表的《人間系列─三軍》，則結合了雕塑、裝置與行動藝術。2007年開始，朱銘《人間系列》以「丟」的概念去除多餘的色彩，轉為白與黑，追求更純粹的造型世界。&#xa;&#xa;2010年，朱銘的《人間系列─囚》及《立方體》作品，更提出新的創作觀，作品跳脫造型思考，轉而探究人類內心的問題，顯示朱銘創作的多元發展及美學觀之深化。&#xa;&lt;iframe width=&quot;500&quot; height=&quot;300&quot; src=&quot;https://www.youtube.com/embed/yYqUYK3oU6E&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen>&lt;/iframe>"/>
+      <hotspot skinid="ht_info" fov="10" customimage="media/未命名-removebg-preview.png" url="" distance3D="565.788" id="Point02" pan="-18.67" title="" tilt="-8.17" customimageheight="99" use3D="0" target="_blank" customimagewidth="99" description="&lt;iframe src=&quot; https://app.modelo.io/embedded/1436224849015078912?viewport=false&amp;autoplay=false&amp;autorotate=false&amp;hideTools=false&amp;showBIM=false&amp;showBBoxSize=false&amp;showKooRender=false&amp;showSettings=false&quot; style=&quot;width:100%;height:100%;&quot; frameborder=&quot;0&quot; mozallowfullscreen webkitallowfullscreen allowfullscreen >&lt;/iframe>&#xa;&#xa;人間系列，朱銘後期創作上不再幫雕塑上色，因為他認為顏色會影響觀看者的主觀意識，反而是黑、白二色能讓人更聚焦於創作品本身；來到朱銘美術館的門口，總能看到白色的雕塑作品，而且會隨著時間更換，不同年份看到的雕塑品都不盡相同。"/>
+      <hotspot skinid="ht_info" fov="10" customimage="media/未命名-removebg-preview.png" url="" distance3D="457.202" id="Point02" pan="-4.53" title="" tilt="1.51" customimageheight="80" use3D="0" target="" customimagewidth="80" description="&lt;iframe src=&quot; https://app.modelo.io/embedded/1436227781303336960?viewport=false&amp;autoplay=false&amp;autorotate=false&amp;hideTools=false&amp;showBIM=false&amp;showBBoxSize=false&amp;showKooRender=false&amp;showSettings=false&quot; style=&quot;width:100%;height:100%;&quot; frameborder=&quot;0&quot; mozallowfullscreen webkitallowfullscreen allowfullscreen >&lt;/iframe>&#xa;人間系列，朱銘後期創作上不再幫雕塑上色，因為他認為顏色會影響觀看者的主觀意識，反而是黑、白二色能讓人更聚焦於創作品本身；來到朱銘美術館的門口，總能看到白色的雕塑作品，而且會隨著時間更換，不同年份看到的雕塑品都不盡相同。"/>
+      <hotspot skinid="ht_url" fov="10" customimage="media/未命名-removebg-preview.png" url="" distance3D="365.762" id="Point02" pan="-345.93" title="" tilt="0.4" customimageheight="64" use3D="0" target="_blank" customimagewidth="64" description=""/>
+      <hotspot skinid="ht_info" fov="10" customimage="media/未命名-removebg-preview.png" url="" distance3D="434.342" id="Point02" pan="-309.48" title="" tilt="-6.9" customimageheight="76" use3D="0" target="" customimagewidth="76" description="&lt;iframe src=&quot; https://app.modelo.io/embedded/1436229143892905984?viewport=false&amp;autoplay=false&amp;autorotate=false&amp;hideTools=false&amp;showBIM=false&amp;showBBoxSize=false&amp;showKooRender=false&amp;showSettings=false&quot; style=&quot;width:100%;height:100%;&quot; frameborder=&quot;0&quot; mozallowfullscreen webkitallowfullscreen allowfullscreen >&lt;/iframe>&#xa;年代：1987&#xa;材質：銅&#xa;朱銘自1980年代中期開始，創作了一系列的運動員。不同於以往木質、陶作或水墨的《人間系列》，此五件作品運用了藝術家新的創作技法，以麻繩綑綁大片海綿塑型，再加以翻銅製成作品。藝術家透過綑綁的鬆緊度，突顯運動員在進行體操當下身體與四肢的肌肉表現，同時也透過海綿材質本身的柔軟性，在人物胸部、腰際與膝蓋等較大的身體轉折處展現高度的靈活和彈性。透過選用的材質特性，藝術家充分地展現運動員力量與柔軟度的完美結合。"/>
+      <hotspot skinid="ht_info" fov="10" customimage="media/未命名-removebg-preview.png" url="" distance3D="542.927" id="Point02" pan="-289.56" title="" tilt="-11.84" customimageheight="95" use3D="0" target="" customimagewidth="95" description="&lt;iframe src=&quot; https://app.modelo.io/embedded/1436229947678130176?viewport=false&amp;autoplay=false&amp;autorotate=false&amp;hideTools=false&amp;showBIM=false&amp;showBBoxSize=false&amp;showKooRender=false&amp;showSettings=false&quot; style=&quot;width:100%;height:100%;&quot; frameborder=&quot;0&quot; mozallowfullscreen webkitallowfullscreen allowfullscreen >&lt;/iframe>&#xa;年代：1987&#xa;材質：銅&#xa;朱銘自1980年代中期開始，創作了一系列的運動員。不同於以往木質、陶作或水墨的《人間系列》，此五件作品運用了藝術家新的創作技法，以麻繩綑綁大片海綿塑型，再加以翻銅製成作品。藝術家透過綑綁的鬆緊度，突顯運動員在進行體操當下身體與四肢的肌肉表現，同時也透過海綿材質本身的柔軟性，在人物胸部、腰際與膝蓋等較大的身體轉折處展現高度的靈活和彈性。透過選用的材質特性，藝術家充分地展現運動員力量與柔軟度的完美結合。"/>
+      <hotspot skinid="ht_info" fov="10" customimage="media/未命名-removebg-preview.png" url="" distance3D="497.207" id="Point02" pan="-303.59" title="" tilt="-23.33" customimageheight="87" use3D="0" target="" customimagewidth="87" description="&lt;iframe src=&quot; https://app.modelo.io/embedded/1436237140270567424?viewport=false&amp;autoplay=false&amp;autorotate=false&amp;hideTools=false&amp;showBIM=false&amp;showBBoxSize=false&amp;showKooRender=false&amp;showSettings=false&quot; style=&quot;width:100%;height:100%;&quot; frameborder=&quot;0&quot; mozallowfullscreen webkitallowfullscreen allowfullscreen >&lt;/iframe> &#xa;年代：1987&#xa;材質：銅&#xa;朱銘自1980年代中期開始，創作了一系列的運動員。不同於以往木質、陶作或水墨的《人間系列》，此五件作品運用了藝術家新的創作技法，以麻繩綑綁大片海綿塑型，再加以翻銅製成作品。藝術家透過綑綁的鬆緊度，突顯運動員在進行體操當下身體與四肢的肌肉表現，同時也透過海綿材質本身的柔軟性，在人物胸部、腰際與膝蓋等較大的身體轉折處展現高度的靈活和彈性。透過選用的材質特性，藝術家充分地展現運動員力量與柔軟度的完美結合。"/>
+      <hotspot skinid="ht_info" fov="10" customimage="media/未命名-removebg-preview.png" url="" distance3D="594.363" id="Point02" pan="-334.63" title="" tilt="-17.66" customimageheight="104" use3D="0" target="" customimagewidth="104" description="&lt;iframe src=&quot; https://app.modelo.io/embedded/1436236291670593536?viewport=false&amp;autoplay=false&amp;autorotate=false&amp;hideTools=false&amp;showBIM=false&amp;showBBoxSize=false&amp;showKooRender=false&amp;showSettings=false&quot; style=&quot;width:100%;height:100%;&quot; frameborder=&quot;0&quot; mozallowfullscreen webkitallowfullscreen allowfullscreen >&lt;/iframe>&#xa;年代：1987&#xa;材質：銅&#xa;朱銘自1980年代中期開始，創作了一系列的運動員。不同於以往木質、陶作或水墨的《人間系列》，此五件作品運用了藝術家新的創作技法，以麻繩綑綁大片海綿塑型，再加以翻銅製成作品。藝術家透過綑綁的鬆緊度，突顯運動員在進行體操當下身體與四肢的肌肉表現，同時也透過海綿材質本身的柔軟性，在人物胸部、腰際與膝蓋等較大的身體轉折處展現高度的靈活和彈性。透過選用的材質特性，藝術家充分地展現運動員力量與柔軟度的完美結合。"/>
+      <hotspot skinid="ht_info" fov="10" customimage="media/未命名-removebg-preview.png" url="" distance3D="1160.15" id="Point02" pan="-172.85" title="" tilt="-31.93" customimageheight="203" use3D="0" target="" customimagewidth="203" description="&lt;iframe src=&quot; https://app.modelo.io/embedded/1436239859443433472?viewport=false&amp;autoplay=false&amp;autorotate=false&amp;hideTools=false&amp;showBIM=false&amp;showBBoxSize=false&amp;showKooRender=false&amp;showSettings=false&quot; style=&quot;width:100%;height:100%;&quot; frameborder=&quot;0&quot; mozallowfullscreen webkitallowfullscreen allowfullscreen >&lt;/iframe>&#xa;年代：1991&#xa;材質：銅&#xa;《太極系列》源於楊英風勸朱銘為了身體的健康應該要去學太極，之後他便開始挑戰以「太極拳」當成雕刻的創作題材。在1976年的史博館個展中，《太極系列》並未獲得太多注意，到了隔年該系列在日本東京中央美術館展出後造成轟動，才重新被臺灣所重視。此後太極就成為藝術家最為人熟知的作品。在這件作品中人物上半身向後轉，雙手微斂，單腳向後曲起作勢踢出，重心落在另隻腳上。藝術家充分掌握到作品的平衡感，在造形上雖然以大塊面堆疊組合而成，卻能在轉折處略作出切面，讓作品在穩重之餘，展現出太極對招中的動勢。"/>
+      <hotspot skinid="ht_info" fov="10" customimage="media/未命名-removebg-preview.png" url="" distance3D="760.098" id="Point02" pan="-248.47" title="" tilt="-5.84" customimageheight="133" use3D="0" target="" customimagewidth="133" description="&lt;iframe src=&quot; https://app.modelo.io/embedded/1436238849723465728?viewport=false&amp;autoplay=false&amp;autorotate=false&amp;hideTools=false&amp;showBIM=false&amp;showBBoxSize=false&amp;showKooRender=false&amp;showSettings=false&quot; style=&quot;width:100%;height:100%;&quot; frameborder=&quot;0&quot; mozallowfullscreen webkitallowfullscreen allowfullscreen >&lt;/iframe>&#xa;年代：1991&#xa;材質：銅&#xa;《太極系列》源於楊英風勸朱銘為了身體的健康應該要去學太極，之後他便開始挑戰以「太極拳」當成雕刻的創作題材。在1976年的史博館個展中，《太極系列》並未獲得太多注意，到了隔年該系列在日本東京中央美術館展出後造成轟動，才重新被臺灣所重視。此後太極就成為藝術家最為人熟知的作品。在這件作品中人物上半身向後轉，雙手微斂，單腳向後曲起作勢踢出，重心落在另隻腳上。藝術家充分掌握到作品的平衡感，在造形上雖然以大塊面堆疊組合而成，卻能在轉折處略作出切面，讓作品在穩重之餘，展現出太極對招中的動勢。"/>
+      <hotspot skinid="ht_info" fov="10" customimage="media/未命名-removebg-preview.png" url="" distance3D="474.347" id="Point02" pan="-259.99" title="" tilt="2.08" customimageheight="83" use3D="0" target="" customimagewidth="83" description=" &lt;iframe src=&quot; https://app.modelo.io/embedded/1436239311981903872?viewport=false&amp;autoplay=false&amp;autorotate=false&amp;hideTools=false&amp;showBIM=false&amp;showBBoxSize=false&amp;showKooRender=false&amp;showSettings=false&quot; style=&quot;width:100%;height:100%;&quot; frameborder=&quot;0&quot; mozallowfullscreen webkitallowfullscreen allowfullscreen >&lt;/iframe>&#xa;年代：1991&#xa;材質：銅&#xa;《太極系列》源於楊英風勸朱銘為了身體的健康應該要去學太極，之後他便開始挑戰以「太極拳」當成雕刻的創作題材。在1976年的史博館個展中，《太極系列》並未獲得太多注意，到了隔年該系列在日本東京中央美術館展出後造成轟動，才重新被臺灣所重視。此後太極就成為藝術家最為人熟知的作品。在這件作品中人物上半身向後轉，雙手微斂，單腳向後曲起作勢踢出，重心落在另隻腳上。藝術家充分掌握到作品的平衡感，在造形上雖然以大塊面堆疊組合而成，卻能在轉折處略作出切面，讓作品在穩重之餘，展現出太極對招中的動勢。"/>
+      <hotspot skinid="ht_info" fov="10" customimage="media/未命名-removebg-preview.png" url="" distance3D="822.964" id="Point02" pan="-344.21" title="" tilt="-2.12" customimageheight="144" use3D="0" target="" customimagewidth="144" description=" &lt;iframe src=&quot; https://app.modelo.io/embedded/1436242018833321984?viewport=false&amp;autoplay=false&amp;autorotate=false&amp;hideTools=false&amp;showBIM=false&amp;showBBoxSize=false&amp;showKooRender=false&amp;showSettings=false&quot; style=&quot;width:100%;height:100%;&quot; frameborder=&quot;0&quot; mozallowfullscreen webkitallowfullscreen allowfullscreen >&lt;/iframe>&#xa;年代：1991&#xa;材質：銅&#xa;《太極系列》源於楊英風勸朱銘為了身體的健康應該要去學太極，之後他便開始挑戰以「太極拳」當成雕刻的創作題材。在1976年的史博館個展中，《太極系列》並未獲得太多注意，到了隔年該系列在日本東京中央美術館展出後造成轟動，才重新被臺灣所重視。此後太極就成為藝術家最為人熟知的作品。在這件作品中人物上半身向後轉，雙手微斂，單腳向後曲起作勢踢出，重心落在另隻腳上。藝術家充分掌握到作品的平衡感，在造形上雖然以大塊面堆疊組合而成，卻能在轉折處略作出切面，讓作品在穩重之餘，展現出太極對招中的動勢。"/>
+      <polyhotspot url="{node7}" id="Poly01" title="" target="" description="">
+        <polystring>-325.23/21.28|-324.95/-5.64|-315.8/-8.01|-315.55/24.2</polystring>
+      </polyhotspot>
+    </hotspots>
+    <media>
+      <image fov="21.450" rotx="0.000" height="577" handcursor="0" width="432" id="Element05" pan="-260.420" roty="0.000" tilt="-3.310" clickmode="0" rotz="0.000" stretch="1.000">
+        <source url="media/S__6160418-removebg-preview (1).png"/>
+      </image>
+      <image fov="8.550" rotx="14.000" height="90" handcursor="0" width="80" id="Element07" pan="-252.610" roty="-64.000" tilt="7.170" clickmode="0" rotz="14.000" stretch="1.000">
+        <source url="media/oooo.png"/>
+      </image>
+      <image fov="17.850" rotx="0.000" height="204" handcursor="0" width="112" id="Element01" pan="-176.730" roty="0.000" tilt="-35.390" clickmode="0" rotz="0.000" stretch="1.000">
+        <source url="media/命名.png"/>
+      </image>
+      <image fov="16.950" rotx="0.000" height="364" handcursor="0" width="364" id="Element08" pan="-346.380" roty="13.000" tilt="8.190" clickmode="0" rotz="1.000" stretch="1.000">
+        <source url="media/名.png"/>
+      </image>
+      <image fov="30.000" rotx="12.000" height="1065" handcursor="0" width="1110" id="Element09" pan="-300.920" roty="-29.000" tilt="14.620" clickmode="0" rotz="6.000" stretch="1.000">
+        <source url="media/DONG6847-1110x1065.jpg"/>
+      </image>
+      <image fov="27.300" rotx="-27.000" height="286" handcursor="0" width="321" id="Element13" pan="-291.610" roty="-11.000" tilt="-14.500" clickmode="0" rotz="-12.000" stretch="1.000">
+        <source url="media/S__6160429-removebg-preview.png"/>
+      </image>
+      <image fov="15.600" rotx="-11.000" height="595" handcursor="0" width="419" id="Element15" pan="-3.510" roty="0.000" tilt="-3.190" clickmode="0" rotz="3.000" stretch="1.000">
+        <source url="media/S__132816899-removebg-preview.png"/>
+      </image>
+      <image fov="17.400" rotx="-10.000" height="759" handcursor="0" width="329" id="Element16" pan="-15.890" roty="-9.000" tilt="-7.000" clickmode="0" rotz="-1.000" stretch="1.000">
+        <source url="media/S__132816898-removebg-preview.png"/>
+      </image>
+      <image fov="17.850" rotx="13.000" height="812" handcursor="0" width="724" id="Element02" pan="-237.730" roty="-56.000" tilt="8.790" clickmode="0" rotz="8.000" stretch="1.000">
+        <source url="media/太極介紹.png"/>
+      </image>
+      <image fov="52.950" rotx="5.000" height="364" handcursor="0" width="364" id="Element06" pan="-183.470" roty="0.000" tilt="8.270" clickmode="0" rotz="-2.000" stretch="1.000">
+        <source url="media/名.png"/>
+      </image>
+      <image fov="51.150" rotx="8.000" height="812" handcursor="1" width="724" id="Element17" pan="-181.440" roty="3.000" tilt="10.130" clickmode="1" rotz="-3.000" stretch="1.000">
+        <source url="media/太極介紹.png"/>
+      </image>
+      <image fov="90.000" rotx="-21.000" height="331" handcursor="0" width="679" id="Element04" pan="-175.340" roty="-2.000" tilt="-25.560" clickmode="0" rotz="0.000" stretch="1.000">
+        <source url="media/S__6160420-removebg-preview.png"/>
+      </image>
+      <image fov="30.900" rotx="13.000" height="812" handcursor="1" width="724" id="Element02" pan="-236.980" roty="-56.000" tilt="8.390" clickmode="1" rotz="8.000" stretch="1.000">
+        <source url="media/太極介紹.png"/>
+      </image>
+      <image fov="13.350" rotx="-4.000" height="844" handcursor="1" width="708" id="Element20" pan="-275.130" roty="-8.000" tilt="3.010" clickmode="1" rotz="-2.000" stretch="1.000">
+        <source url="media/人間介紹.png"/>
+      </image>
+      <image fov="17.850" rotx="0.000" height="812" handcursor="1" width="724" id="Element21" pan="-346.200" roty="9.000" tilt="6.820" clickmode="1" rotz="1.000" stretch="1.000">
+        <source url="media/太極介紹.png"/>
+      </image>
+      <image fov="21.900" rotx="9.000" height="449" handcursor="0" width="556" id="Element14" pan="-345.920" roty="-1.000" tilt="-0.740" clickmode="0" rotz="-6.000" stretch="1.000">
+        <source url="media/S__6168598-removebg-preview (1).png"/>
+      </image>
+      <image fov="17.850" rotx="4.000" height="812" handcursor="1" width="724" id="Element22" pan="-251.950" roty="-72.000" tilt="4.990" clickmode="1" rotz="2.000" stretch="1.000">
+        <source url="media/太極介紹.png"/>
+      </image>
+      <image fov="39.000" rotx="0.000" height="341" handcursor="0" width="512" id="Element03" pan="-244.090" roty="-22.000" tilt="-1.810" clickmode="0" rotz="0.000" stretch="1.000">
+        <source url="media/unnamed-removebg-preview (4).png"/>
+      </image>
+      <image fov="30.000" rotx="0.000" height="510" handcursor="0" width="489" id="Element12" pan="-309.770" roty="0.000" tilt="-6.460" clickmode="0" rotz="0.000" stretch="1.000">
+        <source url="media/未名-removebg-preview (1).png"/>
+      </image>
+      <image fov="30.000" rotx="-9.000" height="568" handcursor="0" width="439" id="Element10" pan="-304.350" roty="17.000" tilt="-21.200" clickmode="0" rotz="-16.000" stretch="1.000">
+        <source url="media/S__6160423-removebg-preview.png"/>
+      </image>
+      <image fov="23.250" rotx="0.000" height="556" handcursor="0" width="449" id="Element11" pan="-332.230" roty="0.000" tilt="-18.850" clickmode="0" rotz="-39.000" stretch="1.000">
+        <source url="media/S__6160424-removebg-preview (2).png"/>
+      </image>
+      <sound loop="0" startmutedmobile="0" ambientlevel="0.000" nodechangekeep="0" id="Element18" pan="-176.000" tilt="-13.160" mode="5" level="1.000" pansize="0.000" field="75.000" tiltsize="10.000">
+        <source url="media/華文_302_太極系列.mp3"/>
+      </sound>
+      <sound loop="0" startmutedmobile="0" ambientlevel="0.000" nodechangekeep="0" id="Element19" pan="-317.450" tilt="-19.650" mode="5" level="1.000" pansize="2.000" field="71.000" tiltsize="10.000">
+        <source url="media/華文_103_人間系列.mp3"/>
+      </sound>
+    </media>
+    <transition type="crossdissolve" zoomoutpause="1" zoomspeed="2" softedge="0" zoomfov="20" blendcolor="0x000000" blendtime="1" zoomout="0" enabled="1" zoomin="0"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control sensitivity="8" contextfullscreen="1" speedwheel="1" lockedkeyboardzoom="0" lockedkeyboard="0" invertwheel="0" simulatemass="1" lockedwheel="0" contextprojections="0" rubberband="0" dblclickfullscreen="0" invertcontrol="1" hideabout="0" lockedmouse="0"/>
+  </panorama>
+  <masternode>
+    <userdata info="" tags="" datetime="" title="" heading="0" author="" source="" nodeid="master" comment="" longitude="" description="" customnodeid="" copyright="" latitude=""/>
+  </masternode>
+</tour>

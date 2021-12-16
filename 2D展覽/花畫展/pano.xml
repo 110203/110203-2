@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tour apprev="17919" appversion="6.1.4" start="node2">
+  <panorama id="node6">
+    <input leveltilesize="510" width="1024" levelbias="0.400" levelbiashidpi="1.000" overlap="1" levelingroll="0" height="1024" leveltileurl="tiles/node6/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingpitch="0">
+      <level width="1024" predecode="0" height="1024" preload="0"/>
+      <level width="512" predecode="0" height="512" preload="0"/>
+      <level width="256" predecode="1" height="256" preload="1"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="0" fovmode="0">
+      <start projection="4" tilt="0" fov="70" pan="0"/>
+      <flyin projection="9" tilt="-90" fov="170" pan="0"/>
+      <min fovpixel="2" tilt="-90" pan="0"/>
+      <max tilt="90" fovstereographic="270" fovfisheye="360" scaletofit="1" fov="120" pan="360"/>
+    </view>
+    <userdata copyright="" customnodeid="" title="" latitude="" description="" heading="0" tags="Downloads" source="" author="" datetime="2021/9/1 上午 04:29" comment="" longitude="" info="" nodeid="node6"/>
+    <hotspots width="180" height="20" wordwrap="1">
+      <label bordercolor="0x000000" width="180" background="1" backgroundcolor="0xffffff" textalpha="1" borderalpha="1" border="1" height="20" wordwrap="1" enabled="1" textcolor="0x000000" backgroundalpha="1" borderradius="1"/>
+      <polystyle bordercolor="0x0000ff" handcursor="1" backgroundcolor="0x0000ff" borderalpha="1" mode="0" backgroundalpha="0.25098"/>
+      <polyhotspot title="" description="" target="_blank" id="Poly01" url="">
+        <polystring>-222.38/7.69|-235.27/7.85|-237.65/-13.99|-223.26/-14.2</polystring>
+      </polyhotspot>
+      <polyhotspot title="" description="" target="" id="Poly02" url="{node3}">
+        <polystring>-203.12/6.69|-217.66/7.57|-218.1/-15.75|-198.87/-15.76</polystring>
+      </polyhotspot>
+      <polyhotspot title="" description="" target="" id="Poly03" url="{node2}">
+        <polystring>-187.51/4.34|-200.1/5.34|-197.79/-14.94|-184.49/-11.6</polystring>
+      </polyhotspot>
+      <polyhotspot title="" description="" target="" id="Poly04" url="{node7}">
+        <polystring>-95/11.18|-94.6/-35.41|-132.23/-35.25|-114.68/2.21|-97.12/19.32</polystring>
+      </polyhotspot>
+      <polyhotspot title="" description="" target="" id="Poly05" url="{node8}">
+        <polystring>-116.73/16.05|-142.76/-13.13|-130.95/-29.34|-112.25/11.25</polystring>
+      </polyhotspot>
+      <polyhotspot title="" description="" target="" id="Poly06" url="{node5}">
+        <polystring>-238.67/44.74|-276.34/54.33|-282.31/-33.47|-239.29/-27</polystring>
+      </polyhotspot>
+    </hotspots>
+    <media>
+      <image width="459" tilt="13.340" rotz="-5.000" stretch="1.000" handcursor="0" clickmode="0" id="Element01" roty="60.000" rotx="3.000" height="575" fov="48.450" pan="-250.640">
+        <source url="media/redouté.jpg"/>
+      </image>
+    </media>
+    <transition zoomin="0" zoomspeed="2" blendtime="1" type="crossdissolve" zoomout="0" zoomoutpause="1" zoomfov="20" blendcolor="0x000000" enabled="1" softedge="0"/>
+    <animation syncanimationwithvideo="0" animsequence="Animation01" useinautorotation="0"/>
+    <control lockedkeyboard="0" invertcontrol="1" contextfullscreen="1" sensitivity="8" hideabout="0" invertwheel="0" contextprojections="0" lockedmouse="0" lockedkeyboardzoom="0" speedwheel="1" simulatemass="1" rubberband="0" lockedwheel="0" dblclickfullscreen="0"/>
+  </panorama>
+  <panorama id="node5">
+    <input leveltilesize="510" width="1024" levelbias="0.400" levelbiashidpi="1.000" overlap="1" levelingroll="0" height="1024" leveltileurl="tiles/node5/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingpitch="0">
+      <level width="1024" predecode="0" height="1024" preload="0"/>
+      <level width="512" predecode="0" height="512" preload="0"/>
+      <level width="256" predecode="1" height="256" preload="1"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="0" fovmode="0">
+      <start projection="4" tilt="8.6" fov="65.05" pan="66.67"/>
+      <flyin projection="9" tilt="-90" fov="170" pan="0"/>
+      <min fovpixel="2" tilt="-90" pan="0"/>
+      <max tilt="90" fovstereographic="270" fovfisheye="360" scaletofit="1" fov="120" pan="360"/>
+    </view>
+    <userdata copyright="" customnodeid="" title="" latitude="" description="" heading="0" tags="Downloads" source="" author="" datetime="2021/9/1 上午 04:29" comment="" longitude="" info="" nodeid="node5"/>
+    <hotspots width="180" height="20" wordwrap="1">
+      <label bordercolor="0x000000" width="180" background="1" backgroundcolor="0xffffff" textalpha="1" borderalpha="1" border="1" height="20" wordwrap="1" enabled="1" textcolor="0x000000" backgroundalpha="1" borderradius="1"/>
+      <polystyle bordercolor="0x0000ff" handcursor="1" backgroundcolor="0x0000ff" borderalpha="1" mode="0" backgroundalpha="0.25098"/>
+      <polyhotspot title="" description="" target="" id="Poly01" url="{node4}">
+        <polystring>-213.23/10.57|-215.94/-21.88|-239.07/-20.04|-235.78/10.34</polystring>
+      </polyhotspot>
+      <polyhotspot title="" description="" target="" id="Poly02" url="{node3}">
+        <polystring>-174.77/11.07|-176.38/-30.16|-210.32/-29.93|-206.26/12.5</polystring>
+      </polyhotspot>
+      <polyhotspot title="" description="" target="" id="Poly03" url="{node2}">
+        <polystring>-146.86/9.96|-142.1/-24.62|-163.51/-32.98|-164.56/13.58</polystring>
+      </polyhotspot>
+      <polyhotspot title="" description="" target="" id="Poly04" url="{node8}">
+        <polystring>-8.85/8.47|-9.35/-18.68|-20.02/-16.53|-18.69/11.15</polystring>
+      </polyhotspot>
+      <polyhotspot title="" description="" target="" id="Poly05" url="{node7}">
+        <polystring>-347.9/10.12|-346.95/-16.57|-0.7/-18.56|-0.95/11.29</polystring>
+      </polyhotspot>
+      <hotspot customimageheight="203" title="" tilt="16.73" distance3D="1177.3" description="&lt;iframe width=&quot;500&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/7ih6WPTTEao&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen>&lt;/iframe>&#xa;皮埃爾-約瑟夫·雷杜德（英文名：Pierre-Joseph Redouté，1759年7月10日－1840年6月19日）是一位比利時畫家和植物學家，以玫瑰、百合及石竹類花卉等繪畫聞名於世，並被譽為「花之拉斐爾」。他是瑪麗·安托瓦內特（法國路易十六的王后）的專職畫師，法國大革命及恐怖統治時期（又稱雅各賓專政）仍堅持作畫。雷杜德得以在政治動盪騷亂中倖存下來，獲得國際認可，皆源於精湛的繪畫表現技藝，這類技藝在21世紀初仍鮮于人世。&#xa;著名油彩植物對開出版物《植物學圖譜》，正值雷杜德的創作巔峰期（1798年-1837年），當時的巴黎是歐洲文化和科學中心。一腔熱忱的繪畫精神，使他成為弗蘭德和荷蘭傳統花卉畫家布魯蓋爾（Brueghel）、理察·樂伊斯（Ruysch）、海以森（ van Huysum ）、德·黑姆（ de Heem）的學生兼助手。雷杜德畢生創作植物繪本逾2,100幅，涵蓋1,800餘種不同的品種，大部分在雷杜德之前均未曾以繪畫的藝術形式呈現出來。&#xa;&#xa;雷杜德出生於比利時盧森堡省（Luxembourg，毗鄰歐洲國家盧森堡，指比利時南部同名省）聖胡伯特市。&#xa;雖然少時相對缺乏正式教育，但父親和祖父都是畫家。他13歲時背井離鄉，遊歷比利時，以室內裝飾，肖像畫和宗教繪畫為謀生手段。&#xa;&#xa;1782年，雷杜德跟隨從事室內裝飾和布景設計的兄長安托萬·費迪南德（Antoine Ferdinand）來到巴黎。在巴黎，他遇上的植物學家Charles Louis L'Héritier de Brutelle以及 René Desfontaines，在他們的建議下，他開始朝著植物學圖譜這個迅速發展的學科邁進。&#xa;&#xa;1798年，雷杜德在國家自然歷史博物館從事動植物的編錄工作，並參與植物探險，赫赫有名的是波拿巴率領的埃及探險[1]。1787年，他前往倫敦附近的皇家植物園——裘園深入研究植物。1788年，返回巴黎。1792年，被法國科學院聘用。巴黎商人沃舍（Cheveau），讓這位年輕的藝術家在皇家植物園中，走進荷蘭植物藝術家Gerard van Spaendonck的視野，法國大革命後的1793年，這座植物園成為國家自然歷史博物館的植物園。van Spaendonck成為雷杜德的老師，他的贊助人L'Heritier[2]教他仔細分析花卉並描繪特徵之處。L'Heritier還將雷杜德介紹給凡爾賽法庭的成員們。瑪麗·安托瓦內特成為她的贊助人。雷杜德獲得女王專職製圖師及畫師的頭銜。&#xa;1798年，受到拿破崙一世皇妃約瑟芬·德博阿爾內的庇護，幾年之後，雷杜德成為她的宮廷畫師。1809年，雷杜德委任路易斯·瑪麗·奧爾良皇后的老師，教她學習繪畫。&#xa;&#xa;他於1840年6月19日或20日逝世，葬於拉雪茲神父公墓。&#xa;布魯塞爾的安德萊赫特的雷杜德學院以他的名字立校。&#xa;&#xa;&lt;iframe src='https://s9.gifyu.com/images/461358902.md.jpg' frameborder='0' scrolling='no' allowfullscreen width='540' height='900'>&lt;/iframe>&#xa;&#xa;&#xa;&#xa;&lt;iframe src='https://s9.gifyu.com/images/redoute-musa-paradisiaca_orig.md.jpg' frameborder='0' scrolling='no' allowfullscreen width='540' height='900'>&lt;/iframe>&#xa;&#xa;&lt;iframe src='https://s9.gifyu.com/images/379263041.md.jpg' frameborder='0' scrolling='no' allowfullscreen width='540' height='900'>&lt;/iframe>&#xa;&#xa;&lt;iframe src='https://s9.gifyu.com/images/rosa-gallica-versicolor-rosier-de-france-a-fleurs-panachees-nypl-digitalcollections-510d47de-1433-a3d9-e040-e00a18064a99-001-w_orig.md.jpg' frameborder='0' scrolling='no' allowfullscreen width='540' height='900'>&lt;/iframe>&#xa;&#xa;&lt;iframe src='https://s9.gifyu.com/images/rosa-damascena-variegata-rosier-d-yorck-et-de-lancastre-nypl-digitalcollections-510d47de-1434-a3d9-e040-e00a18064a99-001-w_orig.md.jpg' frameborder='0' scrolling='no' allowfullscreen width='540' height='900'>&lt;/iframe>&#xa;&#xa;&lt;iframe src='https://s9.gifyu.com/images/329974960.jpg' frameborder='0' scrolling='no' allowfullscreen width='540' height='900'>&lt;/iframe>&#xa;" skinid="ht_info" target="" id="Point01" customimagewidth="206" url="" fov="10" pan="-289.26" customimage="media/未命名-removebg-preview.png" use3D="0"/>
+      <hotspot title="" tilt="2.17" description="" skinid="ht_url" target="_blank" id="Point02" url="https://piececart.com/stores/existibition" pan="-59.39"/>
+    </hotspots>
+    <media>
+      <image width="459" tilt="16.170" rotz="1.000" stretch="1.000" handcursor="0" clickmode="0" id="Element01" roty="-10.000" rotx="14.000" height="575" fov="50.700" pan="-288.360">
+        <source url="media/redouté.jpg"/>
+      </image>
+    </media>
+    <transition zoomin="0" zoomspeed="2" blendtime="1" type="crossdissolve" zoomout="0" zoomoutpause="1" zoomfov="20" blendcolor="0x000000" enabled="1" softedge="0"/>
+    <animation syncanimationwithvideo="0" animsequence="Animation01" useinautorotation="0"/>
+    <control lockedkeyboard="0" invertcontrol="1" contextfullscreen="1" sensitivity="8" hideabout="0" invertwheel="0" contextprojections="0" lockedmouse="0" lockedkeyboardzoom="0" speedwheel="1" simulatemass="1" rubberband="0" lockedwheel="0" dblclickfullscreen="0"/>
+  </panorama>
+  <panorama id="node7">
+    <input leveltilesize="510" width="1024" levelbias="0.400" levelbiashidpi="1.000" overlap="1" levelingroll="0" height="1024" leveltileurl="tiles/node7/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingpitch="0">
+      <level width="1024" predecode="0" height="1024" preload="0"/>
+      <level width="512" predecode="0" height="512" preload="0"/>
+      <level width="256" predecode="1" height="256" preload="1"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="0" fovmode="0">
+      <start projection="4" tilt="-2.41" fov="70.92" pan="-172.19"/>
+      <flyin projection="9" tilt="-90" fov="170" pan="0"/>
+      <min fovpixel="2" tilt="-90" pan="0"/>
+      <max tilt="90" fovstereographic="270" fovfisheye="360" scaletofit="1" fov="120" pan="360"/>
+    </view>
+    <userdata copyright="" customnodeid="" title="" latitude="" description="" heading="0" tags="Downloads" source="" author="" datetime="2021/9/1 上午 04:30" comment="" longitude="" info="" nodeid="node7"/>
+    <hotspots width="180" height="20" wordwrap="1">
+      <label bordercolor="0x000000" width="180" background="1" backgroundcolor="0xffffff" textalpha="1" borderalpha="1" border="1" height="20" wordwrap="1" enabled="1" textcolor="0x000000" backgroundalpha="1" borderradius="1"/>
+      <polystyle bordercolor="0x0000ff" handcursor="1" backgroundcolor="0x0000ff" borderalpha="1" mode="0" backgroundalpha="0.25098"/>
+      <hotspot customimageheight="82" title="" tilt="12.73" distance3D="468.632" description="&lt;iframe src='https://s9.gifyu.com/images/S__6201349.md.jpg' frameborder='0' scrolling='no' allowfullscreen width='540' height='900'>&lt;/iframe>" skinid="ht_info" target="_blank" id="Point01" customimagewidth="82" url="" fov="10" pan="-171.93" customimage="media/未命名-removebg-preview.png" use3D="0"/>
+      <hotspot customimageheight="124" title="" tilt="12.13" distance3D="714.378" description="&lt;iframe src='https://s9.gifyu.com/images/2018_NYR_16718_0010_000claude_monet_nympheas_en_fleur.md.jpg' frameborder='0' scrolling='no' allowfullscreen width='540' height='900'>&lt;/iframe>" skinid="ht_info" target="" id="Point02" customimagewidth="125" url="" fov="10" pan="-199.21" customimage="media/未命名-removebg-preview.png" use3D="0"/>
+      <polyhotspot title="" description="" target="" id="Poly01" url="{node4}">
+        <polystring>-14.11/9.76|-14.11/-10.86|-26.58/-10.31|-26.03/8.67</polystring>
+      </polyhotspot>
+      <polyhotspot title="" description="" target="" id="Poly02" url="{node3}">
+        <polystring>-354.69/8.98|-353.06/-10.99|-6.42/-12.74|-6.44/9.51</polystring>
+      </polyhotspot>
+      <polyhotspot title="" description="" target="" id="Poly03" url="{node2}">
+        <polystring>-335.44/9.55|-333.7/-10.73|-344.97/-12.19|-346.69/10.18</polystring>
+      </polyhotspot>
+      <polyhotspot title="" description="" target="" id="Poly04" url="{node8}">
+        <polystring>-210.31/27.36|-210.01/-16.19|-256.48/-18.42|-245.1/23.13</polystring>
+      </polyhotspot>
+      <polyhotspot title="" description="" target="" id="Poly05" url="">
+        <polystring>-42.13/35.39|-78.2/42.96|-74.59/-23.44|-33.29/-12.66</polystring>
+      </polyhotspot>
+    </hotspots>
+    <media>
+      <image width="459" tilt="12.650" rotz="-6.000" stretch="1.000" handcursor="0" clickmode="0" id="Element01" roty="33.000" rotx="13.000" height="575" fov="49.800" pan="-52.900">
+        <source url="media/redouté.jpg"/>
+      </image>
+    </media>
+    <transition zoomin="0" zoomspeed="2" blendtime="1" type="crossdissolve" zoomout="0" zoomoutpause="1" zoomfov="20" blendcolor="0x000000" enabled="1" softedge="0"/>
+    <animation syncanimationwithvideo="0" animsequence="Animation01" useinautorotation="0"/>
+    <control lockedkeyboard="0" invertcontrol="1" contextfullscreen="1" sensitivity="8" hideabout="0" invertwheel="0" contextprojections="0" lockedmouse="0" lockedkeyboardzoom="0" speedwheel="1" simulatemass="1" rubberband="0" lockedwheel="0" dblclickfullscreen="0"/>
+  </panorama>
+  <panorama id="node8">
+    <input leveltilesize="510" width="1024" levelbias="0.400" levelbiashidpi="1.000" overlap="1" levelingroll="0" height="1024" leveltileurl="tiles/node8/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingpitch="0">
+      <level width="1024" predecode="0" height="1024" preload="0"/>
+      <level width="512" predecode="0" height="512" preload="0"/>
+      <level width="256" predecode="1" height="256" preload="1"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="0" fovmode="0">
+      <start projection="4" tilt="-1.19" fov="63.91" pan="-170.85"/>
+      <flyin projection="9" tilt="-90" fov="170" pan="0"/>
+      <min fovpixel="2" tilt="-90" pan="0"/>
+      <max tilt="90" fovstereographic="270" fovfisheye="360" scaletofit="1" fov="120" pan="360"/>
+    </view>
+    <userdata copyright="" customnodeid="" title="" latitude="" description="" heading="0" tags="Downloads" source="" author="" datetime="2021/9/1 上午 04:30" comment="" longitude="" info="" nodeid="node8"/>
+    <hotspots width="180" height="20" wordwrap="1">
+      <label bordercolor="0x000000" width="180" background="1" backgroundcolor="0xffffff" textalpha="1" borderalpha="1" border="1" height="20" wordwrap="1" enabled="1" textcolor="0x000000" backgroundalpha="1" borderradius="1"/>
+      <polystyle bordercolor="0x0000ff" handcursor="1" backgroundcolor="0x0000ff" borderalpha="1" mode="0" backgroundalpha="0.25098"/>
+      <polyhotspot title="" description="" target="" id="Poly01" url="{node7}">
+        <polystring>-131.62/1.65|-144.48/-23.81|-110.68/-24.8|-114.87/21.56</polystring>
+      </polyhotspot>
+      <polyhotspot title="" description="" target="" id="Poly02" url="{node4}">
+        <polystring>-20.82/8.64|-20.88/-12.32|-35.47/-12.42|-34.02/6.72</polystring>
+      </polyhotspot>
+      <polyhotspot title="" description="" target="" id="Poly03" url="{node3}">
+        <polystring>-1.87/8.06|-0.18/-10.15|-17.25/-12.42|-15.31/8.74|-15.31/8.74|-14.66/8.15|-10.04/8.17|-2.32/8.21</polystring>
+      </polyhotspot>
+      <polyhotspot title="" description="" target="" id="Poly04" url="{node2}">
+        <polystring>-343.64/10.31|-341.7/-9.63|-352.86/-11.52|-355.53/10.64</polystring>
+      </polyhotspot>
+      <polyhotspot title="" description="" target="" id="Poly05" url="">
+        <polystring>-86.6/-17.91|-40.99/-14.77|-44.96/30.18|-86.7/38.03</polystring>
+      </polyhotspot>
+      <hotspot customimageheight="113" title="" tilt="15.76" distance3D="651.513" description="&lt;iframe src='https://s9.gifyu.com/images/S__620134872a77d3596646a20.md.jpg' frameborder='0' scrolling='no' allowfullscreen width='540' height='900'>&lt;/iframe>" skinid="ht_info" target="" id="Point01" customimagewidth="114" url="" fov="10" pan="-184.1" customimage="media/未命名-removebg-preview.png" use3D="0"/>
+      <hotspot customimageheight="106" title="" tilt="8.66" distance3D="611.508" description="&lt;iframe src='https://s9.gifyu.com/images/2018_NYR_16718_0010_000claude_monet_nympheas_en_fleur.md.jpg' frameborder='0' scrolling='no' allowfullscreen width='540' height='900'>&lt;/iframe>" skinid="ht_info" target="" id="Point02" customimagewidth="107" url="" fov="10" pan="-155.82" customimage="media/未命名-removebg-preview.png" use3D="0"/>
+    </hotspots>
+    <media>
+      <image width="459" tilt="12.090" rotz="-5.000" stretch="1.000" handcursor="0" clickmode="0" id="Element01" roty="26.000" rotx="17.000" height="575" fov="39.450" pan="-61.760">
+        <source url="media/redouté.jpg"/>
+      </image>
+    </media>
+    <transition zoomin="0" zoomspeed="2" blendtime="1" type="crossdissolve" zoomout="0" zoomoutpause="1" zoomfov="20" blendcolor="0x000000" enabled="1" softedge="0"/>
+    <animation syncanimationwithvideo="0" animsequence="Animation01" useinautorotation="0"/>
+    <control lockedkeyboard="0" invertcontrol="1" contextfullscreen="1" sensitivity="8" hideabout="0" invertwheel="0" contextprojections="0" lockedmouse="0" lockedkeyboardzoom="0" speedwheel="1" simulatemass="1" rubberband="0" lockedwheel="0" dblclickfullscreen="0"/>
+  </panorama>
+  <panorama id="node4">
+    <input leveltilesize="510" width="1024" levelbias="0.400" levelbiashidpi="1.000" overlap="1" levelingroll="0" height="1024" leveltileurl="tiles/node4/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingpitch="0">
+      <level width="1024" predecode="0" height="1024" preload="0"/>
+      <level width="512" predecode="0" height="512" preload="0"/>
+      <level width="256" predecode="1" height="256" preload="1"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="0" fovmode="0">
+      <start projection="4" tilt="-4.98" fov="70" pan="-179.91"/>
+      <flyin projection="9" tilt="-90" fov="170" pan="0"/>
+      <min fovpixel="2" tilt="-90" pan="0"/>
+      <max tilt="90" fovstereographic="270" fovfisheye="360" scaletofit="1" fov="120" pan="360"/>
+    </view>
+    <userdata copyright="" customnodeid="" title="" latitude="" description="" heading="0" tags="Downloads" source="" author="" datetime="2021/9/1 上午 04:31" comment="" longitude="" info="" nodeid="node4"/>
+    <hotspots width="180" height="20" wordwrap="1">
+      <label bordercolor="0x000000" width="180" background="1" backgroundcolor="0xffffff" textalpha="1" borderalpha="1" border="1" height="20" wordwrap="1" enabled="1" textcolor="0x000000" backgroundalpha="1" borderradius="1"/>
+      <polystyle bordercolor="0x0000ff" handcursor="1" backgroundcolor="0x0000ff" borderalpha="1" mode="0" backgroundalpha="0.25098"/>
+      <polyhotspot title="" description="" target="" id="Poly01" url="{node3}">
+        <polystring>-126.6/12.22|-129.28/-26.72|-104.12/-27.22|-102.4/-11.62|-111.73/-11.44|-110.89/-0.39|-112.11/0</polystring>
+      </polyhotspot>
+      <polyhotspot title="" description="" target="" id="Poly02" url="{node2}">
+        <polystring>-108.81/9.98|-114/9.83|-111.53/-10.24|-95.38/-9.95|-99.88/8.99</polystring>
+      </polyhotspot>
+      <polyhotspot title="" description="" target="" id="Poly03" url="{node7}">
+        <polystring>-18.64/5.96|-17.96/-11.61|-24.17/-11.29|-24.77/6.29</polystring>
+      </polyhotspot>
+      <polyhotspot title="" description="" target="" id="Poly04" url="{node8}">
+        <polystring>-27.94/5.06|-28.43/-11|-36.06/-11.09|-35.81/4.89</polystring>
+      </polyhotspot>
+      <polyhotspot title="" description="" target="" id="Poly05" url="">
+        <polystring>-340.36/41.45|-355.85/32.63|-354.98/-16.1|-338.32/-18.75</polystring>
+      </polyhotspot>
+      <hotspot customimageheight="104" title="" tilt="18.31" distance3D="594.363" description="&lt;iframe src='https://s9.gifyu.com/images/S__6201346.jpg' frameborder='0' scrolling='no' allowfullscreen width='540' height='900'>&lt;/iframe>" skinid="ht_info" target="" id="Point01" customimagewidth="104" url="" fov="10" pan="-181.47" customimage="media/未命名-removebg-preview.png" use3D="0"/>
+    </hotspots>
+    <media>
+      <image width="459" tilt="8.870" rotz="1.000" stretch="1.000" handcursor="0" clickmode="0" id="Element01" roty="-70.000" rotx="-1.000" height="575" fov="45.750" pan="-350.680">
+        <source url="media/redouté.jpg"/>
+      </image>
+    </media>
+    <transition zoomin="0" zoomspeed="2" blendtime="1" type="crossdissolve" zoomout="0" zoomoutpause="1" zoomfov="20" blendcolor="0x000000" enabled="1" softedge="0"/>
+    <animation syncanimationwithvideo="0" animsequence="Animation01" useinautorotation="0"/>
+    <control lockedkeyboard="0" invertcontrol="1" contextfullscreen="1" sensitivity="8" hideabout="0" invertwheel="0" contextprojections="0" lockedmouse="0" lockedkeyboardzoom="0" speedwheel="1" simulatemass="1" rubberband="0" lockedwheel="0" dblclickfullscreen="0"/>
+  </panorama>
+  <panorama id="node3">
+    <input leveltilesize="510" width="1024" levelbias="0.400" levelbiashidpi="1.000" overlap="1" levelingroll="0" height="1024" leveltileurl="tiles/node3/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingpitch="0">
+      <level width="1024" predecode="0" height="1024" preload="0"/>
+      <level width="512" predecode="0" height="512" preload="0"/>
+      <level width="256" predecode="1" height="256" preload="1"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="0" fovmode="0">
+      <start projection="4" tilt="-4.84" fov="70" pan="-173.98"/>
+      <flyin projection="9" tilt="-90" fov="170" pan="0"/>
+      <min fovpixel="2" tilt="-90" pan="0"/>
+      <max tilt="90" fovstereographic="270" fovfisheye="360" scaletofit="1" fov="120" pan="360"/>
+    </view>
+    <userdata copyright="" customnodeid="" title="" latitude="" description="" heading="0" tags="Downloads" source="" author="" datetime="2021/9/1 上午 04:31" comment="" longitude="" info="" nodeid="node3"/>
+    <hotspots width="180" height="20" wordwrap="1">
+      <label bordercolor="0x000000" width="180" background="1" backgroundcolor="0xffffff" textalpha="1" borderalpha="1" border="1" height="20" wordwrap="1" enabled="1" textcolor="0x000000" backgroundalpha="1" borderradius="1"/>
+      <polystyle bordercolor="0x0000ff" handcursor="1" backgroundcolor="0x0000ff" borderalpha="1" mode="0" backgroundalpha="0.25098"/>
+      <hotspot customimageheight="92" title="" tilt="15.6" distance3D="531.497" description="&lt;iframe src='https://s9.gifyu.com/images/72c9176f148af58633e02397a78ded74--botanical-illustration-heather-orourke.jpg' frameborder='0' scrolling='no' allowfullscreen width='410' height='580'>&lt;/iframe>" skinid="ht_info" target="" id="Point01" customimagewidth="93" url="" fov="10" pan="-179.37" customimage="media/未命名-removebg-preview.png" use3D="0"/>
+      <polyhotspot title="" description="" target="" id="Poly01" url="{node4}">
+        <polystring>-229.7/20.37|-230.92/-22.31|-269.8/-24.24|-261.88/17.99</polystring>
+      </polyhotspot>
+      <polyhotspot title="" description="" target="" id="Poly02" url="{node2}">
+        <polystring>-128.73/17.63|-129.36/-31.7|-98.68/-33.65|-99.15/10.49</polystring>
+      </polyhotspot>
+      <polyhotspot title="" description="" target="" id="Poly03" url="{node8}">
+        <polystring>-5.02/8.98|-5.37/-11.49|-13.12/-13.33|-13.98/8.36</polystring>
+      </polyhotspot>
+      <polyhotspot title="" description="" target="" id="Poly04" url="{node7}">
+        <polystring>-352.79/8.3|-352.86/-13.43|-0.92/-14.24|-359.62/9.18</polystring>
+      </polyhotspot>
+      <polyhotspot title="" description="" target="" id="Poly05" url="{node5}">
+        <polystring>-290.42/40.57|-326.01/28.74|-326.79/-19.41|-286.16/-16.2</polystring>
+      </polyhotspot>
+    </hotspots>
+    <media>
+      <image width="459" tilt="10.700" rotz="2.000" stretch="1.000" handcursor="0" clickmode="0" id="Element01" roty="-38.000" rotx="2.000" height="575" fov="41.700" pan="-311.990">
+        <source url="media/redouté.jpg"/>
+      </image>
+    </media>
+    <transition zoomin="0" zoomspeed="2" blendtime="1" type="crossdissolve" zoomout="0" zoomoutpause="1" zoomfov="20" blendcolor="0x000000" enabled="1" softedge="0"/>
+    <animation syncanimationwithvideo="0" animsequence="Animation01" useinautorotation="0"/>
+    <control lockedkeyboard="0" invertcontrol="1" contextfullscreen="1" sensitivity="8" hideabout="0" invertwheel="0" contextprojections="0" lockedmouse="0" lockedkeyboardzoom="0" speedwheel="1" simulatemass="1" rubberband="0" lockedwheel="0" dblclickfullscreen="0"/>
+  </panorama>
+  <panorama id="node9">
+    <input leveltilesize="510" width="1024" levelbias="0.400" levelbiashidpi="1.000" overlap="1" levelingroll="0" height="1024" leveltileurl="tiles/node9/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingpitch="0">
+      <level width="1024" predecode="0" height="1024" preload="0"/>
+      <level width="512" predecode="0" height="512" preload="0"/>
+      <level width="256" predecode="1" height="256" preload="1"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="0" fovmode="0">
+      <start projection="4" tilt="0" fov="70" pan="0"/>
+      <flyin projection="9" tilt="-90" fov="170" pan="0"/>
+      <min fovpixel="2" tilt="-90" pan="0"/>
+      <max tilt="90" fovstereographic="270" fovfisheye="360" scaletofit="1" fov="120" pan="360"/>
+    </view>
+    <userdata copyright="" customnodeid="" title="" latitude="" description="" heading="0" tags="Downloads" source="" author="" datetime="2021/9/1 上午 04:30" comment="" longitude="" info="" nodeid="node9"/>
+    <hotspots width="180" height="20" wordwrap="1">
+      <label bordercolor="0x000000" width="180" background="1" backgroundcolor="0xffffff" textalpha="1" borderalpha="1" border="1" height="20" wordwrap="1" enabled="1" textcolor="0x000000" backgroundalpha="1" borderradius="1"/>
+      <polystyle bordercolor="0x0000ff" handcursor="1" backgroundcolor="0x0000ff" borderalpha="1" mode="0" backgroundalpha="0.25098"/>
+      <hotspot customimageheight="43" title="" tilt="10.53" distance3D="245.746" description="&lt;iframe src='https://s9.gifyu.com/images/S__6201352.th.jpg' frameborder='0' scrolling='no' allowfullscreen width='540' height='380'>&lt;/iframe>" skinid="ht_info" target="_blank" id="Point02" customimagewidth="43" url="" fov="10" pan="-183.8" customimage="media/未命名-removebg-preview.png" use3D="0"/>
+      <polyhotspot title="" description="" target="" id="Poly01" url="{node8}">
+        <polystring>-10.31/9.48|-10.33/-14.08|-19.85/-14.59|-19.11/11.27</polystring>
+      </polyhotspot>
+      <polyhotspot title="" description="" target="" id="Poly02" url="{node7}">
+        <polystring>-354.47/8.11|-353.52/-15.77|-5.67/-15.92|-3.86/8.93</polystring>
+      </polyhotspot>
+      <polyhotspot title="" description="" target="_blank" id="Poly03" url="">
+        <polystring>-217.64/17.44|-220.06/-25.87|-252.61/-23.19|-248.16/11.61</polystring>
+      </polyhotspot>
+      <polyhotspot title="" description="" target="" id="Poly04" url="{node3}">
+        <polystring>-163.72/22.37|-159.38/-44.66|-211.66/-41.13|-205.76/20.91|-205.76/20.91|-204.12/19.89</polystring>
+      </polyhotspot>
+      <polyhotspot title="" description="" target="" id="Poly05" url="{node2}">
+        <polystring>-122.2/13.45|-115.99/-27.46|-142.5/-41.05|-148.98/20.75</polystring>
+      </polyhotspot>
+      <polyhotspot title="" description="" target="" id="Poly06" url="">
+        <polystring>-278.03/45.96|-329.69/31.74|-317.42/-31.86|-283.14/-25.9</polystring>
+      </polyhotspot>
+    </hotspots>
+    <media>
+      <image width="459" tilt="14.800" rotz="5.000" stretch="1.000" handcursor="0" clickmode="0" id="Element01" roty="-31.000" rotx="11.000" height="575" fov="47.100" pan="-307.760">
+        <source url="media/redouté.jpg"/>
+      </image>
+    </media>
+    <transition zoomin="0" zoomspeed="2" blendtime="1" type="crossdissolve" zoomout="0" zoomoutpause="1" zoomfov="20" blendcolor="0x000000" enabled="1" softedge="0"/>
+    <animation syncanimationwithvideo="0" animsequence="Animation01" useinautorotation="0"/>
+    <control lockedkeyboard="0" invertcontrol="1" contextfullscreen="1" sensitivity="8" hideabout="0" invertwheel="0" contextprojections="0" lockedmouse="0" lockedkeyboardzoom="0" speedwheel="1" simulatemass="1" rubberband="0" lockedwheel="0" dblclickfullscreen="0"/>
+  </panorama>
+  <panorama id="node2">
+    <input leveltilesize="510" width="1024" levelbias="0.400" levelbiashidpi="1.000" overlap="1" levelingroll="0" height="1024" leveltileurl="tiles/node2/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingpitch="0">
+      <level width="1024" predecode="0" height="1024" preload="0"/>
+      <level width="512" predecode="0" height="512" preload="0"/>
+      <level width="256" predecode="1" height="256" preload="1"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="0" fovmode="0">
+      <start projection="4" tilt="-0.79" fov="58.4" pan="-178.14"/>
+      <flyin projection="9" tilt="-90" fov="170" pan="0"/>
+      <min fovpixel="2" tilt="-90" pan="0"/>
+      <max tilt="90" fovstereographic="270" fovfisheye="360" scaletofit="1" fov="120" pan="360"/>
+    </view>
+    <userdata copyright="" customnodeid="" title="" latitude="" description="" heading="0" tags="Downloads" source="" author="" datetime="2021/9/1 上午 04:31" comment="" longitude="" info="" nodeid="node2"/>
+    <hotspots width="180" height="20" wordwrap="1">
+      <label bordercolor="0x000000" width="180" background="1" backgroundcolor="0xffffff" textalpha="1" borderalpha="1" border="1" height="20" wordwrap="1" enabled="1" textcolor="0x000000" backgroundalpha="1" borderradius="1"/>
+      <polystyle bordercolor="0x0000ff" handcursor="1" backgroundcolor="0x0000ff" borderalpha="1" mode="0" backgroundalpha="0.25098"/>
+      <hotspot customimageheight="108" title="" tilt="13.33" distance3D="622.938" description="&lt;iframe src='https://s9.gifyu.com/images/S__6201350.md.jpg' frameborder='0' scrolling='no' allowfullscreen width='540' height='900'>&lt;/iframe>" skinid="ht_info" target="_blank" id="Point01" customimagewidth="109" url="" fov="10" pan="-175.05" customimage="media/未命名-removebg-preview.png" use3D="0"/>
+      <polyhotspot title="" description="" target="" id="Poly01" url="{node3}">
+        <polystring>-234.19/13.24|-230.08/-22.21|-263.38/-23.75|-251.49/-7.42|-249.91/2|-241.85/2.03</polystring>
+      </polyhotspot>
+      <polyhotspot title="" description="" target="" id="Poly02" url="{node4}">
+        <polystring>-251.48/13.27|-251.92/-5.31|-267.42/-6.36</polystring>
+      </polyhotspot>
+      <polyhotspot title="" description="" target="" id="Poly03" url="{node8}">
+        <polystring>-348.88/9.32|-347.49/-10.91|-357.07/-11.1|-356.3/8.06</polystring>
+      </polyhotspot>
+      <polyhotspot title="" description="" target="" id="Poly04" url="{node7}">
+        <polystring>-331.75/11.73|-334.35/-12.54|-344.32/-13.51|-344.14/10.41</polystring>
+      </polyhotspot>
+      <polyhotspot title="" description="" target="" id="Poly05" url="{node5}">
+        <polystring>-277.75/34.85|-317.85/29.53|-315.24/-10.03|-278.68/-14.1</polystring>
+      </polyhotspot>
+    </hotspots>
+    <media>
+      <image width="459" tilt="10.380" rotz="2.000" stretch="1.000" handcursor="0" clickmode="0" id="Element01" roty="-22.000" rotx="10.000" height="575" fov="30.900" pan="-300.400">
+        <source url="media/redouté.jpg"/>
+      </image>
+    </media>
+    <transition zoomin="0" zoomspeed="2" blendtime="1" type="crossdissolve" zoomout="0" zoomoutpause="1" zoomfov="20" blendcolor="0x000000" enabled="1" softedge="0"/>
+    <animation syncanimationwithvideo="0" animsequence="Animation01" useinautorotation="0"/>
+    <control lockedkeyboard="0" invertcontrol="1" contextfullscreen="1" sensitivity="8" hideabout="0" invertwheel="0" contextprojections="0" lockedmouse="0" lockedkeyboardzoom="0" speedwheel="1" simulatemass="1" rubberband="0" lockedwheel="0" dblclickfullscreen="0"/>
+  </panorama>
+  <masternode>
+    <userdata copyright="" customnodeid="" title="" latitude="" description="" heading="0" tags="" source="" author="" datetime="" comment="" longitude="" info="" nodeid="master"/>
+  </masternode>
+</tour>
